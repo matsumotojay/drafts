@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Art's Auto Service | Hawthorne Auto Repair</title>
+<meta name="description" content="Art's Auto Service on Rosecrans in Hawthorne. Brakes, tune-ups, oil changes, diagnostics and general repair, foreign and domestic.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Yellowtail&family=Alfa+Slab+One&family=Work+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --cream:#f7ecd6; --paper:#fff8ea; --brown:#3a2314; --brown2:#5c3a22;
+  --orange:#c4521c; --mustard:#e2a628; --rust:#9a3b12; --olive:#6f6a2a;
+  --ink:#2a1a0f;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+body{background:var(--cream);color:var(--ink);font:400 17px/1.55 "Work Sans",system-ui,sans-serif;overflow-x:hidden}
+a{color:inherit}
+img{max-width:100%}
+.draft{background:#140c06;color:#f2e3c4;font-size:13px;text-align:center;padding:7px 12px;letter-spacing:.02em}
+.wrap{max-width:1040px;margin:0 auto;padding:0 18px}
+h1,h2,h3{font-family:"Alfa Slab One",Georgia,serif;font-weight:400;line-height:1.08;color:var(--brown)}
+.script{font-family:"Yellowtail",cursive;font-weight:400}
+
+/* top bar */
+.top{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 18px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.logo .badge{width:46px;height:46px;border-radius:50%;background:var(--orange);display:grid;place-items:center;border:3px solid var(--brown);box-shadow:0 0 0 3px var(--mustard)}
+.logo .badge span{font-family:"Yellowtail",cursive;color:var(--paper);font-size:24px;line-height:1;transform:translateY(-1px)}
+.logo b{font-family:"Alfa Slab One",serif;font-weight:400;font-size:17px;color:var(--brown);line-height:1}
+.logo small{display:block;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--brown2);margin-top:3px}
+.top .tel{font-weight:700;font-size:14px!important;text-decoration:none;color:var(--rust);white-space:nowrap;font-size:15px}
+
+/* hero */
+.hero{position:relative;background:var(--brown);color:var(--paper);overflow:hidden;border-top:6px solid var(--mustard)}
+.stripes{position:absolute;right:-120px;top:-130px;width:260px;height:260px;pointer-events:none;opacity:.9}
+.hero .wrap{position:relative;padding-top:96px;padding-bottom:52px}
+.hero .hello{font-family:"Yellowtail",cursive;color:var(--mustard);font-size:30px;line-height:1}
+.hero h1{color:var(--paper);font-size:clamp(44px,13vw,92px);margin:6px 0 4px;letter-spacing:.005em}
+.hero h1 .script{display:block;color:#ee7a3c;font-size:1.12em;line-height:.9;margin-bottom:-.06em;text-shadow:3px 3px 0 #1d1009}
+.hero .sub{font-size:19px;max-width:30ch;color:#f3e2c2;margin:14px 0 26px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font:700 19px/1 "Work Sans",sans-serif;text-decoration:none;border-radius:999px;padding:18px 26px;min-height:56px}
+.btn-call{background:var(--mustard);color:var(--brown);box-shadow:0 5px 0 #a8761a;width:100%;max-width:380px}
+.btn-call:active{transform:translateY(3px);box-shadow:0 2px 0 #a8761a}
+.btn-ghost{color:var(--paper);border:2px solid #8a6446;margin-top:12px;width:100%;max-width:380px;font-size:17px}
+.hero .meta{display:flex;flex-wrap:wrap;gap:8px 18px;margin-top:26px;font-size:15px;color:#e8d3ad}
+.hero .meta b{color:var(--mustard)}
+
+/* stat strip */
+.strip{background:var(--orange);color:var(--paper)}
+.strip .wrap{display:grid;grid-template-columns:repeat(3,1fr);gap:0}
+.stat{padding:20px 8px;text-align:center;border-right:2px dashed rgba(255,248,234,.35)}
+.stat:last-child{border-right:0}
+.stat .n{font-family:"Alfa Slab One",serif;font-size:30px;line-height:1}
+.stat .l{font-size:13px;line-height:1.3;margin-top:6px;color:#ffe9cc}
+
+section{padding:56px 0}
+.kicker{font-family:"Yellowtail",cursive;color:var(--orange);font-size:28px;line-height:1}
+h2{font-size:clamp(30px,8vw,46px);margin:4px 0 18px}
+.lead{max-width:56ch;color:var(--brown2)}
+
+/* services as work-order ticket */
+.ticket{background:var(--paper);border:2px solid var(--brown);border-radius:6px;box-shadow:6px 6px 0 var(--mustard);margin-top:22px}
+.ticket-head{display:flex;justify-content:space-between;align-items:center;background:var(--brown);color:var(--paper);padding:10px 16px;font-size:13px;letter-spacing:.14em;text-transform:uppercase}
+.ticket-head .script{font-size:22px;letter-spacing:0;text-transform:none;color:var(--mustard)}
+.svc{list-style:none;display:grid;grid-template-columns:1fr}
+.svc li{display:flex;gap:14px;align-items:flex-start;padding:15px 16px;border-bottom:1px dashed #c9ad86}
+.svc li:last-child{border-bottom:0}
+.svc .box{flex:0 0 22px;height:22px;border:2px solid var(--brown);border-radius:3px;position:relative;margin-top:2px}
+.svc .box::after{content:"";position:absolute;left:5px;top:0;width:7px;height:13px;border:solid var(--orange);border-width:0 3px 3px 0;transform:rotate(40deg)}
+.svc b{display:block;font-size:17px;color:var(--brown)}
+.svc span{font-size:15px;color:var(--brown2)}
+
+/* why */
+.why{background:var(--mustard);position:relative}
+.why h2{color:var(--brown)}
+.why .stars{font-size:22px;color:var(--brown);letter-spacing:2px}
+.themes{display:grid;gap:16px;margin-top:26px}
+.theme{background:var(--paper);border-radius:14px;padding:20px;border:2px solid var(--brown);position:relative}
+.theme .num{position:absolute;top:-16px;left:16px;background:var(--orange);color:var(--paper);font-family:"Alfa Slab One",serif;width:34px;height:34px;border-radius:50%;display:grid;place-items:center;border:2px solid var(--brown);font-size:15px}
+.theme h3{font-size:21px;margin:8px 0 6px}
+.theme p{font-size:15px;color:var(--brown2)}
+.src{font-size:13px;color:var(--brown2);margin-top:18px}
+
+/* photo placeholder */
+.photo{border:3px dashed var(--brown2);border-radius:14px;min-height:240px;display:grid;place-items:center;text-align:center;padding:28px;background:
+  repeating-linear-gradient(135deg,rgba(196,82,28,.08) 0 14px,transparent 14px 28px),var(--paper)}
+.photo .cam{width:64px;height:48px;border:4px solid var(--brown);border-radius:10px;margin:0 auto 12px;position:relative}
+.photo .cam::before{content:"";position:absolute;width:20px;height:20px;border:4px solid var(--brown);border-radius:50%;left:50%;top:50%;transform:translate(-50%,-50%)}
+.photo .cam::after{content:"";position:absolute;width:16px;height:7px;background:var(--brown);top:-10px;left:10px;border-radius:3px 3px 0 0}
+.photo b{font-family:"Alfa Slab One",serif;font-weight:400;font-size:22px;color:var(--brown)}
+.photo p{font-size:15px;color:var(--brown2);margin-top:6px;max-width:34ch}
+
+/* visit */
+.visit{background:var(--brown);color:var(--paper)}
+.visit h2{color:var(--paper)}
+.visit .kicker{color:var(--mustard)}
+.vgrid{display:grid;gap:18px;margin-top:10px}
+.card{background:#4a2d1a;border-radius:14px;padding:22px;border:2px solid #6d4a30}
+.card h3{color:var(--mustard);font-size:20px;margin-bottom:10px}
+.card p{color:#f0dfbf}
+.card a.link{display:inline-block;margin-top:14px;color:var(--paper);font-weight:700;text-decoration:underline;text-underline-offset:4px;text-decoration-color:var(--orange)}
+.days{display:grid;grid-template-columns:repeat(7,1fr);gap:5px;margin-top:6px}
+.days span{font-size:12px;text-align:center;padding:9px 0;border-radius:6px;background:var(--orange);color:var(--paper);font-weight:700}
+.days span.off{background:transparent;border:1px dashed #8a6446;color:#b99572;font-weight:500}
+
+/* form */
+.formwrap{background:var(--paper);border:2px solid var(--brown);border-radius:16px;padding:22px;box-shadow:6px 6px 0 var(--orange)}
+label{display:block;font-weight:700;font-size:15px;color:var(--brown);margin:14px 0 6px}
+input,select,textarea{width:100%;font:400 16px "Work Sans",sans-serif;padding:13px 14px;border:2px solid #b8976d;border-radius:10px;background:#fff;color:var(--ink)}
+input:focus,select:focus,textarea:focus{outline:3px solid var(--mustard);border-color:var(--brown)}
+textarea{min-height:96px;resize:vertical}
+.row2{display:grid;gap:0 14px}
+.submit{margin-top:20px;width:100%;background:var(--orange);color:var(--paper);border:0;cursor:pointer;box-shadow:0 5px 0 var(--rust)}
+.note{font-size:13px;color:var(--brown2);margin-top:10px;text-align:center}
+
+footer{background:#22140a;color:#d9c4a0;padding:34px 0 96px;font-size:14px}
+footer .script{color:var(--mustard);font-size:30px}
+footer a{color:#f3e2c2}
+
+/* sticky call on phones */
+.sticky{position:fixed;left:12px;right:12px;bottom:12px;z-index:20;display:flex}
+.sticky a{flex:1;max-width:none;box-shadow:0 6px 18px rgba(0,0,0,.35),0 4px 0 #a8761a}
+
+@media (max-width:380px){.logo b{font-size:15px}.logo .badge{width:40px;height:40px}}
+@media (min-width:720px){
+  .svc{grid-template-columns:1fr 1fr}
+  .svc li:nth-child(odd){border-right:1px dashed #c9ad86}
+  .svc li:nth-last-child(2):nth-child(odd){border-bottom:0}
+  .themes{grid-template-columns:repeat(3,1fr)}
+  .vgrid{grid-template-columns:1.1fr 1fr}
+  .row2{grid-template-columns:1fr 1fr}
+  .btn-call,.btn-ghost{width:auto}
+  .hero .actions{display:flex;gap:14px;align-items:center}
+  .btn-ghost{margin-top:0}
+  .sticky{display:none}
+  footer{padding-bottom:34px}
+  .hero .wrap{padding-top:56px}
+  .stripes{right:-60px;top:auto;bottom:-180px;width:600px;height:600px}
+}
+</style>
+</head>
+<body>
+<div class="draft">Draft website made for Art's Auto Service by Jay · not live yet</div>
+
+<header class="wrap top">
+  <a class="logo" href="#top" aria-label="Art's Auto Service home">
+    <span class="badge" aria-hidden="true"><span>A</span></span>
+    <span><b>Art's Auto Service</b><small>Hawthorne, CA</small></span>
+  </a>
+  <a class="tel" href="tel:+13106766245">(310) 676-6245</a>
+</header>
+
+<main id="top">
+<section class="hero" style="padding:0">
+  <svg class="stripes" viewBox="0 0 400 400" aria-hidden="true">
+    <circle cx="200" cy="200" r="190" fill="none" stroke="#e2a628" stroke-width="34"/>
+    <circle cx="200" cy="200" r="152" fill="none" stroke="#c4521c" stroke-width="34"/>
+    <circle cx="200" cy="200" r="114" fill="none" stroke="#9a3b12" stroke-width="34"/>
+    <circle cx="200" cy="200" r="76" fill="none" stroke="#6f6a2a" stroke-width="34"/>
+  </svg>
+  <div class="wrap">
+    <p class="hello">Your neighborhood garage</p>
+    <h1><span class="script">Art's</span>Auto Service</h1>
+    <p class="sub">Honest car repair on Rosecrans in Hawthorne. Foreign and domestic.</p>
+    <div class="actions">
+      <a class="btn btn-call" href="tel:+13106766245">
+        <svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg>
+        Call (310) 676-6245
+      </a>
+      <a class="btn btn-ghost" href="#book">Ask for an appointment</a>
+    </div>
+    <div class="meta"><span><b>4712 W Rosecrans Ave</b></span><span>Open Mon to Sat</span><span>Closed Sunday</span></div>
+  </div>
+</section>
+
+<div class="strip">
+  <div class="wrap">
+    <div class="stat"><div class="n">4.9&#9733;</div><div class="l">on Yelp from 142 reviews</div></div>
+    <div class="stat"><div class="n">~25</div><div class="l">years in business</div></div>
+    <div class="stat"><div class="n">2023</div><div class="l">Nextdoor Neighborhood Favorite</div></div>
+  </div>
+</div>
+
+<section id="services">
+  <div class="wrap">
+    <p class="kicker">What we fix</p>
+    <h2>Bring it in. We'll take a look.</h2>
+    <p class="lead">Everyday repair and maintenance for most makes, foreign and domestic.</p>
+    <div class="ticket">
+      <div class="ticket-head"><span>Work order</span><span class="script">Art's</span></div>
+      <ul class="svc">
+        <li><i class="box" aria-hidden="true"></i><div><b>Brakes</b><span>Pads, rotors and the rest of the brake job</span></div></li>
+        <li><i class="box" aria-hidden="true"></i><div><b>Check engine light</b><span>Computer diagnostics to find the real cause</span></div></li>
+        <li><i class="box" aria-hidden="true"></i><div><b>Oil changes</b><span>In and out, done right</span></div></li>
+        <li><i class="box" aria-hidden="true"></i><div><b>Tune-ups</b><span>Keep it running smooth</span></div></li>
+        <li><i class="box" aria-hidden="true"></i><div><b>30, 60, 90K service</b><span>Your mileage service, without the dealer visit</span></div></li>
+        <li><i class="box" aria-hidden="true"></i><div><b>Shocks and struts</b><span>For bouncing, clunks and a rough ride</span></div></li>
+        <li><i class="box" aria-hidden="true"></i><div><b>Water pump and radiator</b><span>Overheating, leaks and coolant</span></div></li>
+        <li><i class="box" aria-hidden="true"></i><div><b>Safety check</b><span>Before a road trip or a used car buy</span></div></li>
+        <li><i class="box" aria-hidden="true"></i><div><b>General repair</b><span>Not on the list? Call and ask.</span></div></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="why" id="why">
+  <div class="wrap">
+    <p class="kicker" style="color:var(--rust)">Ask the neighbors</p>
+    <h2>Why Hawthorne keeps coming back</h2>
+    <p class="stars" aria-label="4.9 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733; <span style="font-size:16px;letter-spacing:0">4.9 on Yelp, 142 reviews</span></p>
+    <div class="themes">
+      <div class="theme"><span class="num">1</span><h3>Straight talk</h3><p>Customers say they only fix what your car actually needs. No upsell.</p></div>
+      <div class="theme"><span class="num">2</span><h3>Fair prices</h3><p>A common theme: the bill is reasonable, and often less than the dealer.</p></div>
+      <div class="theme"><span class="num">3</span><h3>Quick turnaround</h3><p>People mention getting their car back fast, and some have been coming for 20+ years.</p></div>
+    </div>
+    <p class="src">Themes summed up from public reviews on Yelp and Nextdoor. Not direct quotes.</p>
+  </div>
+</section>
+
+<section id="photos">
+  <div class="wrap">
+    <p class="kicker">The shop</p>
+    <h2>Come see the place</h2>
+    <div class="photo" role="img" aria-label="Photo placeholder">
+      <div><div class="cam" aria-hidden="true"></div><b>Your real shop photos go here</b><p>Jay comes out and shoots the bays, the crew and the sign. No stock photos.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="visit" id="visit">
+  <div class="wrap">
+    <p class="kicker">Come on by</p>
+    <h2>On Rosecrans, in Hawthorne</h2>
+    <div class="vgrid">
+      <div class="card">
+        <h3>Address</h3>
+        <p>4712 W Rosecrans Ave<br>Hawthorne, CA 90250</p>
+        <a class="link" href="https://maps.google.com/?q=4712+W+Rosecrans+Ave,+Hawthorne,+CA+90250" target="_blank" rel="noopener">Get directions</a>
+      </div>
+      <div class="card">
+        <h3>Hours</h3>
+        <p>Open Monday through Saturday. Closed Sunday.</p>
+        <div class="days" aria-hidden="true"><span>M</span><span>T</span><span>W</span><span>T</span><span>F</span><span>S</span><span class="off">S</span></div>
+        <p style="margin-top:12px;font-size:15px">Call for today's hours.</p>
+        <a class="link" href="tel:+13106766245">(310) 676-6245</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="book">
+  <div class="wrap">
+    <p class="kicker">Get on the schedule</p>
+    <h2>Ask for an appointment</h2>
+    <p class="lead" style="margin-bottom:22px">Tell us about the car and what it's doing. We'll call you back. In a hurry? Just call.</p>
+    <form class="formwrap" onsubmit="event.preventDefault();var b=this.querySelector('button');b.textContent='Demo form, not connected yet';b.style.background='#6f6a2a';">
+      <div class="row2">
+        <div><label for="n">Your name</label><input id="n" autocomplete="off"></div>
+        <div><label for="p">Phone</label><input id="p" type="tel" autocomplete="off"></div>
+      </div>
+      <div class="row2">
+        <div><label for="c">Year, make and model</label><input id="c" placeholder="e.g. 2012 Camry" autocomplete="off"></div>
+        <div><label for="s">What do you need?</label>
+          <select id="s"><option>Not sure, needs a look</option><option>Brakes</option><option>Check engine light</option><option>Oil change</option><option>Tune-up</option><option>Mileage service</option><option>Something else</option></select></div>
+      </div>
+      <label for="m">What's it doing?</label><textarea id="m" placeholder="Noises, lights, smells, anything"></textarea>
+      <button class="btn submit" type="submit">Send request</button>
+      <p class="note">This is a demo. Nothing is sent.</p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="script">Art's Auto Service</div>
+    <p style="margin-top:8px">4712 W Rosecrans Ave, Hawthorne, CA 90250 · <a href="tel:+13106766245">(310) 676-6245</a></p>
+    <p style="margin-top:6px">Auto repair for Hawthorne and the South Bay.</p>
+    <p style="margin-top:14px;opacity:.7">Draft site by Jay. Not live yet.</p>
+  </div>
+</footer>
+
+<div class="sticky"><a class="btn btn-call" href="tel:+13106766245">Call Art's · (310) 676-6245</a></div>
+</body>
+</html>

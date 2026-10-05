@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Tree Care By Gibson | Torrance Tree Service</title>
+<meta name="description" content="Tree trimming, removal and arborist advice in Torrance and the South Bay. Call Keith at (310) 634-6884.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Karla:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --forest:#1d3326;--forest-2:#264532;--moss:#55703c;--leaf:#a8c17c;--sage:#dfe6d0;
+  --bark:#5a3e2b;--bark-2:#7a5a40;--cream:#f5f0e4;--paper:#fbf8f1;--ink:#1f2620;--muted:#55604f;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"Karla",system-ui,sans-serif;color:var(--ink);background:var(--paper);line-height:1.55;font-size:17px;overflow-x:hidden}
+h1,h2,h3{font-family:"Fraunces",Georgia,serif;font-weight:600;line-height:1.1;letter-spacing:-.01em}
+a{color:inherit}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+.draft{background:#111;color:#e9e9e9;font-size:13px;text-align:center;padding:7px 12px;letter-spacing:.02em}
+/* top bar */
+.top{background:var(--forest);color:var(--cream)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-top:14px;padding-bottom:14px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none}
+.brand svg{width:34px;height:34px;flex:none}
+.brand b{font-family:"Fraunces",serif;font-size:19px;font-weight:600;line-height:1.1}
+.brand small{display:block;font-size:12px;opacity:.75;font-weight:500;letter-spacing:.06em;text-transform:uppercase}
+.top-call{font-weight:700;text-decoration:none;font-size:15px;border:1px solid rgba(245,240,228,.4);padding:8px 12px;border-radius:999px;white-space:nowrap}
+/* hero */
+.hero{background:var(--forest);color:var(--cream);position:relative;overflow:hidden;padding:36px 0 0}
+.hero .wrap{position:relative;z-index:2}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--leaf);font-weight:700}
+.hero h1{font-size:clamp(38px,10vw,68px);margin:14px 0 16px;max-width:12ch}
+.hero h1 em{font-style:italic;color:var(--leaf);font-weight:400}
+.hero p.lead{font-size:18px;max-width:34ch;color:#e3e7d8}
+.call{display:flex;align-items:center;justify-content:center;gap:12px;background:var(--leaf);color:var(--forest);text-decoration:none;font-weight:700;font-size:clamp(17px,5.2vw,21px);white-space:nowrap;padding:18px 16px;border-radius:14px;margin:26px 0 10px;box-shadow:0 10px 0 -4px #12241a;max-width:420px}
+.call svg{width:24px;height:24px}
+.call:active{transform:translateY(2px)}
+.sub-call{font-size:14px;color:#c9d2bd}
+.stars{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.chip{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);border-radius:999px;padding:7px 13px;font-size:14px}
+.chip b{color:#fff}
+.canopy{display:block;width:100%;height:auto;margin-top:26px;position:relative;z-index:1}
+/* rings badge */
+.since{color:var(--ink);display:flex;align-items:center;gap:16px;background:var(--cream);border-radius:18px;padding:18px;margin:-1px 0 0}
+.since svg{width:76px;height:76px;flex:none}
+.since b{font-family:"Fraunces",serif;font-size:22px;display:block}
+.since span{color:var(--muted);font-size:15px}
+section{padding:56px 0}
+.sec-head{margin-bottom:26px}
+.sec-head .eyebrow{color:var(--moss)}
+.sec-head h2{font-size:clamp(30px,7vw,44px);margin-top:8px;color:var(--forest)}
+.sec-head p{color:var(--muted);max-width:52ch;margin-top:10px}
+/* services */
+.svc{display:grid;grid-template-columns:1fr;gap:14px}
+.svc article{background:#fff;border:1px solid #e3dccb;border-radius:16px;padding:20px 20px 20px 18px;display:grid;grid-template-columns:44px 1fr;gap:14px;align-items:start}
+.svc svg{width:44px;height:44px}
+.svc h3{font-size:21px;color:var(--forest)}
+.svc p{color:var(--muted);font-size:16px;margin-top:4px}
+.also{margin-top:18px;font-size:15px;color:var(--muted)}
+.also b{color:var(--bark)}
+/* why */
+.why{background:var(--sage);position:relative;overflow:hidden}
+.why .leafbg{position:absolute;right:-60px;top:-40px;width:260px;opacity:.25}
+.rating{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:26px}
+.rating .big{font-family:"Fraunces",serif;font-size:64px;line-height:1;color:var(--forest)}
+.rating .meta{font-size:15px;color:var(--muted)}
+.rating .meta b{color:var(--ink)}
+.themes{display:grid;gap:14px;grid-template-columns:1fr;position:relative}
+.theme{background:var(--paper);border-radius:16px;padding:20px;border-left:5px solid var(--moss)}
+.theme h3{font-size:20px;color:var(--forest)}
+.theme p{color:var(--muted);font-size:16px;margin-top:6px}
+.note{font-size:13px;color:var(--muted);margin-top:16px}
+/* photos */
+.photo-ph{border:2px dashed var(--bark-2);border-radius:20px;background:
+ repeating-linear-gradient(135deg,#f1e9da 0 14px,#ece2cf 14px 28px);padding:28px 20px;text-align:center}
+.photo-ph .grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:18px 0}
+.photo-ph .grid div{aspect-ratio:4/3;border-radius:12px;background:rgba(90,62,43,.12);display:flex;align-items:flex-end;justify-content:flex-start;padding:8px 10px;font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--bark)}
+.photo-ph h3{font-size:24px;color:var(--bark)}
+.photo-ph p{color:var(--muted);font-size:15px;max-width:40ch;margin:6px auto 0}
+/* area + hours */
+.area{display:grid;gap:18px;grid-template-columns:1fr}
+.card{background:#fff;border:1px solid #e3dccb;border-radius:18px;padding:22px}
+.card h3{font-size:22px;color:var(--forest);margin-bottom:10px}
+.towns{display:flex;flex-wrap:wrap;gap:8px}
+.towns span{background:var(--sage);color:var(--forest);border-radius:999px;padding:6px 12px;font-size:15px;font-weight:500}
+.hours{width:100%;border-collapse:collapse;font-size:16px}
+.hours td{padding:9px 0;border-bottom:1px solid #eee6d6}
+.hours td:last-child{text-align:right;font-weight:700}
+.hours tr.closed td:last-child{color:#8a7b6a;font-weight:500}
+.pay{font-size:14px;color:var(--muted);margin-top:12px}
+/* form */
+.est{background:var(--forest);color:var(--cream)}
+.est .sec-head h2{color:var(--cream)}
+.est .sec-head .eyebrow{color:var(--leaf)}
+.est .sec-head p{color:#c9d2bd}
+form{display:grid;gap:14px;max-width:560px}
+label{font-size:14px;font-weight:700;letter-spacing:.03em;display:grid;gap:6px}
+input,select,textarea{font:inherit;font-size:16px;padding:13px 14px;border-radius:12px;border:1px solid #3b5a45;background:#16291e;color:#fff}
+input::placeholder,textarea::placeholder{color:#8fa391}
+textarea{min-height:110px;resize:vertical}
+button.demo{font:inherit;font-weight:700;font-size:18px;padding:16px;border:0;border-radius:12px;background:var(--leaf);color:var(--forest);cursor:pointer}
+.formmsg{font-size:14px;color:var(--leaf);min-height:20px}
+.or{margin-top:20px;font-size:16px}
+.or a{color:var(--leaf);font-weight:700}
+footer{background:#13221a;color:#b9c3b1;font-size:14px;padding:34px 0 90px}
+footer b{color:var(--cream);font-family:"Fraunces",serif;font-size:18px;font-weight:600}
+footer .row{display:grid;gap:14px}
+/* sticky call on mobile */
+.sticky{position:fixed;left:12px;right:12px;bottom:12px;z-index:50;display:flex;justify-content:center;align-items:center;gap:10px;background:var(--bark);color:#fff;text-decoration:none;font-weight:700;font-size:18px;padding:15px;border-radius:14px;box-shadow:0 8px 24px rgba(0,0,0,.25)}
+.sticky svg{width:20px;height:20px}
+@media (min-width:760px){
+  .svc{grid-template-columns:1fr 1fr}
+  .themes{grid-template-columns:repeat(3,1fr)}
+  .area{grid-template-columns:1.2fr 1fr}
+  .photo-ph .grid{grid-template-columns:repeat(4,1fr)}
+  .hero-grid{display:grid;grid-template-columns:1.3fr 1fr;gap:30px;align-items:end}
+  .sticky{display:none}
+  footer{padding-bottom:34px}
+  footer .row{grid-template-columns:1fr auto;align-items:end}
+}
+@media (max-width:380px){.top-call{display:none}}
+</style>
+</head>
+<body>
+<div class="draft" role="note">Draft website made for Tree Care By Gibson by Jay · not live yet</div>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Tree Care By Gibson home">
+      <svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="19" fill="#264532" stroke="#a8c17c" stroke-width="1.5"/><path d="M20 31V17M20 22l-5-4M20 19l5-4" stroke="#f5f0e4" stroke-width="2" stroke-linecap="round" fill="none"/><path d="M20 7c6 0 10 4 10 9s-4 7-10 7-10-2-10-7 4-9 10-9z" fill="#a8c17c" opacity=".85"/></svg>
+      <span><b>Tree Care By Gibson</b><small>Torrance · South Bay</small></span>
+    </a>
+    <a class="top-call" href="tel:+13106346884">(310) 634-6884</a>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero" aria-labelledby="h1" style="padding-bottom:0">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow">Arborist · Trimming · Removal</span>
+      <h1 id="h1">Your trees, cared for by <em>someone who knows them.</em></h1>
+      <p class="lead">Keith has been running his own tree service since 1983. Trimming, removals and honest advice for homes in Torrance and the South Bay.</p>
+      <a class="call" href="tel:+13106346884">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+        Call Keith (310) 634-6884
+      </a>
+      <div class="sub-call">Mon to Sat, 6 AM to 6 PM</div>
+      <div class="stars">
+        <span class="chip"><b>4.8 ★</b> on Yelp</span>
+        <span class="chip"><b>99</b> reviews</span>
+        <span class="chip">Cards accepted</span>
+      </div>
+    </div>
+    <div style="padding-top:26px">
+      <div class="since">
+        <svg viewBox="0 0 80 80" aria-hidden="true">
+          <circle cx="40" cy="40" r="38" fill="#d9c7a7"/>
+          <g fill="none" stroke="#7a5a40" stroke-width="1.4">
+            <ellipse cx="41" cy="39" rx="33" ry="32"/><ellipse cx="41" cy="40" rx="27" ry="26"/><ellipse cx="40" cy="40" rx="21" ry="20.5"/><ellipse cx="40" cy="41" rx="15" ry="14.5"/><ellipse cx="39.5" cy="40.5" rx="9" ry="8.8"/><circle cx="39.5" cy="40.5" r="3.5"/>
+          </g>
+        </svg>
+        <div><b>Since 1983</b><span>Started out in Woodland Hills. Now in the South Bay.</span></div>
+      </div>
+    </div>
+  </div>
+  <svg class="canopy" viewBox="0 0 1200 170" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M0 120 C60 70 110 80 150 95 C180 50 250 40 290 85 C330 60 380 70 400 100 C450 40 540 30 580 90 C620 60 680 65 700 100 C760 30 860 30 900 95 C940 70 990 70 1010 100 C1060 50 1140 55 1200 100 V170 H0Z" fill="#264532"/>
+    <path d="M0 140 C80 105 140 110 190 130 C240 95 310 95 350 125 C420 90 500 95 540 130 C600 100 660 105 700 128 C770 90 850 95 890 130 C950 100 1010 105 1060 128 C1110 105 1160 110 1200 125 V170 H0Z" fill="#55703c"/>
+    <path d="M0 160 C200 145 400 150 600 158 C800 150 1000 146 1200 156 V170 H0Z" fill="#fbf8f1"/>
+  </svg>
+</section>
+
+<section id="services" aria-labelledby="svc-h">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">What we do</span>
+      <h2 id="svc-h">Tree work, done the careful way</h2>
+      <p>From one overgrown palm to a big backyard removal. Keith looks at the tree first and tells you what it actually needs.</p>
+    </div>
+    <div class="svc">
+      <article>
+        <svg viewBox="0 0 44 44" aria-hidden="true"><circle cx="22" cy="22" r="21" fill="#dfe6d0"/><path d="M12 30c6-2 10-7 12-16M24 14c3 2 7 2 9 0M19 21c-3-1-6 0-8 2" stroke="#1d3326" stroke-width="2.2" stroke-linecap="round" fill="none"/></svg>
+        <div><h3>Pruning and trimming</h3><p>Shaped right, never butchered. Palms, pines, fruit trees and big shade trees.</p></div>
+      </article>
+      <article>
+        <svg viewBox="0 0 44 44" aria-hidden="true"><circle cx="22" cy="22" r="21" fill="#dfe6d0"/><path d="M22 33V16" stroke="#5a3e2b" stroke-width="3" stroke-linecap="round"/><path d="M14 33h16" stroke="#5a3e2b" stroke-width="2.2" stroke-linecap="round"/><path d="M15 12l14 8" stroke="#1d3326" stroke-width="2.2" stroke-linecap="round"/></svg>
+        <div><h3>Tree removal</h3><p>Safe takedowns, plus stump removal and a full cleanup after.</p></div>
+      </article>
+      <article>
+        <svg viewBox="0 0 44 44" aria-hidden="true"><circle cx="22" cy="22" r="21" fill="#dfe6d0"/><circle cx="20" cy="20" r="7" stroke="#1d3326" stroke-width="2.2" fill="none"/><path d="M25 25l7 7" stroke="#1d3326" stroke-width="2.6" stroke-linecap="round"/></svg>
+        <div><h3>Arborist consults</h3><p>Not sure what's wrong? Keith diagnoses sick trees, pests and root problems.</p></div>
+      </article>
+      <article>
+        <svg viewBox="0 0 44 44" aria-hidden="true"><circle cx="22" cy="22" r="21" fill="#dfe6d0"/><path d="M15 34V14M29 34V14" stroke="#5a3e2b" stroke-width="2.6" stroke-linecap="round"/><path d="M15 19h14" stroke="#1d3326" stroke-width="2" stroke-dasharray="3 2"/></svg>
+        <div><h3>Cabling and bracing</h3><p>Support for heavy limbs and split trunks, so a good tree can stay.</p></div>
+      </article>
+    </div>
+    <p class="also"><b>Also:</b> disease and insect treatment, tree planting, and large tree work.</p>
+  </div>
+</section>
+
+<section class="why" aria-labelledby="why-h">
+  <svg class="leafbg" viewBox="0 0 200 200" aria-hidden="true"><path d="M100 10C40 50 30 130 100 190 170 130 160 50 100 10Z" fill="#55703c"/><path d="M100 30V180M100 70l-25-18M100 100l-30-20M100 130l-28-18M100 70l25-18M100 100l30-20M100 130l28-18" stroke="#dfe6d0" stroke-width="4" fill="none" stroke-linecap="round"/></svg>
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Why neighbors call Keith</span>
+      <h2 id="why-h">What 99 reviews keep saying</h2>
+    </div>
+    <div class="rating">
+      <span class="big">4.8</span>
+      <span class="meta"><b>★★★★★</b><br>from 99 reviews on Yelp</span>
+    </div>
+    <div class="themes">
+      <div class="theme"><h3>He knows trees</h3><p>People say Keith explains what's going on and won't overtrim. He cares about the tree, not just the job.</p></div>
+      <div class="theme"><h3>Same crew, every time</h3><p>Customers notice the same longtime crew showing up years apart. On time, and they clean up everything.</p></div>
+      <div class="theme"><h3>Quick and fair</h3><p>Folks mention getting on the schedule within days and paying a fair price, even for very tall trees.</p></div>
+    </div>
+    <p class="note">Themes summarized from public Yelp reviews, checked October 2026.</p>
+  </div>
+</section>
+
+<section id="work" aria-labelledby="work-h">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Recent work</span>
+      <h2 id="work-h">Before and after</h2>
+    </div>
+    <div class="photo-ph" role="img" aria-label="Photo placeholder">
+      <h3>Your real job photos go here</h3>
+      <p>Jay comes out and shoots your actual jobs: the tree before, the crew at work, the clean yard after.</p>
+      <div class="grid" aria-hidden="true"><div>Before</div><div>After</div><div>The crew</div><div>Cleanup</div></div>
+    </div>
+  </div>
+</section>
+
+<section aria-labelledby="area-h" style="padding-top:0">
+  <div class="wrap area">
+    <div class="card">
+      <h3 id="area-h">Where we work</h3>
+      <p style="color:var(--muted);margin-bottom:14px">Based in Torrance, serving homes around the South Bay. Not sure if you're in range? Just call.</p>
+      <div class="towns"><span>Torrance</span><span>The South Bay</span></div>
+    </div>
+    <div class="card">
+      <h3>Hours</h3>
+      <table class="hours">
+        <tr><td>Monday to Saturday</td><td>6 AM to 6 PM</td></tr>
+        <tr class="closed"><td>Sunday</td><td>Closed</td></tr>
+      </table>
+      <p class="pay">Credit cards accepted.</p>
+    </div>
+  </div>
+</section>
+
+<section class="est" id="estimate" aria-labelledby="est-h">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Request an estimate</span>
+      <h2 id="est-h">Tell Keith about your tree</h2>
+      <p>A couple of details and he'll get back to you. Or just give him a call.</p>
+    </div>
+    <form onsubmit="event.preventDefault();document.getElementById('fm').textContent='Demo form, not connected yet.';">
+      <label>Your name<input type="text" name="name" autocomplete="name" placeholder="First and last"></label>
+      <label>Phone<input type="tel" name="phone" autocomplete="tel" placeholder="(310) 555-0123"></label>
+      <label>What do you need?
+        <select name="job"><option>Trimming or pruning</option><option>Tree removal</option><option>Stump removal</option><option>Sick tree, need advice</option><option>Something else</option></select>
+      </label>
+      <label>Tell us about it<textarea name="msg" placeholder="Type of tree, about how tall, front or back yard"></textarea></label>
+      <button class="demo" type="submit">Demo form, not connected yet</button>
+      <div class="formmsg" id="fm" aria-live="polite"></div>
+    </form>
+    <p class="or">Faster: <a href="tel:+13106346884">call (310) 634-6884</a></p>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap row">
+    <div><b>Tree Care By Gibson</b><br>Tree service and arborist care · Torrance, CA 90501<br><a href="tel:+13106346884">(310) 634-6884</a> · Mon to Sat 6 AM to 6 PM</div>
+    <div>Draft by Jay · not live yet</div>
+  </div>
+</footer>
+
+<a class="sticky" href="tel:+13106346884"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>Call Keith</a>
+</body>
+</html>

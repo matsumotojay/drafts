@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Ben's Tires &amp; Brakes Auto Center | Inglewood</title>
+<meta name="description" content="Ben's Tires & Brakes Auto Center on La Brea in Inglewood. Tires, brakes, alignments, oil changes. Call (310) 671-0418.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow:wght@400;600;700&family=Barlow+Condensed:wght@600;800&display=swap" rel="stylesheet">
+<style>
+:root{--black:#0E0E0E;--coal:#1A1A1A;--steel:#2A2A2A;--yellow:#FFD200;--red:#D3232E;--white:#F7F5EF;--grey:#B9B6AE}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--black);color:var(--white);font:400 17px/1.5 "Barlow",system-ui,sans-serif;overflow-x:hidden}
+a{color:inherit}
+.draft{background:#000;color:#ddd;font:600 12px/1.3 "Barlow",sans-serif;text-align:center;padding:7px 12px;border-bottom:1px solid #333}
+.wrap{max-width:1080px;margin:0 auto;padding:0 18px}
+h1,h2{font-family:"Anton",Impact,sans-serif;font-weight:400;text-transform:uppercase;line-height:.95;letter-spacing:.01em}
+.kicker{font:800 14px/1 "Barlow Condensed",sans-serif;letter-spacing:.18em;text-transform:uppercase;color:var(--yellow)}
+
+/* tread strip */
+.tread{height:22px;background:
+  linear-gradient(135deg,var(--yellow) 25%,transparent 25%) -11px 0/22px 22px,
+  linear-gradient(225deg,var(--yellow) 25%,transparent 25%) -11px 0/22px 22px,
+  linear-gradient(315deg,var(--yellow) 25%,transparent 25%) 0 0/22px 22px,
+  linear-gradient(45deg,var(--yellow) 25%,var(--black) 25%) 0 0/22px 22px}
+.hazard{height:12px;background:repeating-linear-gradient(-45deg,var(--yellow) 0 14px,var(--black) 14px 28px)}
+
+/* nav */
+.nav{background:var(--black);position:sticky;top:0;z-index:30;border-bottom:3px solid var(--yellow)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:10px;padding-top:10px;padding-bottom:10px}
+.logo{font-family:"Anton",sans-serif;font-size:22px;text-transform:uppercase;text-decoration:none;letter-spacing:.02em}
+.logo span{color:var(--yellow)}
+.nav .tel{background:var(--yellow);color:var(--black);font:800 16px/1 "Barlow Condensed",sans-serif;letter-spacing:.04em;text-decoration:none;padding:10px 12px;white-space:nowrap}
+
+/* hero */
+.hero{position:relative;overflow:hidden;padding:30px 0 0;background:
+  repeating-linear-gradient(90deg,rgba(255,255,255,.025) 0 2px,transparent 2px 46px),var(--black)}
+.hero .grid{display:grid;gap:8px;align-items:center}
+.signbox{display:inline-block;background:var(--yellow);color:var(--black);padding:6px 12px 4px;font:800 15px/1 "Barlow Condensed",sans-serif;letter-spacing:.14em;text-transform:uppercase;border:3px solid var(--black);outline:3px solid var(--yellow)}
+.hero h1{font-size:clamp(58px,18vw,128px);margin:16px 0 6px}
+.hero h1 .y{color:var(--yellow);display:block}
+.hero .sub{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:22px;line-height:1.2;color:var(--grey);max-width:470px}
+.hero .sub b{color:var(--white)}
+.btns{display:flex;flex-direction:column;gap:10px;margin:22px 0 0;max-width:440px}
+.btn{display:flex;align-items:center;justify-content:center;gap:10px;text-decoration:none;font:800 21px/1 "Barlow Condensed",sans-serif;letter-spacing:.05em;text-transform:uppercase;padding:18px 18px;border:0;cursor:pointer}
+.btn-call{background:var(--yellow);color:var(--black);clip-path:polygon(0 0,100% 0,96% 100%,0 100%)}
+.btn-line{background:transparent;color:var(--white);border:2px solid var(--white)}
+.btn-red{background:var(--red);color:#fff}
+.tirewrap{display:flex;justify-content:center;margin:26px -40px -70px 0}
+.tire{width:min(78vw,380px);height:auto;animation:spin 14s linear infinite;filter:drop-shadow(0 10px 30px rgba(0,0,0,.6))}
+@keyframes spin{to{transform:rotate(360deg)}}
+@media (prefers-reduced-motion:reduce){.tire{animation:none}}
+
+/* stat bar */
+.stats{background:var(--yellow);color:var(--black);position:relative;z-index:2}
+.stats .wrap{display:grid;grid-template-columns:1fr 1fr;gap:0}
+.stat{padding:16px 6px;border-right:2px solid rgba(0,0,0,.15)}
+.stat:nth-child(2n){border-right:0}
+.stat:nth-child(-n+2){border-bottom:2px solid rgba(0,0,0,.15)}
+.stat b{display:block;font-family:"Anton",sans-serif;font-size:34px;line-height:1}
+.stat span{font:800 13px/1.2 "Barlow Condensed",sans-serif;letter-spacing:.08em;text-transform:uppercase}
+
+section{padding:50px 0}
+.head{margin-bottom:24px}
+.head h2{font-size:clamp(40px,11vw,68px);margin-top:8px}
+
+/* services */
+.svc{display:grid;grid-template-columns:1fr;gap:10px}
+.s{background:var(--coal);border-left:6px solid var(--yellow);padding:16px 16px 16px 18px;display:flex;gap:14px;align-items:flex-start}
+.s .n{font-family:"Anton",sans-serif;font-size:26px;color:var(--yellow);line-height:1;min-width:34px}
+.s h3{font:800 22px/1.1 "Barlow Condensed",sans-serif;text-transform:uppercase;letter-spacing:.03em}
+.s p{color:var(--grey);font-size:15px;margin-top:3px}
+.s.red{border-left-color:var(--red)}
+.fd{margin-top:16px;display:inline-block;border:2px solid var(--red);color:#fff;padding:8px 12px;font:800 15px/1 "Barlow Condensed",sans-serif;letter-spacing:.14em;text-transform:uppercase}
+
+/* reviews */
+.rev{background:var(--white);color:var(--black)}
+.rev .kicker{color:var(--red)}
+.rev .top{display:flex;flex-wrap:wrap;align-items:flex-end;gap:12px 22px;margin-bottom:24px}
+.rev .score{font-family:"Anton",sans-serif;font-size:96px;line-height:.85}
+.rev .score small{font-size:30px;color:#777}
+.rev .meta{font:700 16px/1.3 "Barlow Condensed",sans-serif;text-transform:uppercase;letter-spacing:.06em}
+.rev .stars{color:var(--red);font-size:24px;letter-spacing:3px}
+.rev .half{background:linear-gradient(90deg,var(--red) 55%,#cfcac0 55%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.rev .kicker{display:block;margin-bottom:14px}
+.cards{display:grid;gap:12px}
+.c{background:#fff;border:3px solid var(--black);padding:16px;box-shadow:6px 6px 0 var(--yellow)}
+.c h3{font:800 22px/1.1 "Barlow Condensed",sans-serif;text-transform:uppercase}
+.c p{margin-top:4px;color:#333;font-size:16px}
+.src{font-size:12px;color:#666;margin-top:16px}
+
+/* photos */
+.photos{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.ph{aspect-ratio:1/1;background:
+  repeating-linear-gradient(-45deg,#1f1f1f 0 12px,#161616 12px 24px);border:2px dashed #555;display:flex;align-items:center;justify-content:center;text-align:center;padding:10px;color:var(--grey);font:700 15px/1.2 "Barlow Condensed",sans-serif;text-transform:uppercase;letter-spacing:.06em}
+.ph.big{grid-column:1/-1;aspect-ratio:16/9;color:var(--yellow);font-size:22px;border-color:var(--yellow)}
+
+/* visit */
+.visit{display:grid;gap:14px}
+.box{background:var(--coal);padding:20px;border-top:5px solid var(--yellow)}
+.box h3{font:800 24px/1 "Barlow Condensed",sans-serif;text-transform:uppercase;letter-spacing:.04em;margin-bottom:12px}
+.addr{font:700 22px/1.25 "Barlow Condensed",sans-serif;margin-bottom:14px}
+.hrs{width:100%;border-collapse:collapse}
+.hrs td{padding:8px 0;border-bottom:1px solid #333;font-size:16px}
+.hrs td:last-child{text-align:right;font-weight:700}
+.hrs .sat td:last-child{color:var(--yellow)}
+.hrs .off td:last-child{color:#ff8a8f}
+
+/* form */
+.formsec{background:var(--steel)}
+form{display:grid;gap:12px;max-width:620px}
+label{display:grid;gap:5px;font:700 15px/1.2 "Barlow Condensed",sans-serif;text-transform:uppercase;letter-spacing:.08em;color:var(--grey)}
+input,select,textarea{font:400 17px "Barlow",sans-serif;padding:13px;background:var(--black);color:var(--white);border:2px solid #555;border-radius:0;width:100%}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--yellow)}
+.formnote{font-size:13px;color:var(--grey)}
+
+footer{background:#000;color:var(--grey);padding:28px 0 96px;font-size:14px}
+footer .logo{font-size:26px;display:block;margin-bottom:6px;color:var(--white)}
+.sticky{position:fixed;left:0;right:0;bottom:0;z-index:40;padding:10px 12px;background:rgba(0,0,0,.92);border-top:2px solid var(--yellow)}
+.sticky .btn{clip-path:none;padding:15px}
+
+@media (min-width:760px){
+  .hero{padding-top:50px}
+  .hero .grid{grid-template-columns:1.15fr .85fr}
+  .tirewrap{margin:0 -60px -40px 0}
+  .btns{flex-direction:row;max-width:none}
+  .stats .wrap{grid-template-columns:repeat(4,1fr)}
+  .stat{border-bottom:0 !important;border-right:2px solid rgba(0,0,0,.15) !important}
+  .stat:last-child{border-right:0 !important}
+  .svc{grid-template-columns:1fr 1fr 1fr}
+  .cards{grid-template-columns:1fr 1fr 1fr}
+  .photos{grid-template-columns:repeat(4,1fr)}
+  .ph.big{grid-column:span 2;grid-row:span 2;aspect-ratio:auto}
+  .visit{grid-template-columns:1fr 1fr 1fr}
+  .sticky{display:none}
+  footer{padding-bottom:30px}
+}
+</style>
+</head>
+<body>
+<div class="draft">Draft website made for Bens Tires &amp; Brakes Auto Center by Jay · not live yet</div>
+
+<nav class="nav">
+  <div class="wrap">
+    <a class="logo" href="#">Ben's <span>Tires &amp; Brakes</span></a>
+    <a class="tel" href="tel:+13106710418">(310) 671-0418</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap grid">
+    <div>
+      <span class="signbox">Inglewood · La Brea Ave</span>
+      <h1>Get rolling<span class="y">again.</span></h1>
+      <p class="sub"><b>Tires, brakes and alignments on La Brea.</b> Quick work, fair prices, and a straight answer on what your car needs.</p>
+      <div class="btns">
+        <a class="btn btn-call" href="tel:+13106710418">Call (310) 671-0418</a>
+        <a class="btn btn-line" href="#request">Request a time</a>
+      </div>
+    </div>
+    <div class="tirewrap" aria-hidden="true">
+      <svg class="tire" viewBox="0 0 200 200">
+        <defs>
+          <radialGradient id="rim" cx="50%" cy="45%" r="55%"><stop offset="0" stop-color="#e9e9e9"/><stop offset=".7" stop-color="#9b9b9b"/><stop offset="1" stop-color="#555"/></radialGradient>
+        </defs>
+        <circle cx="100" cy="100" r="98" fill="#151515"/>
+        <g fill="#2b2b2b">
+          <!-- tread blocks -->
+          <g id="blk"><rect x="95" y="2" width="10" height="16" rx="2"/></g>
+        </g>
+        <g fill="#2e2e2e" id="treads"></g>
+        <circle cx="100" cy="100" r="78" fill="#0d0d0d"/>
+        <circle cx="100" cy="100" r="76" fill="none" stroke="#FFD200" stroke-width="2"/>
+        <circle cx="100" cy="100" r="56" fill="url(#rim)"/>
+        <g stroke="#3a3a3a" stroke-width="9" stroke-linecap="round">
+          <line x1="100" y1="100" x2="100" y2="50"/>
+          <line x1="100" y1="100" x2="147.5" y2="84.5"/>
+          <line x1="100" y1="100" x2="129.4" y2="140.5"/>
+          <line x1="100" y1="100" x2="70.6" y2="140.5"/>
+          <line x1="100" y1="100" x2="52.5" y2="84.5"/>
+        </g>
+        <circle cx="100" cy="100" r="16" fill="#D3232E"/>
+        <circle cx="100" cy="100" r="6" fill="#111"/>
+        <text font-family="Anton" font-size="11" fill="#FFD200" letter-spacing="3">
+          <textPath href="#arc" startOffset="0">BEN'S TIRES &amp; BRAKES · INGLEWOOD ·</textPath>
+        </text>
+        <path id="arc" d="M100,100 m-68,0 a68,68 0 1,1 136,0 a68,68 0 1,1 -136,0" fill="none"/>
+      </svg>
+    </div>
+  </div>
+  <div class="tread" aria-hidden="true"></div>
+</header>
+
+<div class="stats">
+  <div class="wrap">
+    <div class="stat"><b>4.6★</b><span>Google rating</span></div>
+    <div class="stat"><b>123</b><span>Google reviews</span></div>
+    <div class="stat"><b>6 days</b><span>Open Mon to Sat</span></div>
+    <div class="stat"><b>Family</b><span>Owned and run</span></div>
+  </div>
+</div>
+
+<main>
+<section id="services">
+  <div class="wrap">
+    <div class="head">
+      <div class="kicker">What we do</div>
+      <h2>Rubber, rotors <br>and everything between</h2>
+    </div>
+    <div class="svc">
+      <div class="s"><div class="n">01</div><div><h3>New tires</h3><p>Mounted, balanced and back on the road.</p></div></div>
+      <div class="s red"><div class="n">02</div><div><h3>Brakes and rotors</h3><p>Squeaks, grinding or a soft pedal. Bring it in.</p></div></div>
+      <div class="s"><div class="n">03</div><div><h3>Wheel alignment</h3><p>Stop the pull and save your tires.</p></div></div>
+      <div class="s"><div class="n">04</div><div><h3>Suspension</h3><p>Shocks and struts for a smooth ride.</p></div></div>
+      <div class="s red"><div class="n">05</div><div><h3>Oil changes</h3><p>Fast, simple, done right.</p></div></div>
+      <div class="s"><div class="n">06</div><div><h3>Repairs</h3><p>Tune ups, alternators, starters and clutches.</p></div></div>
+    </div>
+    <span class="fd">Foreign &amp; domestic repair</span>
+  </div>
+</section>
+
+<div class="hazard" aria-hidden="true"></div>
+
+<section class="rev" id="reviews">
+  <div class="wrap">
+    <div class="kicker">Why Inglewood comes back</div>
+    <div class="top">
+      <div class="score">4.6<small>/5</small></div>
+      <div><div class="stars" aria-hidden="true">★★★★<span class="half">★</span></div><div class="meta">123 reviews on Google</div></div>
+    </div>
+    <div class="cards">
+      <div class="c"><h3>In and out</h3><p>People say they got their brakes or tires done quick, without losing the whole day.</p></div>
+      <div class="c"><h3>Fair price</h3><p>Customers say the price beat other shops in town and the owner treats them right.</p></div>
+      <div class="c"><h3>Straight talk</h3><p>Reviews mention being told what they really need, even when it meant spending less.</p></div>
+    </div>
+    <p class="src">Themes summarized from public Google reviews.</p>
+  </div>
+</section>
+
+<section id="photos">
+  <div class="wrap">
+    <div class="head">
+      <div class="kicker">The shop</div>
+      <h2>See the shop</h2>
+    </div>
+    <div class="photos">
+      <div class="ph big">Your real shop photos go here</div>
+      <div class="ph">The crew</div>
+      <div class="ph">The bays</div>
+      <div class="ph">Tire wall</div>
+      <div class="ph">Out front on La Brea</div>
+    </div>
+  </div>
+</section>
+
+<div class="tread" aria-hidden="true"></div>
+
+<section id="visit">
+  <div class="wrap">
+    <div class="head">
+      <div class="kicker">Pull in</div>
+      <h2>On La Brea, near Century</h2>
+    </div>
+    <div class="visit">
+      <div class="box">
+        <h3>Address</h3>
+        <p class="addr">1140 S La Brea Ave<br>Inglewood, CA 90301</p>
+        <a class="btn btn-line" href="https://maps.google.com/?q=1140+S+La+Brea+Ave,+Inglewood,+CA+90301" target="_blank" rel="noopener">Directions</a>
+      </div>
+      <div class="box">
+        <h3>Hours</h3>
+        <table class="hrs">
+          <tr><td>Monday to Friday</td><td>8 AM to 5 PM</td></tr>
+          <tr class="sat"><td>Saturday</td><td>8 AM to 2 PM</td></tr>
+          <tr class="off"><td>Sunday</td><td>Closed</td></tr>
+        </table>
+      </div>
+      <div class="box">
+        <h3>Call us</h3>
+        <p style="color:var(--grey);margin-bottom:14px">Tell us the tire size or what the car's doing and we'll get you in.</p>
+        <a class="btn btn-call" href="tel:+13106710418">(310) 671-0418</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="formsec" id="request">
+  <div class="wrap">
+    <div class="head">
+      <div class="kicker">Request a time</div>
+      <h2>Tell us what you need</h2>
+    </div>
+    <form onsubmit="event.preventDefault();var b=this.querySelector('button');b.textContent='Demo form, not connected yet';b.disabled=true;">
+      <label>Name<input type="text" name="name" autocomplete="name"></label>
+      <label>Phone<input type="tel" name="phone" autocomplete="tel"></label>
+      <label>What do you need?
+        <select name="need">
+          <option>Tires</option><option>Brakes</option><option>Alignment</option><option>Oil change</option><option>Suspension</option><option>Something else</option>
+        </select>
+      </label>
+      <label>Car and details<textarea name="details" rows="3" placeholder="2016 Camry, front brakes grinding"></textarea></label>
+      <button class="btn btn-call" type="submit">Send request</button>
+      <p class="formnote">This is a demo. The form is not connected yet.</p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span class="logo">Ben's <span style="color:var(--yellow)">Tires &amp; Brakes</span></span>
+    <p>1140 S La Brea Ave, Inglewood, CA 90301 · <a href="tel:+13106710418">(310) 671-0418</a></p>
+    <p>Mon to Fri 8 AM to 5 PM · Sat 8 AM to 2 PM · Sun closed</p>
+  </div>
+</footer>
+
+<div class="sticky"><a class="btn btn-call" href="tel:+13106710418">Call Ben's · (310) 671-0418</a></div>
+
+<script>
+// draw tread blocks around the tire
+(function(){var g=document.getElementById('treads');if(!g)return;var ns='http://www.w3.org/2000/svg';
+for(var i=0;i<36;i++){var r=document.createElementNS(ns,'rect');r.setAttribute('x','95');r.setAttribute('y','3');r.setAttribute('width','10');r.setAttribute('height','15');r.setAttribute('rx','2');r.setAttribute('transform','rotate('+(i*10)+' 100 100)');g.appendChild(r);}
+var b=document.getElementById('blk');if(b)b.remove();})();
+</script>
+</body>
+</html>

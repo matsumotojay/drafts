@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Llama Auto Repair | San Pedro Mechanic</title>
+<meta name="description" content="Llama Auto Repair, 711 W Battery St, San Pedro. Honest diagnostics, brakes, A/C, oil changes and engine work. Call (310) 548-8660.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0e2740; --blue:#1d5fa6; --blue-2:#2f78c4; --teal:#1f8a80;
+  --sand:#f5ead6; --sand-2:#ecdcbf; --red:#c8392b; --ink:#13202d; --muted:#4d5b69; --white:#fff;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"Work Sans",system-ui,sans-serif;color:var(--ink);background:var(--sand);line-height:1.55;font-size:17px;overflow-x:hidden}
+h1,h2,h3{font-family:"Fredoka",system-ui,sans-serif;line-height:1.1;letter-spacing:-.01em}
+a{color:inherit}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+.draft{background:#111;color:#e8e8e8;font-size:13px;text-align:center;padding:7px 12px}
+
+/* top bar */
+.top{background:var(--navy);color:var(--white)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-top:12px;padding-bottom:12px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none}
+.brand svg{width:44px;height:44px;flex:none}
+.brand b{font-family:"Fredoka";font-weight:700;font-size:21px;line-height:1}
+.brand small{display:block;font-size:12px;opacity:.75;font-weight:500;letter-spacing:.06em;text-transform:uppercase;margin-top:3px}
+.top .call-sm{background:var(--red);color:#fff;text-decoration:none;font-weight:600;border-radius:999px;padding:9px 14px;font-size:15px;white-space:nowrap}
+
+/* hero */
+.hero{background:var(--blue);color:var(--white);position:relative;padding:44px 0 96px;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background:
+  repeating-linear-gradient(90deg,rgba(255,255,255,.06) 0 2px,transparent 2px 46px);pointer-events:none}
+.hero .wrap{position:relative;display:grid;gap:28px}
+.pill{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.14);border-radius:999px;padding:6px 14px;font-size:14px;font-weight:500}
+.pill .stars{color:#ffd76a;letter-spacing:1px}
+.hero h1{font-size:44px;font-weight:700;margin:16px 0 14px}
+.hero h1 span{color:#ffd76a}
+.hero p.lead{font-size:19px;max-width:30ch;opacity:.95}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;text-decoration:none;font-weight:600;border-radius:16px;padding:16px 22px;font-size:18px;border:0;cursor:pointer;font-family:inherit}
+.btn-call{background:var(--red);color:#fff;box-shadow:0 6px 0 #8e2419;font-size:22px;font-family:"Fredoka";width:100%}
+.btn-call:active{transform:translateY(3px);box-shadow:0 3px 0 #8e2419}
+.btn-ghost{background:transparent;color:#fff;border:2px solid rgba(255,255,255,.55);width:100%}
+.hero-art{display:flex;justify-content:center}
+.hero-art svg{width:100%;max-width:340px;height:auto}
+.waves{position:absolute;left:0;right:0;bottom:-1px;height:70px;width:100%}
+
+/* sections */
+section{padding:56px 0}
+.kicker{font-family:"Fredoka";font-weight:600;color:var(--teal);text-transform:uppercase;letter-spacing:.12em;font-size:14px}
+h2{font-size:34px;font-weight:700;margin:6px 0 10px;color:var(--navy)}
+.sub{color:var(--muted);max-width:52ch}
+
+/* services */
+.svc{display:grid;grid-template-columns:1fr;gap:14px;margin-top:26px}
+.tag{background:var(--white);border-radius:18px;padding:18px 18px 18px 64px;position:relative;border:2px solid var(--sand-2)}
+.tag::before{content:"";position:absolute;left:20px;top:22px;width:24px;height:24px;border-radius:50%;background:var(--sand);border:3px solid var(--blue)}
+.tag h3{font-size:20px;color:var(--navy);margin-bottom:2px}
+.tag p{color:var(--muted);font-size:15.5px}
+.tag.hot{background:var(--navy);border-color:var(--navy);color:#fff}
+.tag.hot h3{color:#ffd76a}.tag.hot p{color:#d6e2ee}
+.tag.hot::before{border-color:#ffd76a;background:var(--navy)}
+
+/* reviews */
+.reviews{background:var(--white)}
+.score{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:24px}
+.score div{background:var(--sand);border-radius:18px;padding:18px;text-align:center}
+.score b{display:block;font-family:"Fredoka";font-size:44px;color:var(--blue);line-height:1}
+.score .st{color:#e0a400;letter-spacing:2px;font-size:18px}
+.score small{display:block;color:var(--muted);font-size:14px;margin-top:4px}
+.themes{list-style:none;display:grid;gap:12px;margin-top:22px}
+.themes li{display:flex;gap:14px;align-items:flex-start;padding:16px;border-radius:16px;border:2px dashed var(--sand-2)}
+.themes .n{flex:none;width:36px;height:36px;border-radius:12px;background:var(--teal);color:#fff;font-family:"Fredoka";font-weight:700;display:grid;place-items:center}
+.themes strong{display:block;color:var(--navy)}
+.themes span{color:var(--muted);font-size:15.5px}
+.fine{font-size:13px;color:var(--muted);margin-top:14px}
+
+/* photos */
+.photos .grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:22px}
+.ph{border-radius:16px;min-height:130px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:12px;color:var(--navy);font-weight:600;font-size:14px;
+  background:repeating-linear-gradient(45deg,var(--sand-2) 0 10px,#f1e3c8 10px 20px);border:2px dashed #c9b28b}
+.ph.big{grid-column:1/-1;min-height:200px;font-family:"Fredoka";font-size:22px}
+.ph.big small{display:block;font-family:"Work Sans";font-size:14px;font-weight:500;color:var(--muted);margin-top:4px}
+
+/* visit */
+.visit{background:var(--navy);color:#fff}
+.visit h2{color:#fff}
+.visit .sub{color:#c7d4e2}
+.vgrid{display:grid;gap:16px;margin-top:24px}
+.card{background:#163659;border-radius:18px;padding:20px}
+.card h3{font-size:20px;color:#ffd76a;margin-bottom:10px}
+.hours{width:100%;border-collapse:collapse;font-size:16px}
+.hours td{padding:7px 0;border-bottom:1px solid rgba(255,255,255,.12)}
+.hours td:last-child{text-align:right;font-weight:600}
+.hours tr.closed td:last-child{color:#9fb3c8;font-weight:500}
+.card address{font-style:normal;font-size:18px;margin-bottom:12px}
+.card .btn{width:100%;margin-top:6px}
+.btn-sand{background:var(--sand);color:var(--navy)}
+
+/* form */
+.form{background:var(--sand)}
+form{background:var(--white);border-radius:20px;padding:22px;margin-top:22px;display:grid;gap:14px;border:2px solid var(--sand-2)}
+label{font-weight:600;font-size:15px;color:var(--navy);display:grid;gap:6px}
+input,textarea,select{font:inherit;font-size:16px;padding:12px 14px;border-radius:12px;border:2px solid #d9cbb0;background:#fffdf8;color:var(--ink);width:100%}
+input:focus,textarea:focus,select:focus{outline:3px solid var(--blue-2);outline-offset:1px}
+.two{display:grid;gap:14px}
+.form-note{font-size:14px;color:var(--muted)}
+#demoMsg{display:none;background:#fff4d6;border-radius:12px;padding:12px;font-weight:600;color:#6b4b00}
+
+footer{background:#0a1c2e;color:#b9c8d8;padding:34px 0 90px;font-size:15px}
+footer .wrap{display:grid;gap:10px}
+footer b{color:#fff;font-family:"Fredoka";font-size:20px}
+
+/* sticky call on phones */
+.sticky{position:fixed;left:12px;right:12px;bottom:12px;z-index:20}
+.sticky a{width:100%;font-size:19px}
+
+@media (min-width:760px){
+  body{font-size:18px}
+  .hero{padding:64px 0 120px}
+  .hero .wrap{grid-template-columns:1.15fr .85fr;align-items:center}
+  .hero h1{font-size:64px}
+  .btn-call,.btn-ghost{width:auto}
+  .svc{grid-template-columns:repeat(2,1fr)}
+  .score{grid-template-columns:repeat(2,minmax(0,220px))}
+  .themes{grid-template-columns:repeat(3,1fr)}
+  .photos .grid{grid-template-columns:repeat(3,1fr)}
+  .ph.big{grid-column:span 2;grid-row:span 2;min-height:280px}
+  .vgrid{grid-template-columns:1fr 1fr}
+  .two{grid-template-columns:1fr 1fr}
+  .sticky{display:none}
+  footer{padding-bottom:34px}
+  h2{font-size:42px}
+}
+</style>
+</head>
+<body>
+<div class="draft">Draft website made for Llama Auto Repair by Jay · not live yet</div>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Llama Auto Repair home">
+      <svg viewBox="0 0 64 64" aria-hidden="true">
+        <circle cx="32" cy="32" r="31" fill="#f5ead6"/>
+        <!-- llama head mark -->
+        <rect x="23" y="9" width="6" height="17" rx="3" fill="#0e2740" transform="rotate(-8 26 18)"/>
+        <rect x="35" y="9" width="6" height="17" rx="3" fill="#0e2740" transform="rotate(8 38 18)"/>
+        <rect x="21" y="20" width="22" height="30" rx="11" fill="#0e2740"/>
+        <rect x="25" y="36" width="14" height="12" rx="6" fill="#f5ead6"/>
+        <circle cx="27.5" cy="29" r="1.9" fill="#f5ead6"/><circle cx="36.5" cy="29" r="1.9" fill="#f5ead6"/>
+        <path d="M30 41.5q2 1.6 4 0" stroke="#0e2740" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+        <path d="M20 50h24" stroke="#c8392b" stroke-width="4" stroke-linecap="round"/>
+      </svg>
+      <span><b>Llama Auto Repair</b><small>San Pedro, CA</small></span>
+    </a>
+    <a class="call-sm" href="tel:+13105488660">Call</a>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero" aria-labelledby="h1">
+  <div class="wrap">
+    <div>
+      <span class="pill"><span class="stars" aria-hidden="true">★★★★★</span> 5.0 from 203 Google reviews</span>
+      <h1 id="h1">Honest car repair, <span>right here in San Pedro.</span></h1>
+      <p class="lead">Check engine light on? Brakes making noise? Bring it down to Battery Street. We'll find the problem and tell you straight.</p>
+      <div class="cta">
+        <a class="btn btn-call" href="tel:+13105488660">
+          <svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.6a1 1 0 0 1-.25 1z"/></svg>
+          (310) 548-8660
+        </a>
+        <a class="btn btn-ghost" href="#visit">Hours and directions</a>
+      </div>
+    </div>
+    <div class="hero-art" aria-hidden="true">
+      <!-- friendly llama standing on the dock, with harbor crane behind -->
+      <svg viewBox="0 0 340 300">
+        <g opacity=".22" stroke="#fff" stroke-width="5" fill="none" stroke-linecap="round">
+          <path d="M40 250V70h70M110 70l-20 40M40 70l70 0M70 70v-25h20v25"/>
+          <path d="M100 70v60"/>
+        </g>
+        <rect x="150" y="196" width="150" height="12" rx="6" fill="#0e2740" opacity=".35"/>
+        <!-- body -->
+        <rect x="150" y="150" width="120" height="58" rx="29" fill="#f5ead6"/>
+        <rect x="160" y="196" width="16" height="60" rx="8" fill="#f5ead6"/>
+        <rect x="190" y="196" width="16" height="60" rx="8" fill="#ecdcbf"/>
+        <rect x="226" y="196" width="16" height="60" rx="8" fill="#f5ead6"/>
+        <rect x="252" y="196" width="16" height="60" rx="8" fill="#ecdcbf"/>
+        <!-- neck + head -->
+        <rect x="236" y="70" width="34" height="110" rx="17" fill="#f5ead6"/>
+        <rect x="232" y="56" width="58" height="40" rx="20" fill="#f5ead6"/>
+        <rect x="240" y="34" width="10" height="28" rx="5" fill="#f5ead6"/>
+        <rect x="256" y="34" width="10" height="28" rx="5" fill="#ecdcbf"/>
+        <circle cx="262" cy="72" r="4" fill="#0e2740"/>
+        <path d="M282 84q4 4 0 8" stroke="#0e2740" stroke-width="3" fill="none" stroke-linecap="round"/>
+        <!-- bandana -->
+        <path d="M234 110h40l-20 18z" fill="#c8392b"/>
+        <!-- wrench -->
+        <g transform="rotate(-30 190 140)">
+          <rect x="150" y="134" width="70" height="10" rx="5" fill="#ffd76a"/>
+          <circle cx="222" cy="139" r="11" fill="#ffd76a"/>
+          <rect x="222" y="134" width="14" height="10" fill="#1d5fa6"/>
+        </g>
+        <!-- dock -->
+        <rect x="20" y="256" width="310" height="14" rx="4" fill="#0e2740"/>
+        <rect x="40" y="270" width="12" height="30" fill="#0e2740"/><rect x="290" y="270" width="12" height="30" fill="#0e2740"/>
+      </svg>
+    </div>
+  </div>
+  <svg class="waves" viewBox="0 0 1440 70" preserveAspectRatio="none" aria-hidden="true"><path d="M0 30c120 30 240 30 360 0s240-30 360 0 240 30 360 0 240-30 360 0v40H0z" fill="#f5ead6"/></svg>
+</section>
+
+<section id="services" aria-labelledby="svc-h">
+  <div class="wrap">
+    <div class="kicker">What we fix</div>
+    <h2 id="svc-h">Everyday repairs and the hard-to-find problems.</h2>
+    <p class="sub">Not sure what's wrong? That's fine. Tell us what the car is doing and we'll take a look.</p>
+    <div class="svc">
+      <div class="tag hot"><h3>Diagnostics and check engine lights</h3><p>The thing people mention most. We find the real cause before we replace parts.</p></div>
+      <div class="tag"><h3>Brakes</h3><p>Pads, rotors, squeaks and grinding. Done right so you can stop worrying.</p></div>
+      <div class="tag"><h3>Oil changes and maintenance</h3><p>Keep up with the basics so small stuff stays small.</p></div>
+      <div class="tag"><h3>A/C service</h3><p>Blowing warm air? We'll get it cold again.</p></div>
+      <div class="tag"><h3>Engine work, belts and leaks</h3><p>From a drip on the driveway to bigger engine repairs.</p></div>
+      <div class="tag"><h3>Tires and electrical</h3><p>Tires, plus tricky electrical problems.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="reviews" aria-labelledby="rev-h">
+  <div class="wrap">
+    <div class="kicker">Why San Pedro keeps coming back</div>
+    <h2 id="rev-h">Five stars, over and over.</h2>
+    <div class="score">
+      <div><b>5.0</b><span class="st" aria-hidden="true">★★★★★</span><small>203 reviews on Google</small></div>
+      <div><b>5.0</b><span class="st" aria-hidden="true">★★★★★</span><small>44 reviews on Yelp</small></div>
+    </div>
+    <ul class="themes">
+      <li><span class="n">1</span><div><strong>Honest, every time</strong><span>"Honest mechanic" is the top thing customers write about. Fair prices, straight answers.</span></div></li>
+      <li><span class="n">2</span><div><strong>Finds the real problem</strong><span>Reviewers say the issue gets diagnosed fast and fixed right the first time.</span></div></li>
+      <li><span class="n">3</span><div><strong>Jorge explains it</strong><span>People like that the owner walks them through what's wrong and what it costs.</span></div></li>
+    </ul>
+    <p class="fine">Ratings from Google and Yelp, checked October 2026. Themes summarized from customer reviews.</p>
+  </div>
+</section>
+
+<section class="photos" aria-labelledby="ph-h">
+  <div class="wrap">
+    <div class="kicker">The shop</div>
+    <h2 id="ph-h">Come see the shop on Battery.</h2>
+    <div class="grid">
+      <div class="ph big">Your real shop photos go here<small>Jay shoots the bays, the team and the llama on the wall</small></div>
+      <div class="ph">Team photo</div>
+      <div class="ph">Work in progress</div>
+    </div>
+  </div>
+</section>
+
+<section class="visit" id="visit" aria-labelledby="v-h">
+  <div class="wrap">
+    <div class="kicker" style="color:#7fd3c9">Find us</div>
+    <h2 id="v-h">Just off the 110, near Battery and Gaffey.</h2>
+    <p class="sub">Open weekdays. Call ahead and we'll tell you when we can get you in.</p>
+    <div class="vgrid">
+      <div class="card">
+        <h3>Hours</h3>
+        <table class="hours">
+          <tr><td>Monday</td><td>8:00 AM to 5:30 PM</td></tr>
+          <tr><td>Tuesday</td><td>8:00 AM to 5:30 PM</td></tr>
+          <tr><td>Wednesday</td><td>8:00 AM to 5:30 PM</td></tr>
+          <tr><td>Thursday</td><td>8:00 AM to 5:30 PM</td></tr>
+          <tr><td>Friday</td><td>8:00 AM to 5:30 PM</td></tr>
+          <tr class="closed"><td>Saturday</td><td>Closed</td></tr>
+          <tr class="closed"><td>Sunday</td><td>Closed</td></tr>
+        </table>
+      </div>
+      <div class="card">
+        <h3>Address</h3>
+        <address>711 W Battery St<br>San Pedro, CA 90731</address>
+        <a class="btn btn-sand" href="https://maps.google.com/?q=711+W+Battery+St,+San+Pedro,+CA+90731" target="_blank" rel="noopener">Open in Google Maps</a>
+        <a class="btn btn-call" style="margin-top:12px" href="tel:+13105488660">Call (310) 548-8660</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="form" aria-labelledby="f-h">
+  <div class="wrap">
+    <div class="kicker">Ask about your car</div>
+    <h2 id="f-h">Tell us what it's doing.</h2>
+    <p class="sub">Leave your info and a short note. Calling is still the fastest way.</p>
+    <form onsubmit="event.preventDefault();document.getElementById('demoMsg').style.display='block';">
+      <div class="two">
+        <label>Your name<input type="text" name="name" autocomplete="name"></label>
+        <label>Phone<input type="tel" name="phone" autocomplete="tel"></label>
+      </div>
+      <div class="two">
+        <label>Year, make and model<input type="text" name="car" placeholder="2015 Honda Civic"></label>
+        <label>What do you need?
+          <select name="need"><option>Not sure yet</option><option>Check engine light</option><option>Brakes</option><option>Oil change</option><option>A/C</option><option>Something else</option></select>
+        </label>
+      </div>
+      <label>What's the car doing?<textarea name="msg" rows="4" placeholder="Noise when I brake, light came on Tuesday..."></textarea></label>
+      <button class="btn btn-call" type="submit">Send request</button>
+      <p id="demoMsg" role="status">Demo form, not connected yet.</p>
+      <p class="form-note">Demo form, not connected yet.</p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <b>Llama Auto Repair</b>
+    <span>711 W Battery St, San Pedro, CA 90731</span>
+    <span><a href="tel:+13105488660">(310) 548-8660</a> · Mon to Fri, 8:00 AM to 5:30 PM</span>
+    <span style="opacity:.7">Draft website made by Jay · not live yet</span>
+  </div>
+</footer>
+
+<div class="sticky"><a class="btn btn-call" href="tel:+13105488660">Call (310) 548-8660</a></div>
+</body>
+</html>
