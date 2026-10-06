@@ -182,7 +182,7 @@ footer a{color:#fff}
 
 .pv-btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;margin-top:14px;min-height:46px;padding:12px 20px;border:0;border-radius:8px;background:#1b1f2a;color:#ffe27a;font:700 15px/1 Inter,system-ui,sans-serif;cursor:pointer}
 .pv-btn:hover{background:#2a3040}.pv-btn:focus-visible{outline:3px solid #f2c200;outline-offset:2px}
-.pv-lk{width:18px;height:18px}.pv-lk .shackle{transform-origin:16px 11px;transition:transform .35s cubic-bezier(.3,1.5,.5,1)}
+.veil .vcard .pv-btn svg,.pv-lk{width:18px;height:18px;padding:0;margin:0;background:none;border-radius:0;color:inherit;display:inline-block;box-sizing:border-box}.pv-lk .shackle{transform-origin:16px 11px;transition:transform .35s cubic-bezier(.3,1.5,.5,1)}
 .pv-btn:hover .shackle,.lockwrap.open .shackle{transform:translate(4px,-3px) rotate(28deg)}
 .pv-ribbon{display:none;position:absolute;top:-13px;left:16px;z-index:3;align-items:center;gap:6px;background:#f6c315;color:#1b1f2a;font:800 12px/1 Inter,sans-serif;letter-spacing:.04em;text-transform:uppercase;padding:7px 11px;border-radius:999px;box-shadow:0 2px 0 #c99d00}
 .lockwrap.open .pv-ribbon{display:inline-flex}
@@ -255,6 +255,18 @@ h1,h2,h3{font-family:Inter,sans-serif;letter-spacing:-.02em}
 .pv-result p{margin:0;font-size:14px;color:#4a5260}
 @media(prefers-reduced-motion:reduce){.pv-lk .shackle,.lockwrap form,.lockwrap .veil{transition:none}}
 
+
+#photos.locked-sec{background:#fff8d9;border-top:4px solid #f2c200;border-bottom:4px solid #f2c200}
+.pgrid{display:grid;gap:14px;grid-template-columns:1fr}
+@media(min-width:760px){.pgrid{grid-template-columns:repeat(3,1fr)}}
+.slot{display:grid;place-items:center;text-align:center;min-height:200px;padding:20px;border:2px dashed #b9c4d0;border-radius:10px;background:#fff}
+.slot svg{width:40px;height:40px;color:var(--navy2);margin:0 auto 10px;display:block}
+.slot b{display:block;font-size:17px;color:var(--navy)}
+.slot span{display:block;font-size:13.5px;color:var(--muted);margin-top:4px}
+.lockwrap .pgrid{filter:grayscale(1);opacity:.5;pointer-events:none;user-select:none;transition:opacity .3s,filter .3s}
+.lockwrap.open .pgrid{filter:none;opacity:1;pointer-events:auto;user-select:auto;outline:3px solid #f2c200;outline-offset:6px;border-radius:10px}
+@media(max-width:759px){.pwrap .pgrid .slot{min-height:120px}}
+
 </style>
 </head>
 <body class="v-clean">
@@ -290,9 +302,10 @@ h1,h2,h3{font-family:Inter,sans-serif;letter-spacing:-.02em}
 <div class="quotes"><figure class="q"><div class="st" aria-label="5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p>"Treated us more like a family friend than a customer they were trying to upsell."</p><cite>D. Kwon <span>on Google</span></cite></figure><figure class="q"><div class="st" aria-label="5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p>"Their honesty and integrity made me a dedicated customer."</p><cite>Dean Y. <span>on Google</span></cite></figure><figure class="q"><div class="st" aria-label="5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p>"Clear diagnosis, professional advice and service. No nonsense explanation."</p><cite>Jerry O. <span>on Google</span></cite></figure></div>
 <p class="src">Short excerpts from public Google reviews.</p>
 </div></section>
-<section id="photos"><div class="wrap">
+<section id="photos" class="locked-sec"><div class="wrap">
 <p class="kicker">The shop</p><h2>Come see the place</h2>
-<div class="photo" role="img" aria-label="Photo placeholder"><div><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 8h3l2-2.5h6L17 8h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg><b>Your real shop photos go here</b><p>Jay comes out and shoots the bays, the crew and the sign. No stock photos.</p></div></div>
+<div class="locked"><span class="pill"><svg class="lk" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>Standard plan</span><p>Real photos of your bays, your crew and your sign, shot at the shop.</p></div>
+<div class="lockwrap pwrap"><span class="pv-ribbon"><svg class="pv-lk" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path class="shackle" d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>Preview: part of the Standard plan</span><div class="pgrid" aria-hidden="true" inert><div class="slot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 8h3l2-2.5h6L17 8h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg><b>Your bays</b><span>The shop floor and lifts</span></div><div class="slot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.4"/><path d="M3.5 19c.6-3.2 3-5 5.5-5s4.9 1.8 5.5 5M14.5 14.6c2.6-.3 5 1.2 5.8 4.4"/></svg><b>Your crew</b><span>The team at work</span></div><div class="slot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="4" width="18" height="9" rx="1.5"/><path d="M8 13v7M16 13v7M6.5 8.5h11"/></svg><b>Your sign</b><span>Out front, so customers know they found you</span></div></div><div class="veil"><div class="vcard"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/><circle cx="12" cy="16" r="1.3" fill="currentColor"/></svg><b>Locked on the Starter site</b><p>Pro photo shoot: part of the Standard plan. On your Starter site you can send your own photos anytime.</p><button type="button" class="pv-btn"><svg class="pv-lk" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path class="shackle" d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>Preview this feature</button></div></div></div>
 </div></section>
 <section class="visit" id="visit"><div class="wrap">
 <p class="kicker">Hours and location</p><h2>Find us in Torrance</h2>
@@ -314,13 +327,15 @@ h1,h2,h3{font-family:Inter,sans-serif;letter-spacing:-.02em}
 <footer><div class="wrap"><b>Takeda Enterprises</b><p style="margin-top:10px">1715 Abalone Ave, Ste 301, Torrance, CA 90501 · <a href="tel:+13105277812">(310) 527-7812</a></p><p style="margin-top:6px">Auto repair for Torrance, Gardena and the South Bay.</p><p style="margin-top:14px;opacity:.7">Draft site by Jay. Not live yet.</p></div></footer>
 <div class="sticky"><a class="btn btn-red" href="tel:+13105277812">Call Takeda · (310) 527-7812</a></div>
 <script>
-(function(){var w=document.querySelector('.lockwrap');if(!w)return;var f=w.querySelector('form'),r=w.querySelector('.pv-result');
-function open(focus){if(!w.classList.contains('open')){w.classList.add('open');f.removeAttribute('inert');f.removeAttribute('aria-hidden');}
- if(focus){var i=f.querySelector('input,select,textarea');if(i)i.focus({preventScroll:true});}}
-w.querySelector('.pv-btn').addEventListener('click',function(){open(true);});
+(function(){
+function open(w,focus){if(!w.classList.contains('open')){w.classList.add('open');var x=w.querySelector('[inert]');if(x){x.removeAttribute('inert');x.removeAttribute('aria-hidden');}}
+ if(focus){var i=w.querySelector('input,select,textarea,.pv-ribbon');if(i&&i.focus)i.focus({preventScroll:true});}}
+document.querySelectorAll('.lockwrap').forEach(function(w){var b=w.querySelector('.pv-btn');if(b)b.addEventListener('click',function(){open(w,true);});});
+var bw=document.querySelector('#book .lockwrap');
 document.querySelectorAll('a[href="#book"]').forEach(function(a){a.addEventListener('click',function(e){e.preventDefault();
- document.getElementById('book').scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'start'});open(false);});});
-f.addEventListener('submit',function(e){e.preventDefault();r.classList.add('show');r.scrollIntoView({behavior:'smooth',block:'nearest'});});
+ document.getElementById('book').scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'start'});if(bw)open(bw,false);});});
+var f=bw&&bw.querySelector('form'),r=bw&&bw.querySelector('.pv-result');
+if(f)f.addEventListener('submit',function(e){e.preventDefault();r.classList.add('show');r.scrollIntoView({behavior:'smooth',block:'nearest'});});
 })();
 </script>
 </body>

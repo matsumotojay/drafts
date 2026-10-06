@@ -176,6 +176,18 @@ footer p{margin-top:8px}
 @media(prefers-reduced-motion:reduce){.pv-lk .shackle,.lockwrap form,.lockwrap .veil{transition:none}}
 .pv-btn,.pv-ribbon{font-family:"Work Sans",sans-serif}.pv-btn{border-radius:40px}
 .veil .vcard .pv-btn svg{width:18px;height:18px;padding:0;margin:0;background:none;border-radius:0;color:inherit;display:inline-block}
+
+.shoot .own{display:flex;gap:10px;align-items:flex-start;margin:0 0 22px;padding:12px 14px;background:#fff;border:1px solid #e3d48a;border-radius:8px;font-size:15px;color:#3d3a2c}
+.shoot .own svg{width:20px;height:20px;flex:none;margin-top:2px;color:#1d6b33}
+.ph-grid{display:grid;gap:10px;min-height:330px;padding:12px;background:#fff;border-radius:10px;border:1px solid #e6dfc4}
+.ph-tile{display:grid;place-items:center;align-content:center;gap:6px;text-align:center;min-height:100px;border:2px dashed #cfc7a8;border-radius:8px;background:#f4f1e6;color:#5a5546;padding:12px}
+.ph-tile .cam{width:28px;height:28px}
+.ph-tile b{font-size:16px}.ph-tile small{font-size:12.5px}
+.ph-cap{font-size:13px;color:#6b6450;margin-top:10px}
+.ph-lock .ph-grid{filter:grayscale(1);opacity:.5;pointer-events:none;user-select:none;transition:opacity .3s,filter .3s}
+.ph-lock.open .ph-grid{filter:none;opacity:1;outline:3px solid #f2c200;outline-offset:4px}
+@media(min-width:760px){.ph-grid{grid-template-columns:repeat(3,1fr)}.ph-tile{min-height:300px}}
+
 </style>
 </head>
 <body>
@@ -206,7 +218,7 @@ footer p{margin-top:8px}
       </div>
     </div>
     <div class="ph" role="img" aria-label="Photo placeholder for a Tree Care By Gibson job photo">
-      <div><span class="tag">Photo slot</span><b>A photo of your crew's work goes here</b><p>Your Yelp page has job photos of palms and pines. With your OK, Jay uses those or shoots a job.</p></div>
+      <div><span class="tag">Photo slot</span><b>Your own job photo goes here</b><p>Send one anytime, free on every plan. Your Yelp page already has palms and pines you could use.</p></div>
     </div>
   </div>
   <svg class="ridge" viewBox="0 0 1200 36" preserveAspectRatio="none" aria-hidden="true"><path d="M0 36V22c60-10 110-14 170-6s120 6 180-4 130-12 200-2 120 10 190 0 140-10 210-2 100 8 150 2l100-6v32z" fill="currentColor"/></svg>
@@ -260,6 +272,15 @@ footer p{margin-top:8px}
       <div class="theme"><h3>Quick and fair</h3><p>On the schedule within days, at a fair price, even for very tall trees.</p></div>
     </div>
     <p class="src">Themes summed up from public reviews on <a href="https://www.yelp.com/biz/tree-care-by-gibson-torrance" target="_blank" rel="noopener">Yelp</a>, checked October 2026. Tree Care By Gibson isn't on Google Maps yet.</p>
+  </div>
+</section>
+
+<section class="shoot locked-sec" id="shoot">
+  <div class="wrap">
+    <p class="kicker">Recent work</p>
+    <h2 class="t">Before and after</h2>
+    <div class="locked"><span class="pill"><svg class="lk" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>Standard plan</span><p>Real photos of your crew at work and the clean yard after, shot on the job.</p></div>
+    <div class="lockwrap ph-lock"><span class="pv-ribbon"><svg class="pv-lk" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path class="shackle" d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>Preview: part of the Standard plan</span><div class="ph-grid" aria-hidden="true" inert><div class="ph-tile"><svg class="cam" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 8h3l2-2.5h6L17 8h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg><b>Before</b><small>The overgrown tree</small></div><div class="ph-tile"><svg class="cam" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.4"/><path d="M3.5 19c.6-3.2 3-5 5.5-5s4.9 1.8 5.5 5M14.5 14.6c2.6-.3 5 1.2 5.8 4.4"/></svg><b>The crew</b><small>Work in progress</small></div><div class="ph-tile"><svg class="cam" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 8h3l2-2.5h6L17 8h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg><b>After</b><small>Trimmed tree, clean yard</small></div></div><div class="veil"><div class="vcard"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/><circle cx="12" cy="16" r="1.3" fill="currentColor"/></svg><b>Locked on the Starter site</b><p>Pro photo shoot: part of the Standard plan. On your Starter site you can send your own photos anytime.</p><button type="button" class="pv-btn"><svg class="pv-lk" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path class="shackle" d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>Preview this feature</button></div></div></div>
   </div>
 </section>
 
@@ -365,7 +386,7 @@ footer p{margin-top:8px}
 })();
 </script>
 <script>
-(function(){var w=document.querySelector('.lockwrap');if(!w)return;var f=w.querySelector('form'),r=w.querySelector('.pv-result');
+(function(){var w=document.querySelector('.lockwrap:not(.ph-lock)');if(!w)return;var f=w.querySelector('form'),r=w.querySelector('.pv-result');
 function open(focus){if(!w.classList.contains('open')){w.classList.add('open');f.removeAttribute('inert');f.removeAttribute('aria-hidden');}
  if(focus){var i=f.querySelector('input,select,textarea');if(i)i.focus({preventScroll:true});}}
 w.querySelector('.pv-btn').addEventListener('click',function(){open(true);});
@@ -373,6 +394,9 @@ document.querySelectorAll('a[href="#estimate"]').forEach(function(a){a.addEventL
  document.getElementById('estimate').scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'start'});open(false);});});
 f.addEventListener('submit',function(e){e.preventDefault();r.classList.add('show');r.scrollIntoView({behavior:'smooth',block:'nearest'});});
 })();
+</script>
+<script>
+document.querySelectorAll('.ph-lock').forEach(function(w){w.querySelector('.pv-btn').addEventListener('click',function(){w.classList.add('open');var x=w.querySelector('[inert]');if(x){x.removeAttribute('inert');x.removeAttribute('aria-hidden');}});});
 </script>
 </body>
 </html>
