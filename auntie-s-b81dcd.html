@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Auntie&#x27;s Bakery &amp; Cafe | Breakfast and brunch in Uptown Whittier</title>
+<meta name="description" content="Breakfast, brunch and lunch at 6506 Greenleaf Ave in Uptown Whittier. Open 8:00 AM to 1:30 PM, closed Tuesdays. Call (562) 464-1959.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Damion&family=Josefin+Sans:wght@600;700&family=Crimson+Pro:wght@500;600;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box}html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;color:var(--ink);background:var(--paper);overflow-x:hidden}
+img,svg{max-width:100%}a{color:inherit}
+.wrap{max-width:1120px;margin:0 auto;padding:0 16px}
+.ic{width:20px;height:20px;flex:none}
+.draft{background:var(--draft-bg);color:var(--draft-fg);text-align:center;font-size:12.5px;padding:7px 12px;font-family:system-ui,sans-serif}
+.fill{display:inline-block;background:#fff3a6;border:1.5px dashed #c9a300;color:#5b4a00;border-radius:6px;padding:1px 8px;font-size:.9em;font-weight:700;font-family:system-ui,sans-serif;font-style:normal;letter-spacing:0;text-transform:none}
+.top{position:sticky;top:0;z-index:20}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:10px;min-height:64px}
+.logo{display:flex;align-items:center;text-decoration:none;min-width:0}
+nav.links{display:none;gap:22px;font-weight:700;font-size:15px}nav.links a{text-decoration:none}
+@media(min-width:960px){nav.links{display:flex}}
+.hcall{display:inline-flex;align-items:center;gap:8px;text-decoration:none;font-weight:700;padding:11px 14px;border-radius:10px;white-space:nowrap}
+.hcall span{display:none}@media(min-width:560px){.hcall span{display:inline}}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:52px;padding:13px 20px;border-radius:12px;font-weight:700;font-size:17px;text-decoration:none;border:0;cursor:pointer;font-family:inherit}
+.btn-ghost{background:#fff;color:var(--ink);border:2px dashed #c9a300}
+.btn-ghost .lk{color:#b58900}
+.btn .tag{font-style:normal;font-size:10.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;background:#fff3c2;color:#8a6a00;border:1px solid #f2d66b;border-radius:4px;padding:3px 6px}
+.actions{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:22px}
+.status{display:inline-flex;align-items:center;gap:8px;font-weight:700;font-size:15px;margin-bottom:18px}
+.status i{width:10px;height:10px;border-radius:50%;background:#22a35a;box-shadow:0 0 0 4px rgba(34,163,90,.18);flex:none}
+section{padding:54px 0}
+.kicker{margin:0 0 6px;font-weight:700;font-size:13px;letter-spacing:.1em;text-transform:uppercase}
+.lead{font-size:17px;max-width:40em}
+.fine{font-size:13.5px;color:var(--muted);margin:10px 0 0}
+.facts .wrap{display:grid;grid-template-columns:repeat(2,1fr)}
+.facts .f{padding:16px 10px;text-align:center}
+.facts .l{font-size:13.5px;opacity:.85}
+@media(min-width:760px){.facts .wrap{grid-template-columns:repeat(4,1fr)}}
+.quotes{display:grid;gap:14px;margin-top:18px}
+@media(min-width:760px){.quotes{grid-template-columns:repeat(var(--qn,3),1fr)}}
+.q{margin:0;border-radius:14px;padding:18px}
+.q .st{color:#e5a200;letter-spacing:2px}
+.q p{font-size:17px;margin:8px 0 10px}
+.q cite{font-style:normal;font-size:14px;color:var(--muted)}
+.vgrid{display:grid;gap:18px}
+@media(min-width:860px){.vgrid{grid-template-columns:1.1fr 1fr}}
+.panel{border-radius:14px;padding:18px;background:#fff;border:1px solid var(--line)}
+.panel h3{display:flex;align-items:center;gap:8px;margin:0 0 10px;font-size:18px}
+table.hours{width:100%;border-collapse:collapse;font-size:16px}
+table.hours td{padding:8px 0;border-bottom:1px solid var(--line)}table.hours td+td{text-align:right;font-weight:700}
+table.hours tr.off td+td{color:var(--muted)}
+.map{display:block;border-radius:10px;overflow:hidden;border:1px solid var(--line);margin:6px 0 10px}
+.map svg{display:block;width:100%;height:auto}
+.link{display:inline-flex;align-items:center;gap:6px;font-weight:700}
+.found{margin:0;border-radius:14px;overflow:hidden}
+.found.empty{display:grid;place-items:center;text-align:center;min-height:200px;padding:20px;border:2px dashed #b9b2a6;background:#fffdf8}
+.found.empty .ic{width:36px;height:36px;margin:0 auto 8px;display:block}
+.found.empty b{display:block}.found.empty span{display:block;font-size:13.5px;color:var(--muted);margin-top:4px}
+.lk{width:14px;height:14px;flex:none}
+.locked-sec{background:#fff8d9;border-top:4px solid #f2c200;border-bottom:4px solid #f2c200}
+.locked-sec h2{color:#2a2416}
+.locked{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;margin:0 0 16px}
+.locked p{margin:0;font-size:15px;color:#5b4a12;flex:1 1 240px}
+.pill{display:inline-flex;align-items:center;gap:7px;background:#f6c315;color:#1b1f2a;font:800 13px/1.2 system-ui,sans-serif;letter-spacing:.03em;text-transform:uppercase;padding:7px 12px;border-radius:999px;box-shadow:0 2px 0 #c99d00}
+.pill.pro{background:#1b1f2a;color:#ffe27a;box-shadow:0 2px 0 #000}
+.lockwrap{position:relative}
+.lockwrap form,.lockwrap .ghost{filter:grayscale(1);opacity:.5;pointer-events:none;user-select:none}
+.lockwrap.open .ghost{filter:none;opacity:1;pointer-events:auto;user-select:auto;outline:3px solid #f2c200;outline-offset:6px;border-radius:10px}
+.lockwrap .ghost{transition:opacity .3s,filter .3s}
+.lockwrap .veil{position:absolute;inset:0;display:grid;place-items:center;padding:18px;background:rgba(240,242,245,.55);border-radius:10px}
+.veil .vcard{max-width:420px;text-align:center;background:#fff;border:2px solid #f2c200;border-radius:12px;padding:22px 22px 18px;box-shadow:0 14px 40px rgba(0,0,0,.14);font-family:system-ui,sans-serif}
+.veil .vcard svg{width:44px;height:44px;color:#1b1f2a;background:#f6c315;border-radius:50%;padding:10px;box-sizing:content-box;margin:0 auto 10px;display:block}
+.veil .vcard b{display:block;font-size:17px;color:#1b1f2a;margin-bottom:4px}
+.veil .vcard p{font-size:14.5px;color:#4a5260;margin:0}
+.veil .vcard small{display:block;margin-top:10px;font-size:12px;color:#7a828e}
+.formwrap{background:#fff;border:1px solid #e3d48a;border-radius:12px;padding:18px}
+.formwrap label{display:block;font-weight:700;font-size:14px;margin:10px 0 5px}
+.formwrap input,.formwrap select,.formwrap textarea{width:100%;font:inherit;font-size:16px;padding:11px 12px;border:1px solid #c5cfdc;border-radius:8px;background:#fff}
+.formwrap textarea{min-height:90px}
+.row2{display:grid;gap:0 14px}@media(min-width:620px){.row2{grid-template-columns:1fr 1fr}}
+.submit{margin-top:14px;width:100%}
+.note{font-size:13px;color:var(--muted);margin:8px 0 0}
+.vframe{position:relative;width:100%;height:320px;border-radius:12px;overflow:hidden;background:var(--vbg);display:grid;place-items:center}
+@media(min-width:760px){.vframe{height:auto;aspect-ratio:16/6;max-height:380px}}
+.vframe .play{width:64px;height:64px;border-radius:50%;background:rgba(255,255,255,.92);position:relative}
+.vframe .play:after{content:"";position:absolute;left:26px;top:20px;border-left:18px solid var(--ink);border-top:12px solid transparent;border-bottom:12px solid transparent}
+.vframe .lbl{position:absolute;left:12px;right:12px;bottom:10px;color:#fff;font-weight:700;font-size:14px;text-shadow:0 1px 2px rgba(0,0,0,.6)}
+.vframe .t{position:absolute;right:10px;top:10px;background:rgba(0,0,0,.45);color:#fff;font-size:12px;font-weight:700;border-radius:6px;padding:3px 7px}
+.pages{display:grid;gap:12px;min-height:300px}
+.lockwrap .pgrid{min-height:300px}@media(min-width:760px){.pages{grid-template-columns:repeat(3,1fr)}}
+.pg{background:#fff;border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.pg .ph{height:90px;background:var(--pgbg);display:grid;place-items:center;color:var(--accent)}
+.pg .ph .ic{width:30px;height:30px}
+.pg div.tx{padding:12px 14px}.pg b{display:block;font-size:17px}.pg span{font-size:13.5px;color:var(--muted)}
+.prox{display:grid;gap:12px;min-height:300px;align-content:center;background:#fff;border:1px solid var(--line);border-radius:12px;padding:18px}
+.prox .tog{display:inline-flex;border:2px solid var(--accent);border-radius:999px;overflow:hidden;width:max-content;font-weight:700;font-size:14px}
+.prox .tog span{padding:6px 14px}.prox .tog .on{background:var(--accent);color:#fff}
+.prox h3{font-size:26px;line-height:1.1;margin:0}
+.prox p{margin:0}
+footer{padding:34px 0 96px;font-size:15px}
+footer p{margin:6px 0}
+.sticky{position:fixed;left:0;right:0;bottom:0;z-index:30;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(255,255,255,.96);border-top:1px solid var(--line)}
+.sticky .btn{width:100%}
+@media(min-width:860px){.sticky{display:none}footer{padding-bottom:34px}}
+:focus-visible{outline:3px solid #f2c200;outline-offset:2px}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+
+:root{--ink:#2f2e30;--muted:#6d665c;--paper:#fbf6ec;--line:#e6dccb;--accent:#3b3a3c;--gold:#f0a02a;--olive:#a8893a;
+ --navy:#3b3a3c;--navy2:#a8893a;--draft-bg:#3b3a3c;--draft-fg:#f6e6c8;--vbg:linear-gradient(135deg,#b8664e,#9b6237 55%,#3b3a3c);--pgbg:repeating-linear-gradient(45deg,#f3ead9 0 12px,#fbf6ec 12px 24px)}
+body{font:16px/1.6 'Open Sans',system-ui,sans-serif}
+.top{background:rgba(251,246,236,.97);border-bottom:1px solid var(--line)}
+.top .hexlogo{height:54px;width:auto}
+nav.links a{color:var(--ink)}
+.hcall{background:var(--accent);color:#fff}
+.hero{padding:34px 0 40px;background:radial-gradient(ellipse at 80% 20%,#fff 0,var(--paper) 60%)}
+.hgrid{display:grid;gap:26px;align-items:center}
+@media(min-width:860px){.hgrid{grid-template-columns:1.1fr 1fr}}
+.eyebrow{display:inline-block;font:700 12.5px/1 'Josefin Sans',sans-serif;letter-spacing:.18em;text-transform:uppercase;color:var(--olive);border-top:1.5px solid var(--gold);border-bottom:1.5px solid var(--gold);padding:8px 2px 6px}
+h1{font-family:'Crimson Pro',Georgia,serif;font-weight:700;font-size:clamp(36px,7.6vw,60px);line-height:1.02;margin:16px 0 12px;color:var(--accent)}
+h1 em{font-family:Damion,cursive;font-style:normal;font-weight:400;color:var(--gold);font-size:1.12em}
+.sub{font-size:18px;margin:0 0 14px;max-width:34em}
+.btn-call{background:var(--accent);color:#fff;box-shadow:0 3px 0 #1d1c1e}.btn-call:hover{background:#1d1c1e}
+.heroart{position:relative;margin:0}
+.heroart .pat{display:block;border-radius:200px 200px 16px 16px;overflow:hidden;border:6px solid #fff;box-shadow:0 18px 40px rgba(59,58,60,.18)}
+.heroart .pat svg{display:block;width:100%;height:auto}
+.heroart .badge{position:absolute;left:-6px;top:-14px;background:#fff;border-radius:16px;padding:6px 8px;box-shadow:0 10px 26px rgba(0,0,0,.12)}
+.heroart .badge svg{width:150px;height:auto;display:block}
+.heroart figcaption{font-size:12.5px;color:var(--muted);text-align:right;margin-top:8px}
+.facts{background:var(--accent);color:#fff}
+.facts .f{border-right:1px solid rgba(255,255,255,.12);border-bottom:1px solid rgba(255,255,255,.12)}
+.facts .n{font:700 28px/1.1 'Crimson Pro',Georgia,serif;color:var(--gold)}
+h2{font-family:'Crimson Pro',Georgia,serif;font-weight:700;font-size:clamp(30px,5.6vw,44px);line-height:1.06;margin:0 0 14px;color:var(--accent)}
+.kicker{font-family:'Josefin Sans',sans-serif;color:var(--olive);letter-spacing:.16em}
+.menucard{margin-top:22px;background:#fff;border:1px solid var(--line);border-radius:6px;padding:22px 18px;box-shadow:0 2px 0 #eadfcb,0 18px 40px rgba(59,58,60,.08)}
+.mhead{text-align:center;margin-bottom:12px}
+.mhead b{display:block;font:600 clamp(22px,4.4vw,30px)/1.1 'Open Sans',sans-serif;color:var(--olive)}
+.mhead span{display:block;font-size:14px;color:#555}
+.mcols{display:grid;gap:8px 34px}
+@media(min-width:860px){.mcols{grid-template-columns:repeat(3,1fr)}}
+.mcol h3{font:700 19px/1.2 'Open Sans',sans-serif;text-align:center;margin:16px 0 4px;color:#222}
+.mcol .addon{font:600 14px/1.3 'Crimson Pro',serif;text-align:center;margin:0 0 6px;color:#333}
+.mcol ul{list-style:none;margin:0;padding:0}
+.mcol li{padding:9px 0;font-family:'Crimson Pro',Georgia,serif}
+.mi{display:flex;align-items:baseline;gap:6px}
+.mi b{font-size:18px;color:#111}.mi .dots{flex:1;border-bottom:1.5px dotted #c9bfae;transform:translateY(-4px);min-width:12px}
+.mi .pr{font-weight:700;font-size:17px;color:#111}
+.mcol small{display:block;font-size:15.5px;line-height:1.35;color:#3a3a3a}
+.mfoot{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:4px 18px;margin-top:14px;text-align:center}
+.mfoot p{margin:0;font:600 17px/1.4 'Crimson Pro',serif;color:#333}
+.favs{margin-top:28px;background:#fff8ec;border:1px solid #f2d9ad;border-radius:14px;padding:18px}
+.favs h3{margin:0 0 10px;font:700 20px/1.2 'Crimson Pro',serif}
+.favs ul{list-style:none;margin:0 0 12px;padding:0;display:grid;gap:8px}
+@media(min-width:760px){.favs ul{grid-template-columns:repeat(2,1fr)}}
+.favs li{display:flex;flex-direction:column;background:#fff;border-left:4px solid var(--gold);border-radius:6px;padding:8px 12px}
+.favs li b{font-family:'Crimson Pro',serif;font-size:18px}.favs li span{font-size:13.5px;color:var(--muted)}
+.patio{background:#f3ead9}
+.serve{display:grid;gap:12px;margin-top:20px}
+@media(min-width:760px){.serve{grid-template-columns:repeat(4,1fr)}}
+.serve>div{display:flex;gap:12px;align-items:flex-start;background:#fff;border-radius:12px;padding:14px;border:1px solid var(--line)}
+.serve .ic{width:26px;height:26px;color:var(--gold);margin-top:2px}
+.serve b{display:block;font-size:16px}.serve span{font-size:14px;color:var(--muted)}
+.reviews .q{background:#fff;border:1px solid var(--line)}
+.q p{font-family:'Crimson Pro',serif;font-size:20px;line-height:1.35}
+.panel h3 .ic,.found.empty .ic,.link{color:var(--olive)}
+.ig{display:inline-flex;align-items:center;gap:8px;font-weight:700;text-decoration:none;color:var(--accent);margin-top:10px}
+.prox h3{font-family:'Crimson Pro',serif;color:var(--accent)}
+.wl{display:grid;gap:8px;margin-top:6px}.wl div{display:flex;justify-content:space-between;background:#f6efe2;border-radius:8px;padding:10px 12px;font-weight:600}
+footer{background:var(--accent);color:#efe6d6}footer b{font-family:Damion,cursive;font-weight:400;font-size:30px;color:#fff}
+
+.pv-btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;margin-top:14px;min-height:46px;padding:12px 20px;border:0;border-radius:8px;background:#1b1f2a;color:#ffe27a;font:700 15px/1 Inter,system-ui,sans-serif;cursor:pointer}
+.pv-btn:hover{background:#2a3040}.pv-btn:focus-visible{outline:3px solid #f2c200;outline-offset:2px}
+.veil .vcard .pv-btn svg,.pv-lk{width:18px;height:18px;padding:0;margin:0;background:none;border-radius:0;color:inherit;display:inline-block;box-sizing:border-box}.pv-lk .shackle{transform-origin:16px 11px;transition:transform .35s cubic-bezier(.3,1.5,.5,1)}
+.pv-btn:hover .shackle,.lockwrap.open .shackle{transform:translate(4px,-3px) rotate(28deg)}
+.pv-ribbon{display:none;position:absolute;top:-13px;left:16px;z-index:3;align-items:center;gap:6px;background:#f6c315;color:#1b1f2a;font:800 12px/1 Inter,sans-serif;letter-spacing:.04em;text-transform:uppercase;padding:7px 11px;border-radius:999px;box-shadow:0 2px 0 #c99d00}
+.lockwrap.open .pv-ribbon{display:inline-flex}
+.lockwrap.open form{filter:none;opacity:1;pointer-events:auto;user-select:auto;outline:3px solid #f2c200;outline-offset:4px}
+.lockwrap.open .veil{display:none}
+.lockwrap form,.lockwrap .veil{transition:opacity .3s,filter .3s}
+.pv-result{display:none;margin-top:16px;padding:16px 18px;border-radius:10px;background:#fff8d9;border:2px solid #f2c200;color:#1b1f2a}
+.pv-result.show{display:block}
+.pv-result b{display:block;font-size:16px;margin-bottom:6px}
+.pv-result .bubble{display:inline-block;margin:4px 0 8px;padding:10px 14px;border-radius:14px 14px 14px 4px;background:#fff;border:1px solid #e3d48a;font-size:15px}
+.pv-result p{margin:0;font-size:14px;color:#4a5260}
+@media(prefers-reduced-motion:reduce){.pv-lk .shackle,.lockwrap form,.lockwrap .veil{transition:none}}
+
+
+#photos.locked-sec{background:#fff8d9;border-top:4px solid #f2c200;border-bottom:4px solid #f2c200}
+.pgrid{display:grid;gap:14px;grid-template-columns:1fr}
+@media(min-width:760px){.pgrid{grid-template-columns:repeat(3,1fr)}}
+.slot{display:grid;place-items:center;text-align:center;min-height:200px;padding:20px;border:2px dashed #b9c4d0;border-radius:10px;background:#fff}
+.slot svg{width:40px;height:40px;color:var(--navy2);margin:0 auto 10px;display:block}
+.slot b{display:block;font-size:17px;color:var(--navy)}
+.slot span{display:block;font-size:13.5px;color:var(--muted);margin-top:4px}
+.lockwrap .pgrid{filter:grayscale(1);opacity:.5;pointer-events:none;user-select:none;transition:opacity .3s,filter .3s}
+.lockwrap.open .pgrid{filter:none;opacity:1;pointer-events:auto;user-select:auto;outline:3px solid #f2c200;outline-offset:6px;border-radius:10px}
+@media(max-width:759px){.pwrap .pgrid .slot{min-height:120px}}
+
+</style>
+</head>
+<body>
+<div class="draft">Draft website made for Auntie&#x27;s Bakery &amp; Cafe by Jay · not live yet</div>
+<header class="top"><div class="wrap">
+<a class="logo" href="#top" aria-label="Auntie&#x27;s Bakery &amp; Cafe home"><svg class="hexlogo" width="115" height="85" viewBox="0 0 230 170" role="img" aria-label="Auntie's Bakery and Cafe logo">
+<path d="M62 14 H168 Q176 14 180 21 L196 49 M196 121 L180 149 Q176 156 168 156 H62 Q54 156 50 149 L34 121 M34 49 L50 21 Q54 14 62 14" fill="none" stroke="#3b3a3c" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="115" y="96" text-anchor="middle" font-family="Damion,cursive" font-size="64" fill="#3b3a3c">Auntie<tspan fill="#f0a02a">&#8217;</tspan>s</text>
+<text x="117" y="124" text-anchor="middle" font-family="'Josefin Sans',sans-serif" font-weight="700" font-size="15" letter-spacing="4.2" fill="#f0a02a">BAKERY &amp; CAFE</text>
+</svg></a>
+<nav class="links" aria-label="Main"><a href="#menu">Menu</a><a href="#patio">The place</a><a href="#reviews">Reviews</a><a href="#visit">Hours and location</a></nav>
+<a class="hcall" href="tel:+15624641959" aria-label="Call (562) 464-1959"><svg class="ic" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.6a1 1 0 0 1-.25 1z"/></svg><span>(562) 464-1959</span></a>
+</div></header>
+<main id="top">
+<section class="hero"><div class="wrap hgrid">
+<div>
+<span class="eyebrow">Breakfast · Brunch · Lunch · Uptown Whittier</span>
+<h1>Brunch on Greenleaf, <em>like you&#8217;re home.</em></h1>
+<p class="sub">Toasts, skillets, salads and a kids menu, with seating inside and out on the patio.</p>
+<span class="status"><i></i>Open 8:00 AM to 1:30 PM · Closed Tuesdays</span>
+<div class="actions"><a class="btn btn-call" href="tel:+15624641959"><svg class="ic" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.6a1 1 0 0 1-.25 1z"/></svg>Call (562) 464-1959</a><a class="btn btn-ghost" href="#book"><svg class="lk" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>Order ahead <i class="tag">Standard</i></a></div>
+</div>
+<figure class="heroart"><div class="pat"><svg viewBox="0 0 360 280" role="img" aria-label="Drawing of the Auntie's patio: picket fence, umbrella and a round wood table">
+<rect width="360" height="280" fill="#efe6d6"/>
+<rect y="0" width="360" height="110" fill="#e6dccb"/>
+<circle cx="40" cy="70" r="16" fill="#7d9a57"/><circle cx="66" cy="58" r="14" fill="#8fae63"/><circle cx="90" cy="74" r="12" fill="#6f8f4e"/><circle cx="268" cy="60" r="15" fill="#c9673b"/><circle cx="292" cy="72" r="13" fill="#d98a3e"/><circle cx="316" cy="58" r="16" fill="#b8553a"/><circle cx="338" cy="76" r="12" fill="#e0a447"/><circle cx="250" cy="80" r="10" fill="#8fae63"/><circle cx="120" cy="66" r="10" fill="#7d9a57"/>
+<path d="M18 150 V96 l8 -8 8 8 V150 Z" fill="#fbfaf6" stroke="#d9d3c4" stroke-width="1.2"/><path d="M42 150 V96 l8 -8 8 8 V150 Z" fill="#fbfaf6" stroke="#d9d3c4" stroke-width="1.2"/><path d="M66 150 V96 l8 -8 8 8 V150 Z" fill="#fbfaf6" stroke="#d9d3c4" stroke-width="1.2"/><path d="M90 150 V96 l8 -8 8 8 V150 Z" fill="#fbfaf6" stroke="#d9d3c4" stroke-width="1.2"/><path d="M114 150 V96 l8 -8 8 8 V150 Z" fill="#fbfaf6" stroke="#d9d3c4" stroke-width="1.2"/><path d="M138 150 V96 l8 -8 8 8 V150 Z" fill="#fbfaf6" stroke="#d9d3c4" stroke-width="1.2"/><path d="M162 150 V96 l8 -8 8 8 V150 Z" fill="#fbfaf6" stroke="#d9d3c4" stroke-width="1.2"/><path d="M186 150 V96 l8 -8 8 8 V150 Z" fill="#fbfaf6" stroke="#d9d3c4" stroke-width="1.2"/><path d="M210 150 V96 l8 -8 8 8 V150 Z" fill="#fbfaf6" stroke="#d9d3c4" stroke-width="1.2"/><path d="M234 150 V96 l8 -8 8 8 V150 Z" fill="#fbfaf6" stroke="#d9d3c4" stroke-width="1.2"/><path d="M258 150 V96 l8 -8 8 8 V150 Z" fill="#fbfaf6" stroke="#d9d3c4" stroke-width="1.2"/><path d="M282 150 V96 l8 -8 8 8 V150 Z" fill="#fbfaf6" stroke="#d9d3c4" stroke-width="1.2"/><path d="M306 150 V96 l8 -8 8 8 V150 Z" fill="#fbfaf6" stroke="#d9d3c4" stroke-width="1.2"/><path d="M330 150 V96 l8 -8 8 8 V150 Z" fill="#fbfaf6" stroke="#d9d3c4" stroke-width="1.2"/><rect x="10" y="112" width="340" height="7" fill="#fbfaf6" stroke="#d9d3c4"/><rect x="10" y="134" width="340" height="7" fill="#fbfaf6" stroke="#d9d3c4"/>
+<rect y="150" width="360" height="130" fill="#b8664e"/><path d="M0 196 H360" stroke="#9c5a44" stroke-width="1" opacity=".5"/><path d="M0 210 H360" stroke="#9c5a44" stroke-width="1" opacity=".5"/><path d="M0 224 H360" stroke="#9c5a44" stroke-width="1" opacity=".5"/><path d="M0 238 H360" stroke="#9c5a44" stroke-width="1" opacity=".5"/><path d="M0 252 H360" stroke="#9c5a44" stroke-width="1" opacity=".5"/><path d="M0 266 H360" stroke="#9c5a44" stroke-width="1" opacity=".5"/>
+<path d="M70 40 Q180 -8 290 40 Z" fill="#f3ecdc" stroke="#cfc4ad" stroke-width="2"/>
+<path d="M70 40 Q100 48 125 40 Q152 48 180 40 Q208 48 235 40 Q262 48 290 40" fill="none" stroke="#cfc4ad" stroke-width="2"/>
+<rect x="177" y="22" width="5" height="190" fill="#3b3a3c"/>
+<ellipse cx="180" cy="196" rx="96" ry="22" fill="#7a4a2a"/><ellipse cx="180" cy="192" rx="96" ry="22" fill="#9b6237"/>
+<g stroke="#7a4a2a" stroke-width="1.4" opacity=".7"><path d="M100 176 V210"/><path d="M116 176 V210"/><path d="M132 176 V210"/><path d="M148 176 V210"/><path d="M164 176 V210"/><path d="M180 176 V210"/><path d="M196 176 V210"/><path d="M212 176 V210"/><path d="M228 176 V210"/><path d="M244 176 V210"/><path d="M260 176 V210"/></g>
+<rect x="166" y="178" width="28" height="10" rx="2" fill="#4a4a4a"/>
+<g fill="none" stroke="#3b3a3c" stroke-width="4" stroke-linecap="round">
+<path d="M70 196 L60 268 M70 220 H98 L104 268 M70 220 L74 196"/><path d="M290 196 L300 268 M290 220 H262 L256 268 M290 220 L286 196"/></g>
+<g fill="#9b6237"><rect x="54" y="186" width="22" height="34" rx="2"/><rect x="284" y="186" width="22" height="34" rx="2"/></g>
+<path d="M150 214 L140 270 M210 214 L220 270 M180 214 V270" stroke="#3b3a3c" stroke-width="5" stroke-linecap="round"/>
+<ellipse cx="180" cy="272" rx="34" ry="6" fill="#3b3a3c" opacity=".85"/>
+</svg></div><div class="badge"><svg class="hexlogo" width="149" height="110" viewBox="0 0 230 170" role="img" aria-label="Auntie's Bakery and Cafe logo">
+<path d="M62 14 H168 Q176 14 180 21 L196 49 M196 121 L180 149 Q176 156 168 156 H62 Q54 156 50 149 L34 121 M34 49 L50 21 Q54 14 62 14" fill="none" stroke="#3b3a3c" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="115" y="96" text-anchor="middle" font-family="Damion,cursive" font-size="64" fill="#3b3a3c">Auntie<tspan fill="#f0a02a">&#8217;</tspan>s</text>
+<text x="117" y="124" text-anchor="middle" font-family="'Josefin Sans',sans-serif" font-weight="700" font-size="15" letter-spacing="4.2" fill="#f0a02a">BAKERY &amp; CAFE</text>
+</svg></div><figcaption>Patio drawn from a photo on the Google listing. Logo from your menu.</figcaption></figure>
+</div></section>
+<div class="facts"><div class="wrap"><div class="f"><div class="n">4.1<span>&#9733;</span></div><div class="l">on Google</div></div><div class="f"><div class="n">642</div><div class="l">Google reviews</div></div><div class="f"><div class="n">8 to 1:30</div><div class="l">closed Tuesdays</div></div><div class="f"><div class="n">$10 to 20</div><div class="l">a person, per Google</div></div></div></div>
+
+<section id="menu"><div class="wrap">
+<p class="kicker">Menu</p><h2>From the menu</h2>
+<p class="lead">Toasts and skillets, salads, soup and grilled cheese, and a kids menu. Here is what is on the printed menu.</p>
+<div class="menucard">
+<div class="mhead"><b>Aunties Bakery and Café</b><span>6506 Greenleaf Ave. Whittier, Ca 90601</span></div>
+<div class="mcols"><div class="mcol"><h3>Aunties Specialty Toast and Skillets</h3><p class=addon>Add an egg +3 · Add egg white +4 · Add avocado +3</p><ul><li><div class="mi"><b>Avocado Toast</b><i class="dots"></i><span class="pr">14.75</span></div><small>Whole wheat toast, avocado spread, mixed greens, cherry tomatoes, bacon crumble, lemon vinaigrette drizzled with honey</small></li><li><div class="mi"><b>Smoked Salmon Toast</b><i class="dots"></i><span class="pr">15.75</span></div><small>Sourdough toast, lemon dill cream cheese, smoked salmon, cornichons, capers, red onion</small></li><li><div class="mi"><b>All American Skillet</b><i class="dots"></i><span class="pr">15.75</span></div><small>Bacon, bell peppers, red onions, diced potatoes topped with cheddar cheese, 2 eggs your way and side of toast. Add fried jalapeño +$1</small></li><li><div class="mi"><b>Santa Fe Skillet</b><i class="dots"></i><span class="pr">16.75</span></div><small>Chorizo, corn, bell peppers, red onions, queso fresco, black beans, diced potatoes topped with chipotle mayo, 2 eggs your way and side of toast</small></li></ul></div><div class="mcol"><h3>Aunties Lunch</h3><ul><li><div class="mi"><b>Strawberry Poppy Seed Salad</b><i class="dots"></i><span class="pr">14.75</span></div><small>Mixed greens, fresh strawberries, pecans, Havarti cheese with poppy seed dressing, side of toast. Add smoked salmon or grilled chicken +3</small></li><li><div class="mi"><b>Whittier Chicken Cobb Salad</b><i class="dots"></i><span class="pr">16.75</span></div><small>Mixed greens, hard boiled egg, bacon, cherry tomatoes, avocado, cheddar and grilled chicken with ranch, side of toast</small></li><li><div class="mi"><b>Aunties Loaded Mac and Cheese</b><i class="dots"></i><span class="pr">14.75</span></div><small>Sharp and mild cheddar, panko crust, bacon, drizzled with sour cream</small></li><li><div class="mi"><b>Aunties A+ Tomato Soup &amp; Grilled Cheese</b><i class="dots"></i><span class="pr">14.75</span></div><small>Homemade creamy tomato soup with sour cream and croutons, grilled cheese on sourdough</small></li></ul></div><div class="mcol"><h3>Auntie&#x27;s Kids Menu</h3><p class=addon>For kids 10 and under. Served with a juice or baby-ccino</p><ul><li><div class="mi"><b>Strawberry Banana Waffle or Pancake</b><i class="dots"></i><span class="pr">13.50</span></div><small>Kids breakfast with scrambled eggs and choice of bacon or sausage</small></li><li><div class="mi"><b>Chocolate Chip Pancakes</b><i class="dots"></i><span class="pr">12.50</span></div><small>With scrambled eggs and choice of bacon or sausage</small></li><li><div class="mi"><b>Tator Tot Skillet</b><i class="dots"></i><span class="pr">12.50</span></div><small>Tator tots, bacon, scrambled eggs, cheddar cheese</small></li><li><div class="mi"><b>Kids Mac &amp; Cheese</b><i class="dots"></i><span class="pr">13.50</span></div><small>Kid size auntie mac and cheese with tots, wedges or fruit</small></li></ul></div></div>
+<div class="mfoot"><svg class="hexlogo" width="142" height="105" viewBox="0 0 230 170" role="img" aria-label="Auntie's Bakery and Cafe logo">
+<path d="M62 14 H168 Q176 14 180 21 L196 49 M196 121 L180 149 Q176 156 168 156 H62 Q54 156 50 149 L34 121 M34 49 L50 21 Q54 14 62 14" fill="none" stroke="#3b3a3c" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="115" y="96" text-anchor="middle" font-family="Damion,cursive" font-size="64" fill="#3b3a3c">Auntie<tspan fill="#f0a02a">&#8217;</tspan>s</text>
+<text x="117" y="124" text-anchor="middle" font-family="'Josefin Sans',sans-serif" font-weight="700" font-size="15" letter-spacing="4.2" fill="#f0a02a">BAKERY &amp; CAFE</text>
+</svg><p>Beauty, Community, Commerce.<br>When you&#8217;re at Auntie&#8217;s, you&#8217;re home.</p></div>
+</div>
+<p class="fine">Items and prices copied from Auntie&#x27;s printed menu (customer photo on the Google listing, November 2025). Owner confirms current prices before this goes live.</p>
+<div class="favs"><h3>Breakfast people talk about</h3><ul><li><b>Chicken and waffles</b><span>A Google reviewer, June 2025</span></li><li><b>Breakfast burrito</b><span>A Google reviewer, June 2025</span></li><li><b>French toast</b><span>On the Auntie&#x27;s Instagram</span></li><li><b>Vegan zucchini bread</b><span>From the bakery, a Google reviewer, April 2024</span></li></ul>
+<p><span class="fill">Owner adds the breakfast menu and bakery case with prices</span></p></div>
+</div></section>
+<section id="patio" class="patio"><div class="wrap">
+<p class="kicker">The place</p><h2>Feels like eating at a friend&#8217;s house</h2>
+<p class="lead">Seating inside and out on the patio. Customers say it feels like being in a home.</p>
+<div class="serve"><div><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg><div><b>Patio seating</b><span>Umbrellas and a white picket fence out back.</span></div></div><div><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3c1 3 5 5 5 10a5 5 0 0 1-10 0c0-2.5 1.5-4 2.5-5 .3 1.5 1 2.5 2 3 0-3-.5-5.5.5-8z"/></svg><div><b>Heaters on cool days</b><span>Customers mention the patio heaters.</span></div></div><div><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1 12H6z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><div><b>Dine-in and takeout</b><span>Both listed on Google.</span></div></div><div><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3"/><path d="M3.5 19c.6-3.2 3-5 5.5-5s4.9 1.8 5.5 5"/><circle cx="17" cy="9" r="2.3"/><path d="M15.5 14.4c2.5-.2 4.6 1.3 5.2 4.6"/></svg><div><b>Weekends get busy</b><span>Worth the short wait, reviewers say.</span></div></div></div>
+</div></section>
+<section class="reviews" id="reviews"><div class="wrap">
+<p class="kicker">Reviews</p><h2>4.1 stars from 642 people on Google</h2>
+<div class="quotes" style="--qn:3"><figure class="q"><div class="st" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p>"Warm and cozy atmosphere, the staff was amazing, accommodating, and friendly."</p><cite>Ginger · Google · April 2024</cite></figure><figure class="q"><div class="st" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p>"We had the chicken and waffles... This dish was excellent."</p><cite>Kenton C. · Google · June 2025</cite></figure><figure class="q"><div class="st" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p>"Thank you for the hospitality, conversation, and amazing food!"</p><cite>Thomas R. · Google · April 2025</cite></figure></div>
+<p class="fine">Short excerpts from public Google reviews, star ratings as the reviewer gave them.</p>
+</div></section>
+<section id="visit"><div class="wrap">
+<p class="kicker">Hours and location</p><h2>On Greenleaf in Uptown Whittier</h2>
+<div class="vgrid">
+<div class="panel"><h3><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>6506 Greenleaf Ave, Whittier, CA 90601</h3>
+<a class="map" href="https://maps.google.com/?cid=1134857329961068387" target="_blank" rel="noopener" aria-label="Open directions in Google Maps"><svg viewBox="0 0 520 220" role="img" aria-label="Simple map: Auntie&#x27;s Bakery &amp; Cafe on Greenleaf Ave">
+<rect width="520" height="220" fill="#f3ece0"/>
+<g fill="#e6dccb"><rect x="8" y="14" width="92" height="54" rx="4"/><rect x="8" y="152" width="92" height="54" rx="4"/><rect x="112" y="14" width="92" height="54" rx="4"/><rect x="112" y="152" width="92" height="54" rx="4"/><rect x="216" y="14" width="92" height="54" rx="4"/><rect x="216" y="152" width="92" height="54" rx="4"/><rect x="320" y="14" width="92" height="54" rx="4"/><rect x="320" y="152" width="92" height="54" rx="4"/><rect x="424" y="14" width="92" height="54" rx="4"/><rect x="424" y="152" width="92" height="54" rx="4"/></g>
+<rect x="0" y="86" width="520" height="48" fill="#fff"/><path d="M0 110 H520" stroke="#f2c200" stroke-width="2" stroke-dasharray="14 10"/>
+<text x="16" y="80" font-family="system-ui,sans-serif" font-weight="700" font-size="14" fill="#555">Greenleaf Ave</text>
+<g transform="translate(250 64)"><path d="M0 46 C-4 34 -18 26 -18 12 A18 18 0 0 1 18 12 C18 26 4 34 0 46Z" fill="#3b3a3c"/><circle cx="0" cy="12" r="6.5" fill="#fff"/></g>
+<rect x="180" y="160" width="140" height="26" rx="13" fill="#3b3a3c"/><text x="250" y="178" text-anchor="middle" font-family="system-ui,sans-serif" font-weight="700" font-size="13" fill="#fff">6506 Greenleaf Ave</text>
+<text x="504" y="210" text-anchor="end" font-family="system-ui,sans-serif" font-size="11" fill="#8a8f98">Not to scale</text>
+</svg></a>
+<a class="link" href="https://maps.google.com/?cid=1134857329961068387" target="_blank" rel="noopener">Get directions</a>
+<p class="fine">Uptown Whittier. Tap the map for directions.</p><a class="ig" href="https://www.instagram.com/auntiescafe/" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>@auntiescafe on Instagram</a></div>
+<div style="display:grid;gap:18px;align-content:start">
+<div class="panel"><h3><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Hours</h3><table class="hours"><tr><td>Monday</td><td>8:00 AM to 1:30 PM</td></tr><tr class=off><td>Tuesday</td><td>Closed</td></tr><tr><td>Wednesday</td><td>8:00 AM to 1:30 PM</td></tr><tr><td>Thursday</td><td>8:00 AM to 1:30 PM</td></tr><tr><td>Friday</td><td>8:00 AM to 1:30 PM</td></tr><tr><td>Saturday</td><td>8:00 AM to 1:30 PM</td></tr><tr><td>Sunday</td><td>8:00 AM to 1:30 PM</td></tr></table><p class="fine">Hours from the Google listing; the @auntiescafe Instagram says the same. Call to check holidays.</p>
+<a class="btn btn-call" style="margin-top:12px;width:100%" href="tel:+15624641959"><svg class="ic" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.6a1 1 0 0 1-.25 1z"/></svg>Call (562) 464-1959</a></div>
+<figure class="found empty" data-photo-slot="auntie-s-bakery-cafe"><div><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 8h3l2-2.5h6L17 8h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg><b>Your photo goes here</b><span>The patio, the front of the house or a plate of chicken and waffles. Send one anytime.</span></div></figure>
+</div></div></div></section>
+<section id="video" class="locked-sec"><div class="wrap"><p class="kicker">Video</p><h2>A 10-second look inside</h2>
+<div class="locked"><span class="pill"><svg class="lk" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>Standard plan</span><p>A short video banner across the top of your site.</p></div>
+<div class="lockwrap"><span class="pv-ribbon"><svg class="pv-lk" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path class="shackle" d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>Preview: part of the Standard plan</span><div class="ghost" aria-hidden="true" inert><div class="vframe"><div class="play"></div><span class="t">0:10</span><div class="lbl">10 seconds at Auntie&#x27;s: the patio in the morning, a skillet coming out, coffee</div></div></div><div class="veil"><div class="vcard"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/><circle cx="12" cy="16" r="1.3" fill="currentColor"/></svg><b>Locked on the Starter site</b><p>The 10-second video banner is part of the Standard plan. Jay shoots it at your place.</p><button type="button" class="pv-btn"><svg class="pv-lk" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path class="shackle" d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>Preview this feature</button></div></div></div>
+</div></section>
+<section id="photos" class="locked-sec"><div class="wrap">
+<p class="kicker">Photos</p><h2>Show the patio before they come</h2>
+<div class="locked"><span class="pill"><svg class="lk" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>Standard plan</span><p>Real photos of your food, your patio and the front of the house, shot by Jay.</p></div>
+<div class="lockwrap pwrap"><span class="pv-ribbon"><svg class="pv-lk" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path class="shackle" d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>Preview: part of the Standard plan</span><div class="pgrid" aria-hidden="true" inert><div class="slot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 8h3l2-2.5h6L17 8h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg><b>Your food</b><span>Toasts, skillets, chicken and waffles</span></div><div class="slot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.4"/><path d="M3.5 19c.6-3.2 3-5 5.5-5s4.9 1.8 5.5 5M14.5 14.6c2.6-.3 5 1.2 5.8 4.4"/></svg><b>Your patio</b><span>The umbrellas, the fence and the heaters</span></div><div class="slot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="4" width="18" height="9" rx="1.5"/><path d="M8 13v7M16 13v7M6.5 8.5h11"/></svg><b>Your front door</b><span>So people know they found you on Greenleaf</span></div></div><div class="veil"><div class="vcard"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/><circle cx="12" cy="16" r="1.3" fill="currentColor"/></svg><b>Locked on the Starter site</b><p>Pro photo shoot: part of the Standard plan. On your Starter site you can send your own photos anytime.</p><button type="button" class="pv-btn"><svg class="pv-lk" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path class="shackle" d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>Preview this feature</button></div></div></div>
+</div></section>
+<section id="pages" class="locked-sec"><div class="wrap"><p class="kicker">Menu pages</p><h2>A page for each part of the menu</h2>
+<div class="locked"><span class="pill"><svg class="lk" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>Standard plan</span><p>Each section gets its own page with photos and prices.</p></div>
+<div class="lockwrap"><span class="pv-ribbon"><svg class="pv-lk" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path class="shackle" d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>Preview: part of the Standard plan</span><div class="ghost" aria-hidden="true" inert><div class="pages"><div class="pg"><div class="ph"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3h7l4 4v14H7z"/><path d="M14 3v4h4M10 12h5M10 16h5"/></svg></div><div class="tx"><b>Toast and Skillets</b><span>Its own page, with photos and prices</span></div></div><div class="pg"><div class="ph"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3h7l4 4v14H7z"/><path d="M14 3v4h4M10 12h5M10 16h5"/></svg></div><div class="tx"><b>Lunch</b><span>Its own page, with photos and prices</span></div></div><div class="pg"><div class="ph"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3h7l4 4v14H7z"/><path d="M14 3v4h4M10 12h5M10 16h5"/></svg></div><div class="tx"><b>Kids Menu</b><span>Its own page, with photos and prices</span></div></div></div></div><div class="veil"><div class="vcard"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/><circle cx="12" cy="16" r="1.3" fill="currentColor"/></svg><b>Locked on the Starter site</b><p>A page per menu section is part of the Standard plan.</p><button type="button" class="pv-btn"><svg class="pv-lk" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path class="shackle" d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>Preview this feature</button></div></div></div>
+</div></section>
+<section id="book"><div class="wrap">
+<p class="kicker">Order ahead</p><h2>Order ahead for pickup</h2>
+<p class="lead" style="margin-bottom:18px">Order takeout ahead and pick it up on Greenleaf. Want it now? Just call. <span class="fill">Owner confirms: cakes, pastry trays or catering?</span></p>
+<div class="locked"><span class="pill"><svg class="lk" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>Standard plan</span><p>Customers can send a pickup order with the details right here.</p></div>
+<div class="lockwrap"><span class="pv-ribbon"><svg class="pv-lk" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path class="shackle" d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>Preview: part of the Standard plan</span><form class="formwrap" aria-hidden="true" inert>
+<div class="row2"><div><label for="n">Your name</label><input id="n" autocomplete="off"></div><div><label for="p">Phone</label><input id="p" type="tel" autocomplete="off"></div></div>
+<div class="row2"><div><label for="s">What do you need?</label><select id="s"><option>Takeout order</option><option>Order for a group</option><option>Something else</option></select></div><div><label for="c">How many people?</label><input id="c" inputmode="numeric" placeholder="e.g. 20" autocomplete="off"></div></div>
+<div class="row2"><div><label for="d">Pickup day</label><input id="d" type="date"></div><div><label for="t">Pickup time</label><select id="t"><option>Morning</option><option>Midday</option></select></div></div>
+<label for="m">Details</label><textarea id="m" placeholder="e.g. two Avocado Toasts and a Santa Fe Skillet, Saturday 10 AM pickup"></textarea>
+<button class="btn btn-call submit" type="submit">Send request</button><p class="note">Demo form, not connected yet.</p><div class="pv-result" role="status"><b>This is what your customer would see:</b><span class="bubble">Got it! We'll call you to confirm your order.</span><p>On the Standard plan, this order goes straight to your phone. Demo form, not connected yet: nothing was sent.</p></div></form><div class="veil"><div class="vcard"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/><circle cx="12" cy="16" r="1.3" fill="currentColor"/></svg><b>Locked on the Starter site</b><p>Online order requests are part of the Standard plan. Your Starter site ($500) shows your menu, hours and a call button.</p><small>Demo form, not connected yet</small><button type="button" class="pv-btn"><svg class="pv-lk" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path class="shackle" d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>Preview this feature</button></div></div></div>
+</div></section>
+<section id="waitlist" class="locked-sec"><div class="wrap"><p class="kicker">Weekend waitlist</p><h2>Join the line from your phone</h2>
+<div class="locked"><span class="pill pro"><svg class="lk" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>Pro plan</span><p>On busy weekend mornings, guests add their name to the list before they walk over.</p></div>
+<div class="lockwrap"><span class="pv-ribbon"><svg class="pv-lk" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path class="shackle" d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>Preview: part of the Pro plan</span><div class="ghost" aria-hidden="true" inert><div class="prox"><h3>Weekend waitlist</h3><p>Add your name and party size. We will call you when your table is close.</p><div class="wl"><div><span>Party of 2</span><span>about 10 min</span></div><div><span>Party of 4</span><span>about 15 min</span></div></div><p class="fine">Sample wait times for the demo only.</p></div></div><div class="veil"><div class="vcard"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/><circle cx="12" cy="16" r="1.3" fill="currentColor"/></svg><b>Locked on the Starter site</b><p>The weekend waitlist is part of the Pro plan.</p><button type="button" class="pv-btn"><svg class="pv-lk" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path class="shackle" d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>Preview this feature</button></div></div></div>
+</div></section>
+</main>
+<footer><div class="wrap"><b>Auntie&#x27;s Bakery &amp; Cafe</b><p>6506 Greenleaf Ave, Whittier, CA 90601 · <a href="tel:+15624641959">(562) 464-1959</a></p><p>Breakfast, brunch and lunch in Uptown Whittier. Open 8:00 AM to 1:30 PM, closed Tuesdays.</p><p style="margin-top:14px;opacity:.6">Draft site by Jay. Not live yet.</p></div></footer>
+<div class="sticky"><a class="btn btn-call" href="tel:+15624641959" aria-label="Call Auntie&#x27;s at (562) 464-1959"><svg class="ic" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.6a1 1 0 0 1-.25 1z"/></svg>Call (562) 464-1959</a></div>
+<script>
+(function(){
+function open(w,focus){if(!w.classList.contains('open')){w.classList.add('open');var x=w.querySelector('[inert]');if(x){x.removeAttribute('inert');x.removeAttribute('aria-hidden');}}
+ if(focus){var i=w.querySelector('input,select,textarea,.pv-ribbon');if(i&&i.focus)i.focus({preventScroll:true});}}
+document.querySelectorAll('.lockwrap').forEach(function(w){var b=w.querySelector('.pv-btn');if(b)b.addEventListener('click',function(){open(w,true);});});
+var bw=document.querySelector('#book .lockwrap');
+document.querySelectorAll('a[href="#book"]').forEach(function(a){a.addEventListener('click',function(e){e.preventDefault();
+ document.getElementById('book').scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'start'});if(bw)open(bw,false);});});
+var f=bw&&bw.querySelector('form'),r=bw&&bw.querySelector('.pv-result');
+if(f)f.addEventListener('submit',function(e){e.preventDefault();r.classList.add('show');r.scrollIntoView({behavior:'smooth',block:'nearest'});});
+})();
+</script>
+</body>
+</html>

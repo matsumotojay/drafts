@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Lalo&#x27;s Bakery | Panadería in Pico Rivera, CA</title>
+<meta name="description" content="Bolillos, conchas, pan dulce, tamales, champurrado and coffee at 9454 Whittier Blvd, Pico Rivera. Open at 5 AM Monday to Saturday.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Archivo:ital,wdth,wght@0,100..125,400..900;1,100..125,400..900&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box}html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;font:16px/1.55 Archivo,Arial,system-ui,sans-serif;color:var(--ink);background:var(--paper);overflow-x:hidden}
+img,svg{max-width:100%}a{color:inherit}
+.wrap{max-width:1120px;margin:0 auto;padding:0 16px}
+.ic{width:20px;height:20px;flex:none}
+.draft{background:var(--ink);color:#f3e3d3;text-align:center;font-size:12.5px;padding:7px 12px}
+.fill{display:inline-block;background:#fff3a6;border:1.5px dashed #c9a300;color:#5b4a00;border-radius:6px;padding:1px 8px;font-size:.92em;font-weight:700}
+/* header: the storefront sign as the logo */
+.top{position:sticky;top:0;z-index:20;background:var(--stucco);border-bottom:3px solid var(--roof)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:10px;min-height:68px}
+.logo{display:flex;align-items:center;text-decoration:none;min-width:0}
+.sign{display:inline-flex;flex-direction:column;align-items:center;line-height:1}
+.sign-big{color:var(--red);font-size:26px;letter-spacing:.04em;text-shadow:1px 1px 0 var(--redsh),2px 2px 0 rgba(0,0,0,.15);margin-bottom:-3px}
+.sign-bar{display:block;background:var(--red);color:#fff;font-size:12.5px;letter-spacing:.06em;padding:5px 14px 4px;border-radius:999px;white-space:nowrap;box-shadow:0 2px 0 var(--redsh)}
+.hcall{display:inline-flex;align-items:center;gap:8px;text-decoration:none;font-weight:800;color:#fff;background:var(--red);padding:11px 14px;border-radius:999px;white-space:nowrap;box-shadow:0 3px 0 var(--redsh)}
+.hcall span{display:none}@media(min-width:560px){.hcall span{display:inline}}
+nav.links{display:none;gap:22px;font-weight:700;font-size:15px}nav.links a{text-decoration:none;color:var(--ink)}
+@media(min-width:900px){nav.links{display:flex}}
+/* roof edge */
+.roof{height:20px;background:radial-gradient(circle at 12px 0,var(--roof) 11px,var(--roof2) 12px,transparent 13px) repeat-x 0 0/24px 20px,var(--stucco)}
+/* hero */
+.hero{background:var(--stucco);padding:26px 0 0;overflow:hidden}
+.hgrid{display:grid;gap:22px;align-items:end}
+@media(min-width:860px){.hgrid{grid-template-columns:1.05fr 1fr}}
+.eyebrow{display:inline-block;font-weight:800;font-style:italic;font-stretch:115%;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:#fff;background:var(--red);border-radius:999px;padding:6px 14px}
+h1,h2{font-family:Cinzel,Georgia,serif;font-weight:900;color:var(--ink)}
+h1{font-size:clamp(32px,7vw,56px);line-height:1.05;margin:14px 0 12px;letter-spacing:.01em}
+h1 em{font-style:normal;color:var(--red)}
+.sub{font-size:18px;margin:0 0 8px;max-width:34em;color:#4b3326}
+.es-line{font-size:16px;font-style:italic;color:var(--roof2);margin:0 0 16px}
+.status{display:flex;align-items:flex-start;gap:9px;font-weight:700;font-size:15px;margin-bottom:18px}
+.status .ic{color:var(--red);margin-top:1px}
+.actions{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:24px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:52px;padding:13px 20px;border-radius:999px;font-weight:800;font-size:17px;text-decoration:none;border:0;cursor:pointer;font-family:inherit}
+.btn-call{background:var(--red);color:#fff;box-shadow:0 3px 0 var(--redsh)}
+.btn-call:hover{background:var(--red2)}
+.btn-ghost{background:#fff;color:var(--ink);border:2px dashed #c9a300}
+.btn-ghost .lk{color:#b58900}
+.btn .tag{font-style:normal;font-size:10.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;background:#fff3c2;color:#8a6a00;border:1px solid #f2d66b;border-radius:4px;padding:3px 6px}
+.store{position:relative;margin:0 auto;width:100%;max-width:500px}
+.store svg{display:block;width:100%;height:auto}
+.store figcaption{font-size:12.5px;color:var(--muted);text-align:center;margin:6px 0 10px}
+/* quick facts: like the window stickers */
+.facts{background:var(--red);color:#fff}
+.facts .wrap{display:grid;grid-template-columns:repeat(2,1fr)}
+.facts .f{padding:16px 10px;text-align:center;border-right:1px solid rgba(255,255,255,.2);border-bottom:1px solid rgba(255,255,255,.2)}
+.facts .n{font-family:Cinzel,Georgia,serif;font-weight:900;font-size:28px;line-height:1.1}
+.facts .n .s{font-size:.7em;margin-left:3px;color:var(--gold)}
+.facts .l{font-size:13.5px;opacity:.92}
+@media(min-width:760px){.facts .wrap{grid-template-columns:repeat(4,1fr)}.facts .f{border-bottom:0}}
+section{padding:54px 0}
+.kicker{margin:0 0 6px;font-weight:800;font-style:italic;font-stretch:115%;font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--red)}
+h2{font-size:clamp(26px,5vw,38px);line-height:1.1;margin:0 0 16px}
+.lead{font-size:17px;color:#4b3326;max-width:40em}
+.fine{font-size:13.5px;color:var(--muted);margin:10px 0 0}
+/* get there early */
+.early{padding:0;background:var(--stucco)}
+.early .box{display:grid;gap:12px;grid-template-columns:auto 1fr;align-items:start;background:#fff;border:3px solid var(--ink);border-radius:14px;padding:18px;margin:30px 0;box-shadow:6px 6px 0 var(--roof)}
+.early .clock{width:58px;height:58px;border-radius:50%;background:var(--gold);display:grid;place-items:center;color:var(--ink)}
+.early .clock .ic{width:32px;height:32px}
+.early h3{margin:0 0 4px;font-size:20px;line-height:1.2}
+.early p{margin:0;color:#4b3326}
+.early small{display:block;margin-top:6px;color:var(--muted);font-size:12.5px}
+.early .btn{margin-top:12px}
+/* the racks: menu as sheet pans */
+#menu{background:var(--ink) repeating-linear-gradient(180deg,transparent 0 118px,rgba(255,255,255,.07) 118px 122px);color:#fff}
+#menu h2{color:#fff}#menu .kicker{color:var(--gold)}#menu .lead{color:#ecdccc}
+.pricenote{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;margin:0 0 20px}
+.pans{display:grid;gap:18px}
+@media(min-width:760px){.pans{grid-template-columns:1fr 1fr}}
+.pan{background:linear-gradient(180deg,#e9ebee,#cfd3d8);border:3px solid var(--steel2);border-radius:10px;padding:6px;box-shadow:0 6px 0 rgba(0,0,0,.3);color:var(--ink)}
+.pan .in{background:#fbf6ec;border-radius:6px;padding:14px 14px 6px}
+.pan h3{display:flex;align-items:baseline;justify-content:space-between;gap:10px;margin:0 0 6px;font-family:Cinzel,Georgia,serif;font-weight:900;font-size:24px;color:var(--red);border-bottom:2px solid var(--red);padding-bottom:6px}
+.pan h3 small{font-family:Archivo,Arial,sans-serif;font-size:13px;font-style:italic;font-weight:700;color:var(--muted)}
+.pan ul{list-style:none;margin:0;padding:0}
+.pan li{display:grid;grid-template-columns:56px 1fr auto;gap:2px 12px;align-items:center;padding:8px 0;border-bottom:1px dashed #d8cbb8}
+.pan li:last-child{border-bottom:0}
+.pan li .bread{grid-row:1/3;width:56px;height:40px}
+.pan li b{font-size:16px;line-height:1.25}.pan li small{grid-column:2;font-size:13.5px;color:var(--muted)}
+.pan .p{grid-row:1;grid-column:3;font-size:13px;font-weight:700;background:#fff3a6;color:#5b4a00;border:1.5px dashed #c9a300;border-radius:5px;padding:0 6px;white-space:nowrap}
+.alsob{margin-top:20px;display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.alsob .chip{font-weight:700;font-size:14px;border:2px solid var(--gold);color:#fff;border-radius:999px;padding:6px 12px}
+.asks{margin-top:12px;display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+#menu .fine{color:#d7c3b1}
+/* steps */
+.steps{display:grid;gap:12px}
+@media(min-width:760px){.steps{grid-template-columns:repeat(3,1fr)}}
+.step{background:#fff;border:2px solid var(--ink);border-radius:12px;padding:16px;position:relative}
+.step .num{position:absolute;top:-14px;left:14px;background:var(--red);color:#fff;font-weight:900;font-size:14px;border-radius:999px;width:28px;height:28px;display:grid;place-items:center}
+.step .ic{width:30px;height:30px;color:var(--red);margin:6px 0 6px}
+.step b{display:block;font-size:18px}
+.step p{margin:4px 0 0;color:#4b3326}
+.serve{display:grid;gap:12px;margin-top:22px}
+@media(min-width:760px){.serve{grid-template-columns:repeat(3,1fr)}}
+.serve>div{display:flex;gap:12px;align-items:flex-start;background:var(--stucco);border-radius:12px;padding:14px}
+.serve .ic{width:26px;height:26px;color:var(--red);margin-top:2px}
+.serve b{display:block;font-size:16px}.serve span{font-size:14px;color:var(--muted)}
+/* reviews */
+.reviews{background:var(--stucco)}
+.quotes{display:grid;gap:14px;margin-top:18px}
+@media(min-width:760px){.quotes{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1000px){.quotes{grid-template-columns:repeat(4,1fr)}}
+.q{margin:0;background:#fff;border-radius:14px;padding:18px;border-top:6px solid var(--red)}
+.q .st{color:#e3a400;letter-spacing:2px}.q .st .o{color:#ddd2c4}
+.q p{font-size:17px;margin:8px 0 10px;font-weight:700}
+.q cite{font-style:normal;font-size:14px;color:var(--muted)}
+.src{font-size:13px;color:var(--muted);margin-top:14px}
+/* visit */
+.vgrid{display:grid;gap:18px}
+@media(min-width:860px){.vgrid{grid-template-columns:1.1fr 1fr}}
+.panel{background:#fff;border:1px solid #e3d8c7;border-radius:14px;padding:18px}
+.panel h3{display:flex;align-items:center;gap:8px;margin:0 0 10px;font-size:18px}
+.panel h3 .ic{color:var(--red)}
+table.hours{width:100%;border-collapse:collapse;font-size:16px}
+table.hours td{padding:7px 0;border-bottom:1px solid #efe6d8}table.hours td+td{text-align:right;font-weight:700}
+table.hours tr.closed td{color:var(--muted)}
+.map{display:block;border-radius:10px;overflow:hidden;border:1px solid #e3d8c7;margin:6px 0 10px}
+.map svg{display:block;width:100%;height:auto}
+.link{display:inline-flex;align-items:center;gap:6px;font-weight:700;color:var(--red)}
+.found{margin:0;border-radius:14px;overflow:hidden}
+.found.empty{display:grid;place-items:center;text-align:center;min-height:200px;padding:20px;border:2px dashed #cdbfa9;background:var(--stucco)}
+.found.empty .ic{width:36px;height:36px;color:var(--red);margin:0 auto 8px;display:block}
+.found.empty b{display:block}.found.empty span{display:block;font-size:13.5px;color:var(--muted);margin-top:4px}
+/* locked bits */
+.lk{width:14px;height:14px;flex:none}
+.locked-sec{background:#fff8d9;border-top:4px solid #f2c200;border-bottom:4px solid #f2c200}
+.locked{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;margin:0 0 16px}
+.locked p{margin:0;font-size:15px;color:#5b4a12;flex:1 1 240px}
+.pill{display:inline-flex;align-items:center;gap:7px;background:#f6c315;color:#1b1f2a;font-weight:800;font-size:13px;letter-spacing:.03em;text-transform:uppercase;padding:7px 12px;border-radius:999px;box-shadow:0 2px 0 #c99d00}
+.lockwrap{position:relative}
+.lockwrap form,.lockwrap .ghost{filter:grayscale(1);opacity:.5;pointer-events:none;user-select:none}
+.lockwrap.open .ghost{filter:none;opacity:1;pointer-events:auto;user-select:auto;outline:3px solid #f2c200;outline-offset:6px;border-radius:10px}
+.lockwrap .ghost{transition:opacity .3s,filter .3s}
+.lockwrap .veil{position:absolute;inset:0;display:grid;place-items:center;padding:18px;background:rgba(240,242,245,.55);border-radius:10px}
+.veil .vcard{max-width:420px;text-align:center;background:#fff;border:2px solid #f2c200;border-radius:12px;padding:22px 22px 18px;box-shadow:0 14px 40px rgba(0,0,0,.14)}
+.veil .vcard svg{width:44px;height:44px;color:#1b1f2a;background:#f6c315;border-radius:50%;padding:10px;box-sizing:content-box;margin:0 auto 10px;display:block}
+.veil .vcard b{display:block;font-size:17px;color:#1b1f2a;margin-bottom:4px}
+.veil .vcard p{font-size:14.5px;color:#4a5260;margin:0}
+.veil .vcard small{display:block;margin-top:10px;font-size:12px;color:#7a828e}
+.formwrap{background:#fff;border:1px solid #e3d48a;border-radius:12px;padding:18px}
+.formwrap label{display:block;font-weight:700;font-size:14px;margin:10px 0 5px}
+.formwrap input,.formwrap select,.formwrap textarea{width:100%;font:inherit;font-size:16px;padding:11px 12px;border:1px solid #cdbfa9;border-radius:8px;background:#fff}
+.formwrap textarea{min-height:90px}
+.row2{display:grid;gap:0 14px}@media(min-width:620px){.row2{grid-template-columns:1fr 1fr}}
+.submit{margin-top:14px;width:100%}
+.note{font-size:13px;color:var(--muted);margin:8px 0 0}
+.vframe{position:relative;width:100%;height:320px;border-radius:12px;overflow:hidden;background:repeating-linear-gradient(180deg,#d9dce0 0 40px,#aeb3ba 40px 44px);display:grid;place-items:center}
+@media(min-width:760px){.vframe{height:auto;aspect-ratio:16/6;max-height:380px}}
+.vframe .play{width:64px;height:64px;border-radius:50%;background:rgba(255,255,255,.95);position:relative;box-shadow:0 4px 14px rgba(0,0,0,.2)}
+.vframe .play:after{content:"";position:absolute;left:26px;top:20px;border-left:18px solid var(--red);border-top:12px solid transparent;border-bottom:12px solid transparent}
+.vframe .lbl{position:absolute;left:12px;right:12px;bottom:10px;color:#fff;font-weight:700;font-size:14px;background:rgba(58,36,24,.75);border-radius:6px;padding:6px 8px}
+.vframe .t{position:absolute;right:10px;top:10px;background:rgba(0,0,0,.5);color:#fff;font-size:12px;font-weight:700;border-radius:6px;padding:3px 7px}
+.pages{display:grid;gap:12px;min-height:300px}
+.lockwrap .pgrid{min-height:300px}@media(min-width:760px){.pages{grid-template-columns:repeat(3,1fr)}}
+.pg{background:#fff;border:1px solid #e3d8c7;border-radius:12px;overflow:hidden}
+.pg .ph{height:90px;background:repeating-linear-gradient(45deg,#f4ece0 0 12px,#fbf6ee 12px 24px);display:grid;place-items:center;color:var(--red)}
+.pg .ph .ic{width:30px;height:30px}
+.pg div.tx{padding:12px 14px}.pg b{display:block;font-size:17px}.pg span{font-size:13.5px;color:var(--muted)}
+.es{display:grid;gap:12px;min-height:300px;align-content:center;background:#fff;border:1px solid #e3d8c7;border-radius:12px;padding:18px}
+.es .tog{display:inline-flex;border:2px solid var(--red);border-radius:999px;overflow:hidden;width:max-content;font-weight:700;font-size:14px}
+.es .tog span{padding:6px 14px}.es .tog .on{background:var(--red);color:#fff}
+.es h3{font-family:Cinzel,Georgia,serif;font-weight:900;font-size:26px;line-height:1.1;margin:0;color:var(--ink)}
+.es p{margin:0;color:#4b3326}
+.pill.pro{background:#1b1f2a;color:#ffe27a;box-shadow:0 2px 0 #000}
+footer{background:var(--ink);color:#ecdccc;padding:34px 0 96px;font-size:15px}
+footer b{font-size:18px;color:#fff}footer p{margin:6px 0}
+.sticky{position:fixed;left:0;right:0;bottom:0;z-index:30;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(255,253,248,.96);border-top:1px solid #e3d8c7}
+.sticky .btn{width:100%}
+@media(min-width:860px){.sticky{display:none}footer{padding-bottom:34px}}
+:focus-visible{outline:3px solid #f2c200;outline-offset:2px}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+
+:root{--red:#d62938;--red2:#b81f2d;--redsh:#8e1620;--stucco:#f4efe4;--stucco2:#e8e1d2;--roof:#b4573b;--roof2:#8f3f2a;
+ --ink:#3a2418;--muted:#6f5a4c;--navy:#3a2418;--navy2:#d62938;--paper:#fffdf8;--steel:#c9ccd1;--steel2:#9da2aa;--gold:#f2c94c}
+.sign-big{font-family:Cinzel,Georgia,serif;font-weight:900}
+.sign-bar{font-family:Archivo,Arial,sans-serif;font-style:italic;font-weight:900;font-stretch:125%}
+
+.pv-btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;margin-top:14px;min-height:46px;padding:12px 20px;border:0;border-radius:8px;background:#1b1f2a;color:#ffe27a;font:700 15px/1 Inter,system-ui,sans-serif;cursor:pointer}
+.pv-btn:hover{background:#2a3040}.pv-btn:focus-visible{outline:3px solid #f2c200;outline-offset:2px}
+.veil .vcard .pv-btn svg,.pv-lk{width:18px;height:18px;padding:0;margin:0;background:none;border-radius:0;color:inherit;display:inline-block;box-sizing:border-box}.pv-lk .shackle{transform-origin:16px 11px;transition:transform .35s cubic-bezier(.3,1.5,.5,1)}
+.pv-btn:hover .shackle,.lockwrap.open .shackle{transform:translate(4px,-3px) rotate(28deg)}
+.pv-ribbon{display:none;position:absolute;top:-13px;left:16px;z-index:3;align-items:center;gap:6px;background:#f6c315;color:#1b1f2a;font:800 12px/1 Inter,sans-serif;letter-spacing:.04em;text-transform:uppercase;padding:7px 11px;border-radius:999px;box-shadow:0 2px 0 #c99d00}
+.lockwrap.open .pv-ribbon{display:inline-flex}
+.lockwrap.open form{filter:none;opacity:1;pointer-events:auto;user-select:auto;outline:3px solid #f2c200;outline-offset:4px}
+.lockwrap.open .veil{display:none}
+.lockwrap form,.lockwrap .veil{transition:opacity .3s,filter .3s}
+.pv-result{display:none;margin-top:16px;padding:16px 18px;border-radius:10px;background:#fff8d9;border:2px solid #f2c200;color:#1b1f2a}
+.pv-result.show{display:block}
+.pv-result b{display:block;font-size:16px;margin-bottom:6px}
+.pv-result .bubble{display:inline-block;margin:4px 0 8px;padding:10px 14px;border-radius:14px 14px 14px 4px;background:#fff;border:1px solid #e3d48a;font-size:15px}
+.pv-result p{margin:0;font-size:14px;color:#4a5260}
+@media(prefers-reduced-motion:reduce){.pv-lk .shackle,.lockwrap form,.lockwrap .veil{transition:none}}
+
+
+#photos.locked-sec{background:#fff8d9;border-top:4px solid #f2c200;border-bottom:4px solid #f2c200}
+.pgrid{display:grid;gap:14px;grid-template-columns:1fr}
+@media(min-width:760px){.pgrid{grid-template-columns:repeat(3,1fr)}}
+.slot{display:grid;place-items:center;text-align:center;min-height:200px;padding:20px;border:2px dashed #b9c4d0;border-radius:10px;background:#fff}
+.slot svg{width:40px;height:40px;color:var(--navy2);margin:0 auto 10px;display:block}
+.slot b{display:block;font-size:17px;color:var(--navy)}
+.slot span{display:block;font-size:13.5px;color:var(--muted);margin-top:4px}
+.lockwrap .pgrid{filter:grayscale(1);opacity:.5;pointer-events:none;user-select:none;transition:opacity .3s,filter .3s}
+.lockwrap.open .pgrid{filter:none;opacity:1;pointer-events:auto;user-select:auto;outline:3px solid #f2c200;outline-offset:6px;border-radius:10px}
+@media(max-width:759px){.pwrap .pgrid .slot{min-height:120px}}
+
+</style>
+</head>
+<body>
+<div class="draft">Draft website made for Lalo&#x27;s Bakery by Jay · not live yet</div>
+<header class="top"><div class="wrap">
+<a class="logo" href="#top" aria-label="Lalo&#x27;s Bakery home"><span class="sign"><span class="sign-big">BAKERY</span><span class="sign-bar">LALO'S BAKERY</span></span></a>
+<nav class="links" aria-label="Main"><a href="#menu">What we bake</a><a href="#how">How it works</a><a href="#reviews">Reviews</a><a href="#visit">Hours and location</a></nav>
+<a class="hcall" href="tel:+15628215151" aria-label="Call (562) 821-5151"><svg class="ic" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.6a1 1 0 0 1-.25 1z"/></svg><span>(562) 821-5151</span></a>
+</div></header>
+<main id="top">
+<div class="roof" aria-hidden="true"></div>
+<section class="hero"><div class="wrap hgrid">
+<div style="padding-bottom:10px">
+<span class="eyebrow">Panadería · Pico Rivera</span>
+<h1>Fresh bolillo and pan dulce, <em>from 5&nbsp;AM.</em></h1>
+<p class="sub">Conchas, bolillos rellenos, tamales, champurrado, avena and coffee on Whittier Blvd. Takeout only.</p>
+<p class="es-line" lang="es">Pan dulce, bolillo fresco y tamales. Abrimos a las 5 de la mañana.</p>
+<span class="status"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Mon to Fri 5 AM to 7 PM · Sat 5 AM to 2 PM · Sun closed</span>
+<div class="actions"><a class="btn btn-call" href="tel:+15628215151"><svg class="ic" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.6a1 1 0 0 1-.25 1z"/></svg>Call (562) 821-5151</a><a class="btn btn-ghost" href="#book"><svg class="lk" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>Pre-order tamales <i class="tag">Standard</i></a></div>
+</div>
+<figure class="store" style="margin:0"><svg viewBox="0 0 360 300" role="img" aria-label="Drawing of the Lalo's Bakery storefront with its red BAKERY sign">
+<rect width="360" height="300" fill="#f4efe4"/>
+<path d="M0 10 L360 10 L360 46 L0 46Z" fill="#b4573b"/><rect x="0" y="14" width="360" height="8" fill="#c0654a"/><rect x="0" y="24" width="360" height="8" fill="#b4573b"/><rect x="0" y="34" width="360" height="8" fill="#a84f35"/><path d="M0 40 q8 -10 16 0" fill="none" stroke="#8f3f2a" stroke-width="2"/><path d="M16 40 q8 -10 16 0" fill="none" stroke="#8f3f2a" stroke-width="2"/><path d="M32 40 q8 -10 16 0" fill="none" stroke="#8f3f2a" stroke-width="2"/><path d="M48 40 q8 -10 16 0" fill="none" stroke="#8f3f2a" stroke-width="2"/><path d="M64 40 q8 -10 16 0" fill="none" stroke="#8f3f2a" stroke-width="2"/><path d="M80 40 q8 -10 16 0" fill="none" stroke="#8f3f2a" stroke-width="2"/><path d="M96 40 q8 -10 16 0" fill="none" stroke="#8f3f2a" stroke-width="2"/><path d="M112 40 q8 -10 16 0" fill="none" stroke="#8f3f2a" stroke-width="2"/><path d="M128 40 q8 -10 16 0" fill="none" stroke="#8f3f2a" stroke-width="2"/><path d="M144 40 q8 -10 16 0" fill="none" stroke="#8f3f2a" stroke-width="2"/><path d="M160 40 q8 -10 16 0" fill="none" stroke="#8f3f2a" stroke-width="2"/><path d="M176 40 q8 -10 16 0" fill="none" stroke="#8f3f2a" stroke-width="2"/><path d="M192 40 q8 -10 16 0" fill="none" stroke="#8f3f2a" stroke-width="2"/><path d="M208 40 q8 -10 16 0" fill="none" stroke="#8f3f2a" stroke-width="2"/><path d="M224 40 q8 -10 16 0" fill="none" stroke="#8f3f2a" stroke-width="2"/><path d="M240 40 q8 -10 16 0" fill="none" stroke="#8f3f2a" stroke-width="2"/><path d="M256 40 q8 -10 16 0" fill="none" stroke="#8f3f2a" stroke-width="2"/><path d="M272 40 q8 -10 16 0" fill="none" stroke="#8f3f2a" stroke-width="2"/><path d="M288 40 q8 -10 16 0" fill="none" stroke="#8f3f2a" stroke-width="2"/><path d="M304 40 q8 -10 16 0" fill="none" stroke="#8f3f2a" stroke-width="2"/><path d="M320 40 q8 -10 16 0" fill="none" stroke="#8f3f2a" stroke-width="2"/><path d="M336 40 q8 -10 16 0" fill="none" stroke="#8f3f2a" stroke-width="2"/><path d="M352 40 q8 -10 16 0" fill="none" stroke="#8f3f2a" stroke-width="2"/>
+<rect x="0" y="46" width="360" height="7" fill="#7a3a2c"/>
+<rect x="0" y="53" width="360" height="92" fill="#ece6d8"/>
+<text x="180" y="100" text-anchor="middle" font-family="Cinzel,Georgia,serif" font-weight="900" font-size="44" fill="#d62938" stroke="#8e1620" stroke-width="1" letter-spacing="2">BAKERY</text>
+<rect x="46" y="106" width="268" height="24" rx="12" fill="#d62938"/>
+<text x="180" y="124" text-anchor="middle" font-family="Archivo,Arial,sans-serif" font-style="italic" font-weight="900" font-size="15" fill="#fff" letter-spacing="1.6" style="font-stretch:125%">LALO'S BAKERY</text>
+<rect x="0" y="145" width="360" height="10" fill="#b9ab94"/>
+<rect x="18" y="155" width="324" height="130" fill="#d8cfbe"/>
+<rect x="28" y="162" width="62" height="118" fill="#22252b"/><rect x="34" y="168" width="50" height="106" fill="#3a3f48"/>
+<rect x="38" y="174" width="30" height="12" rx="2" fill="#1d6fd0"/><text x="53" y="183" text-anchor="middle" font-family="Archivo,Arial,sans-serif" font-weight="800" font-size="7" fill="#ff5a5a">OPEN</text>
+<text x="59" y="200" text-anchor="middle" font-family="Archivo,Arial,sans-serif" font-weight="700" font-size="8" fill="#e8e8e8">9454</text>
+<rect x="96" y="162" width="236" height="118" fill="#22252b"/>
+<rect x="101" y="167" width="111" height="108" fill="#59636f"/><rect x="216" y="167" width="111" height="108" fill="#59636f"/>
+<rect x="104" y="170" width="105" height="26" fill="#fbeee4"/><rect x="104" y="170" width="105" height="6" fill="#fff"/>
+<g fill="#f3c6cf"><circle cx="118" cy="187" r="6"/><circle cx="134" cy="186" r="7" fill="#f6e3b3"/><circle cx="152" cy="187" r="6"/><circle cx="170" cy="186" r="7" fill="#e7b88a"/><circle cx="190" cy="187" r="6" fill="#f6e3b3"/></g>
+<rect x="219" y="170" width="105" height="26" fill="#fbeee4"/><rect x="219" y="170" width="105" height="6" fill="#fff"/>
+<g fill="#f6e3b3"><circle cx="234" cy="187" r="7"/><circle cx="252" cy="186" r="6" fill="#f3c6cf"/><circle cx="270" cy="187" r="7"/><circle cx="288" cy="186" r="6" fill="#e7b88a"/><circle cx="306" cy="187" r="7" fill="#f3c6cf"/></g>
+<rect x="190" y="205" width="16" height="20" rx="2" fill="#2fa84f"/><text x="198" y="220" text-anchor="middle" font-family="Archivo,Arial,sans-serif" font-weight="900" font-size="13" fill="#fff">A</text>
+<rect x="104" y="238" width="105" height="34" fill="#fbeee4"/><rect x="104" y="238" width="105" height="9" fill="#d62938"/>
+<text x="156" y="245.4" text-anchor="middle" font-family="Archivo,Arial,sans-serif" font-weight="800" font-size="6.6" fill="#fff" letter-spacing=".4">BOLILLO FRESCO</text>
+<g fill="#d39a55"><ellipse cx="124" cy="260" rx="10" ry="6"/><ellipse cx="146" cy="262" rx="10" ry="6"/><ellipse cx="168" cy="259" rx="10" ry="6"/><ellipse cx="190" cy="262" rx="10" ry="6"/></g>
+<rect x="219" y="238" width="105" height="34" fill="#fbeee4"/><rect x="219" y="238" width="105" height="9" fill="#d62938"/>
+<text x="271" y="245.4" text-anchor="middle" font-family="Archivo,Arial,sans-serif" font-weight="800" font-size="6.6" fill="#fff" letter-spacing=".4">BOLILLO CON...</text>
+<g fill="#d39a55"><rect x="228" y="253" width="26" height="12" rx="6"/><rect x="260" y="253" width="26" height="12" rx="6"/><rect x="292" y="253" width="26" height="12" rx="6"/></g>
+<g fill="#b5432c"><rect x="231" y="258" width="20" height="3"/><rect x="263" y="258" width="20" height="3"/><rect x="295" y="258" width="20" height="3"/></g>
+<rect x="0" y="285" width="360" height="15" fill="#c9c2b4"/>
+</svg><figcaption>Drawn from the storefront. Your own photos go in below.</figcaption></figure>
+</div></section>
+<div class="facts"><div class="wrap"><div class="f"><div class="n">4.7<span class=s>&#9733;</span></div><div class="l">Google, 149 reviews</div></div><div class="f"><div class="n">4.7<span class=s>&#9733;</span></div><div class="l">Yelp, 95 reviews</div></div><div class="f"><div class="n">5 AM</div><div class="l">open Mon to Sat</div></div><div class="f"><div class="n">A</div><div class="l">health grade, per Yelp</div></div></div></div>
+<section class="early"><div class="wrap"><div class="box"><div class="clock"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div><div>
+<h3>Tamales go fast. Call before you drive over.</h3><p>One reviewer was told the tamales usually sell out by 9 AM on Saturdays. Others say items sell out fast and the line gets long.</p><small>From Yelp reviews (Dec 2025, Jan 2025, May and Sep 2026).</small>
+<a class="btn btn-call" href="tel:+15628215151"><svg class="ic" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.6a1 1 0 0 1-.25 1z"/></svg>Call (562) 821-5151</a></div></div></div></section>
+<section id="menu"><div class="wrap">
+<p class="kicker">Lo que hay · What we bake</p><h2>Off the racks</h2>
+<p class="lead">Bolillos, plain or filled, are what most people line up for. Then conchas, tamales and a hot champurrado.</p>
+<div class="pricenote"><span class="fill">Prices: owner fills in</span></div>
+<div class="pans"><div class="pan"><div class="in"><h3>Bolillos <small>Plain and filled</small></h3><ul><li><svg class="bread" width="56" height="56" viewBox="0 0 64 44" aria-hidden="true"><path d="M4 26 Q6 12 32 12 Q58 12 60 26 Q58 36 32 36 Q6 36 4 26Z" fill="#c98a3f"/><path d="M8 24 Q10 15 32 15 Q54 15 56 24" fill="none" stroke="#e8b874" stroke-width="3" stroke-linecap="round"/><path d="M22 20 Q32 26 44 20" fill="none" stroke="#8a5523" stroke-width="2.4" stroke-linecap="round"/></svg><b>Bolillo fresco</b><span class="p">$ __</span><small>Crusty, fresh every day</small></li><li><svg class="bread" width="56" height="56" viewBox="0 0 64 44" aria-hidden="true"><path d="M4 26 Q6 12 32 12 Q58 12 60 26 Q58 36 32 36 Q6 36 4 26Z" fill="#c98a3f"/><path d="M8 24 Q10 15 32 15 Q54 15 56 24" fill="none" stroke="#e8b874" stroke-width="3" stroke-linecap="round"/><path d="M22 20 Q32 26 44 20" fill="none" stroke="#8a5523" stroke-width="2.4" stroke-linecap="round"/><ellipse cx="32" cy="30" rx="11" ry="5" fill="#b5432c"/></svg><b>Bolillo de chorizo con papa</b><span class="p">$ __</span><small>Filled with chorizo and potato</small></li><li><svg class="bread" width="56" height="56" viewBox="0 0 64 44" aria-hidden="true"><path d="M4 26 Q6 12 32 12 Q58 12 60 26 Q58 36 32 36 Q6 36 4 26Z" fill="#c98a3f"/><path d="M8 24 Q10 15 32 15 Q54 15 56 24" fill="none" stroke="#e8b874" stroke-width="3" stroke-linecap="round"/><path d="M22 20 Q32 26 44 20" fill="none" stroke="#8a5523" stroke-width="2.4" stroke-linecap="round"/><ellipse cx="32" cy="30" rx="11" ry="5" fill="#f2b8a2"/></svg><b>Bolillo de jamón y queso</b><span class="p">$ __</span><small>Ham and cheese</small></li><li><svg class="bread" width="56" height="56" viewBox="0 0 64 44" aria-hidden="true"><path d="M4 26 Q6 12 32 12 Q58 12 60 26 Q58 36 32 36 Q6 36 4 26Z" fill="#c98a3f"/><path d="M8 24 Q10 15 32 15 Q54 15 56 24" fill="none" stroke="#e8b874" stroke-width="3" stroke-linecap="round"/><path d="M22 20 Q32 26 44 20" fill="none" stroke="#8a5523" stroke-width="2.4" stroke-linecap="round"/><ellipse cx="32" cy="30" rx="11" ry="5" fill="#6b4226"/></svg><b>Bolillo de frijoles y queso</b><span class="p">$ __</span><small>Beans and cheese</small></li><li><svg class="bread" width="56" height="56" viewBox="0 0 64 44" aria-hidden="true"><path d="M4 26 Q6 12 32 12 Q58 12 60 26 Q58 36 32 36 Q6 36 4 26Z" fill="#c98a3f"/><path d="M8 24 Q10 15 32 15 Q54 15 56 24" fill="none" stroke="#e8b874" stroke-width="3" stroke-linecap="round"/><path d="M22 20 Q32 26 44 20" fill="none" stroke="#8a5523" stroke-width="2.4" stroke-linecap="round"/><ellipse cx="32" cy="30" rx="11" ry="5" fill="#7fb24a"/></svg><b>Bolillo de queso crema con jalapeño</b><span class="p">$ __</span><small>Cream cheese and jalapeño, a favorite</small></li></ul></div></div><div class="pan"><div class="in"><h3>Pan dulce <small>Sweet bread</small></h3><ul><li><svg class="bread" width="56" height="56" viewBox="0 0 64 44" aria-hidden="true"><ellipse cx="32" cy="32" rx="28" ry="10" fill="#d79a4e"/><path d="M6 30 Q8 6 32 6 Q56 6 58 30 Q32 38 6 30Z" fill="#f6e0b0"/><path d="M14 27 Q9.0 18 24.5 10" stroke="rgba(0,0,0,.18)" stroke-width="1.6" fill="none"/><path d="M21 27 Q18.0 18 27.5 10" stroke="rgba(0,0,0,.18)" stroke-width="1.6" fill="none"/><path d="M28 27 Q27.0 18 30.5 10" stroke="rgba(0,0,0,.18)" stroke-width="1.6" fill="none"/><path d="M35 27 Q36.0 18 33.5 10" stroke="rgba(0,0,0,.18)" stroke-width="1.6" fill="none"/><path d="M42 27 Q45.0 18 36.5 10" stroke="rgba(0,0,0,.18)" stroke-width="1.6" fill="none"/><path d="M49 27 Q54.0 18 39.5 10" stroke="rgba(0,0,0,.18)" stroke-width="1.6" fill="none"/></svg><b>Conchas</b><span class="p">$ __</span><small>Crisp top, soft bottom</small></li><li><svg class="bread" width="56" height="56" viewBox="0 0 64 44" aria-hidden="true"><ellipse cx="32" cy="32" rx="28" ry="10" fill="#d79a4e"/><path d="M6 30 Q8 6 32 6 Q56 6 58 30 Q32 38 6 30Z" fill="#f4a6b8"/><path d="M14 27 Q9.0 18 24.5 10" stroke="rgba(0,0,0,.18)" stroke-width="1.6" fill="none"/><path d="M21 27 Q18.0 18 27.5 10" stroke="rgba(0,0,0,.18)" stroke-width="1.6" fill="none"/><path d="M28 27 Q27.0 18 30.5 10" stroke="rgba(0,0,0,.18)" stroke-width="1.6" fill="none"/><path d="M35 27 Q36.0 18 33.5 10" stroke="rgba(0,0,0,.18)" stroke-width="1.6" fill="none"/><path d="M42 27 Q45.0 18 36.5 10" stroke="rgba(0,0,0,.18)" stroke-width="1.6" fill="none"/><path d="M49 27 Q54.0 18 39.5 10" stroke="rgba(0,0,0,.18)" stroke-width="1.6" fill="none"/></svg><b>Mini conchitas</b><span class="p">$ __</span><small>Small ones in bright colors</small></li><li><svg class="bread" width="56" height="56" viewBox="0 0 64 44" aria-hidden="true"><ellipse cx="32" cy="32" rx="28" ry="10" fill="#d79a4e"/><path d="M6 30 Q8 6 32 6 Q56 6 58 30 Q32 38 6 30Z" fill="#f2cf5b"/><path d="M14 27 Q9.0 18 24.5 10" stroke="rgba(0,0,0,.18)" stroke-width="1.6" fill="none"/><path d="M21 27 Q18.0 18 27.5 10" stroke="rgba(0,0,0,.18)" stroke-width="1.6" fill="none"/><path d="M28 27 Q27.0 18 30.5 10" stroke="rgba(0,0,0,.18)" stroke-width="1.6" fill="none"/><path d="M35 27 Q36.0 18 33.5 10" stroke="rgba(0,0,0,.18)" stroke-width="1.6" fill="none"/><path d="M42 27 Q45.0 18 36.5 10" stroke="rgba(0,0,0,.18)" stroke-width="1.6" fill="none"/><path d="M49 27 Q54.0 18 39.5 10" stroke="rgba(0,0,0,.18)" stroke-width="1.6" fill="none"/></svg><b>Elotes</b><span class="p">$ __</span><small>Corn-shaped sweet bread</small></li><li><svg class="bread" width="56" height="56" viewBox="0 0 64 44" aria-hidden="true"><ellipse cx="32" cy="32" rx="28" ry="10" fill="#d79a4e"/><path d="M6 30 Q8 6 32 6 Q56 6 58 30 Q32 38 6 30Z" fill="#e9c6c6"/><path d="M14 27 Q9.0 18 24.5 10" stroke="rgba(0,0,0,.18)" stroke-width="1.6" fill="none"/><path d="M21 27 Q18.0 18 27.5 10" stroke="rgba(0,0,0,.18)" stroke-width="1.6" fill="none"/><path d="M28 27 Q27.0 18 30.5 10" stroke="rgba(0,0,0,.18)" stroke-width="1.6" fill="none"/><path d="M35 27 Q36.0 18 33.5 10" stroke="rgba(0,0,0,.18)" stroke-width="1.6" fill="none"/><path d="M42 27 Q45.0 18 36.5 10" stroke="rgba(0,0,0,.18)" stroke-width="1.6" fill="none"/><path d="M49 27 Q54.0 18 39.5 10" stroke="rgba(0,0,0,.18)" stroke-width="1.6" fill="none"/></svg><b>Borrachitos</b><span class="p">$ __</span></li><li><svg class="bread" width="56" height="56" viewBox="0 0 64 44" aria-hidden="true"><ellipse cx="32" cy="32" rx="28" ry="10" fill="#d79a4e"/><path d="M6 30 Q8 6 32 6 Q56 6 58 30 Q32 38 6 30Z" fill="#e57b6c"/><path d="M14 27 Q9.0 18 24.5 10" stroke="rgba(0,0,0,.18)" stroke-width="1.6" fill="none"/><path d="M21 27 Q18.0 18 27.5 10" stroke="rgba(0,0,0,.18)" stroke-width="1.6" fill="none"/><path d="M28 27 Q27.0 18 30.5 10" stroke="rgba(0,0,0,.18)" stroke-width="1.6" fill="none"/><path d="M35 27 Q36.0 18 33.5 10" stroke="rgba(0,0,0,.18)" stroke-width="1.6" fill="none"/><path d="M42 27 Q45.0 18 36.5 10" stroke="rgba(0,0,0,.18)" stroke-width="1.6" fill="none"/><path d="M49 27 Q54.0 18 39.5 10" stroke="rgba(0,0,0,.18)" stroke-width="1.6" fill="none"/></svg><b>Guayaba con queso</b><span class="p">$ __</span><small>Guava and cheese pastry</small></li></ul></div></div><div class="pan"><div class="in"><h3>Tamales <small>They sell out early</small></h3><ul><li><svg class="bread" width="56" height="56" viewBox="0 0 64 44" aria-hidden="true"><path d="M6 30 L20 12 H50 L58 30 L44 38 H16Z" fill="#e8d39a"/><path d="M20 12 L16 38M50 12 L44 38" stroke="#c4a660" stroke-width="1.5"/><path d="M22 18 H48 L44 32 H20Z" fill="#f2c94c"/><path d="M26 22 H44" stroke="#c0392b" stroke-width="3" stroke-linecap="round"/></svg><b>Tamales de puerco en rojo</b><span class="p">$ __</span><small>Red pork</small></li><li><svg class="bread" width="56" height="56" viewBox="0 0 64 44" aria-hidden="true"><path d="M6 30 L20 12 H50 L58 30 L44 38 H16Z" fill="#e8d39a"/><path d="M20 12 L16 38M50 12 L44 38" stroke="#c4a660" stroke-width="1.5"/><path d="M22 18 H48 L44 32 H20Z" fill="#f2c94c"/><path d="M26 22 H44" stroke="#c0392b" stroke-width="3" stroke-linecap="round"/></svg><b>Tamales de rajas con queso</b><span class="p">$ __</span><small>Jalapeño strips and cheese (spicy)</small></li></ul></div></div><div class="pan"><div class="in"><h3>Para tomar <small>Hot drinks</small></h3><ul><li><svg class="bread" width="56" height="56" viewBox="0 0 64 44" aria-hidden="true"><path d="M14 10 H46 L42 40 H18Z" fill="#fff" stroke="#6b3a24" stroke-width="2"/><path d="M16 14 H44" stroke="#8b4a2b" stroke-width="5"/><path d="M46 16 Q56 18 50 28 L44 30" fill="none" stroke="#6b3a24" stroke-width="2"/><path d="M26 6 Q24 2 28 0M34 6 Q32 2 36 0" stroke="#b9a89a" stroke-width="1.6" fill="none"/></svg><b>Champurrado</b><span class="p">$ __</span><small>Thick chocolate corn drink</small></li><li><svg class="bread" width="56" height="56" viewBox="0 0 64 44" aria-hidden="true"><path d="M14 10 H46 L42 40 H18Z" fill="#fff" stroke="#6b3a24" stroke-width="2"/><path d="M16 14 H44" stroke="#8b4a2b" stroke-width="5"/><path d="M46 16 Q56 18 50 28 L44 30" fill="none" stroke="#6b3a24" stroke-width="2"/><path d="M26 6 Q24 2 28 0M34 6 Q32 2 36 0" stroke="#b9a89a" stroke-width="1.6" fill="none"/></svg><b>Avena</b><span class="p">$ __</span><small>Hot oatmeal drink</small></li><li><svg class="bread" width="56" height="56" viewBox="0 0 64 44" aria-hidden="true"><path d="M14 10 H46 L42 40 H18Z" fill="#fff" stroke="#6b3a24" stroke-width="2"/><path d="M16 14 H44" stroke="#8b4a2b" stroke-width="5"/><path d="M46 16 Q56 18 50 28 L44 30" fill="none" stroke="#6b3a24" stroke-width="2"/><path d="M26 6 Q24 2 28 0M34 6 Q32 2 36 0" stroke="#b9a89a" stroke-width="1.6" fill="none"/></svg><b>Café</b><span class="p">$ __</span><small>Coffee</small></li></ul></div></div></div>
+<div class="alsob"><span style="font-weight:700">Also:</span><span class="chip">Tortas de jamón</span></div>
+<div class="asks"><span style="font-weight:700">Owner confirms:</span><span class="fill">Pasteles para toda ocasión? (the window posters say so)</span><span class="fill">Rosca de Reyes in January?</span><span class="fill">Holiday tamale orders?</span></div>
+<p class="fine">Items named in Google and Yelp reviews and Yelp photo captions (2025 to 2026). No menu or prices are posted online, so the owner confirms items and prices before this goes live.</p>
+</div></section>
+<section id="how"><div class="wrap">
+<p class="kicker">How it works</p><h2>Tell them what you want. They serve it up.</h2>
+<div class="steps"><div class="step"><span class="num">1</span><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="6" cy="7" r="2"/><circle cx="12" cy="7" r="2"/><circle cx="18" cy="7" r="2"/><path d="M3 20c0-3 1.5-6 3-6s3 3 3 6M9 20c0-3 1.5-6 3-6s3 3 3 6M15 20c0-3 1.5-6 3-6s3 3 3 6"/></svg><b>Get in line</b><p>Mornings are busy. One regular comes before 8 AM to beat the line.</p></div><div class="step"><span class="num">2</span><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 13V5.5a1.5 1.5 0 0 1 3 0V12M11 11V4.5a1.5 1.5 0 0 1 3 0V12M14 11.5V6a1.5 1.5 0 0 1 3 0v8c0 4-2.5 7-6 7s-5-2-6.5-5L3 13a1.5 1.5 0 0 1 2.5-1.6L8 14"/></svg><b>Point and pick</b><p>The pan is behind the counter. The staff serves it and packs it for you.</p></div><div class="step"><span class="num">3</span><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1 12H6z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><b>Take it to go</b><p>Takeout only. Park in the private lot in the plaza.</p></div></div>
+<div class="serve"><div><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="6" width="18" height="12" rx="2"/><path d="M3 10h18M7 15h4"/></svg><div><b>Cards taken</b><span>Visa and Mastercard stickers at the register.</span></div></div><div><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 16h14M6 16l1.5-5h9L18 16M5 16v3M19 16v3"/><circle cx="8" cy="16" r="1"/><circle cx="16" cy="16" r="1"/></svg><div><b>Private lot</b><span>Parking in the plaza, per Yelp.</span></div></div><div><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1 12H6z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><div><b>Takeout only</b><span>Order at the counter and go.</span></div></div></div>
+</div></section>
+<section class="reviews" id="reviews"><div class="wrap">
+<p class="kicker">Reviews</p><h2>4.7 stars on Google and on Yelp</h2>
+<div class="quotes"><figure class="q"><div class="st" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;<span class="o"></span></div><p>"Conchitas are the best I&#x27;ve ever had in my life!"</p><cite>Judy H. · Google · July 2026</cite></figure><figure class="q"><div class="st" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;<span class="o"></span></div><p>"Bollios are #1 around here hands down."</p><cite>Maria J. · Google · Oct 2025</cite></figure><figure class="q"><div class="st" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;<span class="o"></span></div><p>"Great sweet bread, tamales, champurado, cafe, avena and fresh bolillo everyday."</p><cite>Andrea C. · Google · May 2026</cite></figure><figure class="q"><div class="st" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;<span class="o"></span></div><p>"The workers are very nice and polite."</p><cite>Jenaro C. · Google · Mar 2026</cite></figure></div>
+<p class="src">Short excerpts from public Google reviews, exactly as written, star ratings as the reviewer gave them.</p>
+</div></section>
+<section id="visit"><div class="wrap">
+<p class="kicker">Hours and location</p><h2>Look for the red BAKERY sign</h2>
+<div class="vgrid">
+<div class="panel"><h3><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>9454 Whittier Blvd, Pico Rivera, CA 90660</h3>
+<a class="map" href="https://maps.google.com/?cid=1968479188999886469" target="_blank" rel="noopener" aria-label="Open directions in Google Maps"><svg viewBox="0 0 520 220" role="img" aria-label="Simple map: Lalo&#x27;s Bakery on Whittier Blvd in Pico Rivera">
+<rect width="520" height="220" fill="#f3eee4"/>
+<g fill="#e6dccb"><rect x="8" y="14" width="92" height="54" rx="4"/><rect x="8" y="152" width="92" height="54" rx="4"/><rect x="112" y="14" width="92" height="54" rx="4"/><rect x="112" y="152" width="92" height="54" rx="4"/><rect x="216" y="14" width="92" height="54" rx="4"/><rect x="216" y="152" width="92" height="54" rx="4"/><rect x="320" y="14" width="92" height="54" rx="4"/><rect x="320" y="152" width="92" height="54" rx="4"/><rect x="424" y="14" width="92" height="54" rx="4"/><rect x="424" y="152" width="92" height="54" rx="4"/></g>
+<rect x="0" y="86" width="520" height="48" fill="#fff"/><path d="M0 110 H520" stroke="#f2c200" stroke-width="2" stroke-dasharray="14 10"/>
+<text x="16" y="80" font-family="Archivo,Arial,sans-serif" font-weight="700" font-size="14" fill="#6f5a4c">Whittier Blvd</text>
+<rect x="160" y="10" width="200" height="66" rx="6" fill="#e9d4c7"/>
+<rect x="172" y="18" width="116" height="16" rx="3" fill="#b4573b"/>
+<text x="230" y="30" text-anchor="middle" font-family="Archivo,Arial,sans-serif" font-weight="700" font-size="11" fill="#fff">Plaza, private lot</text>
+<text x="196" y="64" text-anchor="middle" font-family="Archivo,Arial,sans-serif" font-weight="800" font-size="18" fill="#b4573b">P</text>
+<g transform="translate(322 26)"><path d="M0 46 C-4 34 -18 26 -18 12 A18 18 0 0 1 18 12 C18 26 4 34 0 46Z" fill="#d62938"/><circle cx="0" cy="12" r="6.5" fill="#fff"/></g>
+<rect x="196" y="150" width="148" height="26" rx="13" fill="#3a2418"/><text x="270" y="168" text-anchor="middle" font-family="Archivo,Arial,sans-serif" font-weight="700" font-size="13" fill="#fff">9454 Whittier Blvd</text>
+<text x="504" y="210" text-anchor="end" font-family="Archivo,Arial,sans-serif" font-size="11" fill="#8a7a6a">Not to scale</text>
+</svg></a>
+<a class="link" href="https://maps.google.com/?cid=1968479188999886469" target="_blank" rel="noopener">Get directions</a>
+<p class="fine">In a plaza with a private lot, per Yelp. Takeout only.</p></div>
+<div style="display:grid;gap:18px;align-content:start">
+<div class="panel"><h3><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Hours</h3><table class="hours"><tr><td>Monday</td><td>5:00 AM to 7:00 PM</td></tr><tr><td>Tuesday</td><td>5:00 AM to 7:00 PM</td></tr><tr><td>Wednesday</td><td>5:00 AM to 7:00 PM</td></tr><tr><td>Thursday</td><td>5:00 AM to 7:00 PM</td></tr><tr><td>Friday</td><td>5:00 AM to 7:00 PM</td></tr><tr><td>Saturday</td><td>5:00 AM to 2:00 PM</td></tr><tr class=closed><td>Sunday</td><td>Closed</td></tr></table><p class="fine">Hours from the Google and Yelp listings (they match). Call to check holidays.</p>
+<a class="btn btn-call" style="margin-top:12px;width:100%" href="tel:+15628215151"><svg class="ic" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.6a1 1 0 0 1-.25 1z"/></svg>Call (562) 821-5151</a></div>
+<figure class="found empty" data-photo-slot="lalo-s-bakery"><div><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 8h3l2-2.5h6L17 8h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg><b>Your photo goes here</b><span>The red sign, the racks or a tray of conchas. Send one anytime.</span></div></figure>
+</div></div></div></section>
+<section id="video" class="locked-sec"><div class="wrap"><p class="kicker">Video</p><h2>A 10-second look at the racks</h2>
+<div class="locked"><span class="pill"><svg class="lk" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>Standard plan</span><p>A short video banner across the top of your site.</p></div>
+<div class="lockwrap"><span class="pv-ribbon"><svg class="pv-lk" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path class="shackle" d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>Preview: part of the Standard plan</span><div class="ghost" aria-hidden="true" inert><div class="vframe"><div class="play"></div><span class="t">0:10</span><div class="lbl">10 seconds at 5 AM: the racks, a tray of conchas, a bolillo split open</div></div></div><div class="veil"><div class="vcard"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/><circle cx="12" cy="16" r="1.3" fill="currentColor"/></svg><b>Locked on the Starter site</b><p>The 10-second video banner is part of the Standard plan. Jay shoots it at your place.</p><button type="button" class="pv-btn"><svg class="pv-lk" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path class="shackle" d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>Preview this feature</button></div></div></div>
+</div></section>
+<section id="photos" class="locked-sec"><div class="wrap">
+<p class="kicker">Photos</p><h2>Show the pan before they drive over</h2>
+<div class="locked"><span class="pill"><svg class="lk" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>Standard plan</span><p>Real photos of your food, your racks and your sign, shot by Jay.</p></div>
+<div class="lockwrap pwrap"><span class="pv-ribbon"><svg class="pv-lk" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path class="shackle" d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>Preview: part of the Standard plan</span><div class="pgrid" aria-hidden="true" inert><div class="slot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 8h3l2-2.5h6L17 8h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg><b>Your pan</b><span>Conchas, bolillos and tamales up close</span></div><div class="slot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.4"/><path d="M3.5 19c.6-3.2 3-5 5.5-5s4.9 1.8 5.5 5M14.5 14.6c2.6-.3 5 1.2 5.8 4.4"/></svg><b>Your racks</b><span>The trays behind the counter, fresh at 5 AM</span></div><div class="slot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="4" width="18" height="9" rx="1.5"/><path d="M8 13v7M16 13v7M6.5 8.5h11"/></svg><b>Your sign</b><span>The red BAKERY sign, so people know they found you</span></div></div><div class="veil"><div class="vcard"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/><circle cx="12" cy="16" r="1.3" fill="currentColor"/></svg><b>Locked on the Starter site</b><p>Pro photo shoot: part of the Standard plan. On your Starter site you can send your own photos anytime.</p><button type="button" class="pv-btn"><svg class="pv-lk" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path class="shackle" d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>Preview this feature</button></div></div></div>
+</div></section>
+<section id="pages" class="locked-sec"><div class="wrap"><p class="kicker">Menu pages</p><h2>A page for each part of the menu</h2>
+<div class="locked"><span class="pill"><svg class="lk" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>Standard plan</span><p>Each part of the menu gets its own page with photos and prices.</p></div>
+<div class="lockwrap"><span class="pv-ribbon"><svg class="pv-lk" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path class="shackle" d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>Preview: part of the Standard plan</span><div class="ghost" aria-hidden="true" inert><div class="pages"><div class="pg"><div class="ph"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3h7l4 4v14H7z"/><path d="M14 3v4h4M10 12h5M10 16h5"/></svg></div><div class="tx"><b>Bolillos</b><span>Its own page, with photos and prices</span></div></div><div class="pg"><div class="ph"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3h7l4 4v14H7z"/><path d="M14 3v4h4M10 12h5M10 16h5"/></svg></div><div class="tx"><b>Pan dulce</b><span>Its own page, with photos and prices</span></div></div><div class="pg"><div class="ph"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3h7l4 4v14H7z"/><path d="M14 3v4h4M10 12h5M10 16h5"/></svg></div><div class="tx"><b>Tamales</b><span>Its own page, with photos and prices</span></div></div></div></div><div class="veil"><div class="vcard"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/><circle cx="12" cy="16" r="1.3" fill="currentColor"/></svg><b>Locked on the Starter site</b><p>A page per menu section is part of the Standard plan.</p><button type="button" class="pv-btn"><svg class="pv-lk" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path class="shackle" d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>Preview this feature</button></div></div></div>
+</div></section>
+<section id="book"><div class="wrap">
+<p class="kicker">Skip the sell-out</p><h2>Pre-order tamales for pickup</h2>
+<p class="lead" style="margin-bottom:18px">Put in your tamale order ahead and pick it up. Want something now? Just call.</p>
+<div class="locked"><span class="pill"><svg class="lk" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>Standard plan</span><p>Customers can send a tamale or bread order for pickup right here.</p></div>
+<div class="lockwrap"><span class="pv-ribbon"><svg class="pv-lk" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path class="shackle" d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>Preview: part of the Standard plan</span><form class="formwrap" aria-hidden="true" inert>
+<div class="row2"><div><label for="n">Your name</label><input id="n" autocomplete="off"></div><div><label for="p">Phone</label><input id="p" type="tel" autocomplete="off"></div></div>
+<div class="row2"><div><label for="s">What's it for?</label><select id="s"><option>Tamales for pickup</option><option>Holiday tamales (December)</option><option>A big bread order (ask first)</option></select></div><div><label for="c">How many dozen?</label><input id="c" inputmode="numeric" placeholder="e.g. 2" autocomplete="off"></div></div>
+<div class="row2"><div><label for="d">Pickup day</label><input id="d" type="date"></div><div><label for="t">Pickup time</label><select id="t"><option>5 to 8 AM</option><option>8 to 11 AM</option><option>Afternoon</option></select></div></div>
+<label for="m">Your order</label><textarea id="m" placeholder="e.g. 1 dozen rojo, 1 dozen rajas, 10 bolillos"></textarea>
+<button class="btn btn-call submit" type="submit">Send order</button><p class="note">Demo form, not connected yet.</p><div class="pv-result" role="status"><b>This is what your customer would see:</b><span class="bubble">Got it! We'll call you to confirm your order.</span><p>On the Standard plan, this order goes straight to your phone. Demo form, not connected yet: nothing was sent.</p></div></form><div class="veil"><div class="vcard"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/><circle cx="12" cy="16" r="1.3" fill="currentColor"/></svg><b>Locked on the Starter site</b><p>Online pre-orders are part of the Standard plan. Your Starter site ($500) shows what you bake, your hours and a call button.</p><small>Demo form, not connected yet</small><button type="button" class="pv-btn"><svg class="pv-lk" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path class="shackle" d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>Preview this feature</button></div></div></div>
+</div></section>
+<section id="espanol" class="locked-sec"><div class="wrap"><p class="kicker">En español</p><h2>Your site in Spanish too</h2>
+<div class="locked"><span class="pill pro"><svg class="lk" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>Pro plan</span><p>A button at the top switches the whole site to Spanish.</p></div>
+<div class="lockwrap"><span class="pv-ribbon"><svg class="pv-lk" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path class="shackle" d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>Preview: part of the Pro plan</span><div class="ghost" aria-hidden="true" inert><div class="es" lang="es"><div class="tog"><span>English</span><span class="on">Español</span></div><h3>Bolillo fresco y pan dulce desde las 5 AM.</h3><p>Conchas, bolillos rellenos, tamales, champurrado, avena y café en Whittier Blvd. Solo para llevar.</p><p><b>Lunes a viernes 5 AM a 7 PM, sábado 5 AM a 2 PM</b> · Llame al (562) 821-5151</p></div></div><div class="veil"><div class="vcard"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/><circle cx="12" cy="16" r="1.3" fill="currentColor"/></svg><b>Locked on the Starter site</b><p>The Spanish version with a language button is part of the Pro plan.</p><button type="button" class="pv-btn"><svg class="pv-lk" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path class="shackle" d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>Preview this feature</button></div></div></div>
+</div></section>
+</main>
+<footer><div class="wrap"><b>Lalo&#x27;s Bakery</b><p>9454 Whittier Blvd, Pico Rivera, CA 90660 · <a href="tel:+15628215151">(562) 821-5151</a></p><p>Panadería on Whittier Blvd, Pico Rivera. Open at 5 AM Monday to Saturday. Closed Sunday.</p><p style="margin-top:14px;opacity:.6">Draft site by Jay. Not live yet.</p></div></footer>
+<div class="sticky"><a class="btn btn-call" href="tel:+15628215151" aria-label="Call Lalo&#x27;s at (562) 821-5151"><svg class="ic" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.6a1 1 0 0 1-.25 1z"/></svg>Call (562) 821-5151</a></div>
+<script>
+(function(){
+function open(w,focus){if(!w.classList.contains('open')){w.classList.add('open');var x=w.querySelector('[inert]');if(x){x.removeAttribute('inert');x.removeAttribute('aria-hidden');}}
+ if(focus){var i=w.querySelector('input,select,textarea,.pv-ribbon');if(i&&i.focus)i.focus({preventScroll:true});}}
+document.querySelectorAll('.lockwrap').forEach(function(w){var b=w.querySelector('.pv-btn');if(b)b.addEventListener('click',function(){open(w,true);});});
+var bw=document.querySelector('#book .lockwrap');
+document.querySelectorAll('a[href="#book"]').forEach(function(a){a.addEventListener('click',function(e){e.preventDefault();
+ document.getElementById('book').scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'start'});if(bw)open(bw,false);});});
+var f=bw&&bw.querySelector('form'),r=bw&&bw.querySelector('.pv-result');
+if(f)f.addEventListener('submit',function(e){e.preventDefault();r.classList.add('show');r.scrollIntoView({behavior:'smooth',block:'nearest'});});
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,398 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Rainbow Donuts | Donuts, Sandwiches and Boba in Gardena, Open 24 Hours</title>
+<meta name="description" content="Fresh donuts, croissant sandwiches, burgers, boba, smoothies and fresh orange juice at 1242 W Redondo Beach Blvd, Gardena. Open 24 hours, every day.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Roboto+Slab:wght@700;800;900&family=Figtree:wght@400;600;700;800&family=Patrick+Hand&display=swap" rel="stylesheet">
+<style>
+:root{--yel:#f5b52e;--red:#d7282f;--red2:#b81f26;--redsh:#8e161b;--blue:#0b62e4;--blue2:#0a4fb8;
+ --night:#121318;--night2:#1d1c1f;--stucco:#efe5cb;--stucco2:#e3d6b4;--steel:#a9b4c4;--steel2:#7d8899;
+ --lime:#c9d94e;--pink:#ff6fa0;--neon:#3fe37f;--ink:#1d1c1f;--muted:#5f5850;--paper:#fffdf7;--navy:#1d1c1f;--navy2:#0b62e4}
+*{box-sizing:border-box}html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;font:16px/1.55 Figtree,Arial,system-ui,sans-serif;color:var(--ink);background:var(--paper);overflow-x:hidden}
+img,svg{max-width:100%}a{color:inherit}
+.wrap{max-width:1120px;margin:0 auto;padding:0 16px}
+.ic{width:20px;height:20px;flex:none}
+.draft{background:var(--night);color:#e9e3d6;text-align:center;font-size:12.5px;padding:7px 12px}
+.fill{display:inline-block;background:#fff3a6;border:1.5px dashed #c9a300;color:#5b4a00;border-radius:6px;padding:1px 8px;font-size:.92em;font-weight:700}
+/* header: stucco fascia, arch sign + red channel letters, steel I-beam under it */
+.top{position:sticky;top:0;z-index:20;background:var(--stucco)}
+.top:after{content:"";display:block;height:12px;background:radial-gradient(circle,#5f6a7b 1.3px,transparent 1.8px) 0 50%/22px 12px repeat-x,linear-gradient(var(--steel),#93a0b3)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:10px;min-height:66px}
+.logo{display:flex;align-items:center;gap:8px;text-decoration:none;min-width:0}
+.logo .arch{width:118px;height:auto;display:block;flex:none}
+.wm{display:flex;flex-direction:column;line-height:.95;font-family:'Roboto Slab',Rockwell,Georgia,serif;font-weight:900;color:var(--red);text-shadow:1px 1px 0 var(--redsh)}
+.wm1{font-size:21px;letter-spacing:.02em}.wm2{font-size:11.2px;letter-spacing:.03em}
+@media(max-width:380px){.logo .arch{width:100px}.wm1{font-size:18px}.wm2{font-size:9.6px}}
+.hcall{display:inline-flex;align-items:center;gap:8px;text-decoration:none;font-weight:800;color:#fff;background:var(--red);padding:11px 14px;border-radius:10px;white-space:nowrap;box-shadow:0 3px 0 var(--redsh)}
+.hcall span{display:none}@media(min-width:620px){.hcall span{display:inline}}
+nav.links{display:none;gap:22px;font-weight:700;font-size:15px}nav.links a{text-decoration:none;color:var(--ink)}
+@media(min-width:960px){nav.links{display:flex}}
+/* rainbow stripe, the signature from the arch sign */
+.stripe{height:14px;background:linear-gradient(var(--yel) 0 45%,var(--red) 45% 65%,var(--blue) 65%)}
+/* hero: night, sign lit */
+.hero{background:radial-gradient(ellipse at 75% 30%,#262833 0,var(--night) 65%);color:#f4efe4;padding:30px 0 0;overflow:hidden}
+.hgrid{display:grid;gap:22px;align-items:end}
+@media(min-width:860px){.hgrid{grid-template-columns:1.05fr 1fr}}
+.eyebrow{display:inline-block;font-weight:800;font-size:12.5px;letter-spacing:.09em;text-transform:uppercase;color:var(--night);background:var(--yel);border-radius:6px;padding:6px 12px}
+h1,h2{font-family:'Roboto Slab',Rockwell,Georgia,serif;font-weight:900}
+h1{font-size:clamp(32px,7vw,56px);line-height:1.05;margin:14px 0 12px;color:#fff}
+h1 em{font-style:normal;color:#ff4a4f;text-shadow:0 0 18px rgba(255,74,79,.55)}
+.sub{font-size:18px;margin:0 0 14px;max-width:34em;color:#ddd6c8}
+.status{display:inline-flex;align-items:center;gap:9px;font-weight:800;font-size:15px;margin-bottom:18px;background:#0d0e12;border:2px solid #ff4a4f;color:#ff6b6f;border-radius:8px;padding:8px 12px;box-shadow:0 0 14px rgba(255,74,79,.35)}
+.status .dot{width:10px;height:10px;border-radius:50%;background:var(--neon);box-shadow:0 0 8px var(--neon)}
+.actions{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:24px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:52px;padding:13px 20px;border-radius:10px;font-weight:800;font-size:17px;text-decoration:none;border:0;cursor:pointer;font-family:inherit}
+.btn-call{background:var(--red);color:#fff;box-shadow:0 3px 0 var(--redsh)}
+.btn-call:hover{background:var(--red2)}
+.btn-ghost{background:#fff;color:var(--ink);border:2px dashed #c9a300}
+.btn-ghost .lk{color:#b58900}
+.btn .tag{font-style:normal;font-size:10.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;background:#fff3c2;color:#8a6a00;border:1px solid #f2d66b;border-radius:4px;padding:3px 6px}
+.store{position:relative;margin:0 auto;width:100%;max-width:520px}
+.store svg{display:block;width:100%;height:auto;border-radius:10px 10px 0 0}
+.store figcaption{font-size:12.5px;color:#a9a294;text-align:center;margin:6px 0 10px}
+/* quick facts */
+.facts{background:var(--night2);color:#fff}
+.facts .wrap{display:grid;grid-template-columns:repeat(2,1fr)}
+.facts .f{padding:16px 10px;text-align:center;border-right:1px solid rgba(255,255,255,.12);border-bottom:1px solid rgba(255,255,255,.12)}
+.facts .n{font-family:'Roboto Slab',Georgia,serif;font-weight:900;font-size:28px;line-height:1.1;color:var(--yel)}
+.facts .n .s{font-size:.7em;margin-left:3px}
+.facts .l{font-size:13.5px;opacity:.85}
+@media(min-width:760px){.facts .wrap{grid-template-columns:repeat(4,1fr)}.facts .f{border-bottom:0}}
+section{padding:54px 0}
+.kicker{margin:0 0 6px;font-weight:800;font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--blue)}
+h2{font-size:clamp(26px,5vw,38px);line-height:1.1;margin:0 0 16px;color:var(--ink)}
+.lead{font-size:17px;color:#4a443d;max-width:40em}
+.fine{font-size:13.5px;color:var(--muted);margin:10px 0 0}
+/* any hour */
+.hours3{display:grid;gap:12px}
+@media(min-width:760px){.hours3{grid-template-columns:repeat(3,1fr)}}
+.h3c{border-radius:14px;padding:18px;border:2px solid var(--ink);position:relative;overflow:hidden}
+.h3c:nth-child(1){background:#fff6dc}.h3c:nth-child(2){background:#e8f0ff}.h3c:nth-child(3){background:var(--night);color:#f4efe4;border-color:var(--night)}
+.h3c .ic{width:30px;height:30px;color:var(--red)}
+.h3c:nth-child(2) .ic{color:var(--blue)}.h3c:nth-child(3) .ic{color:var(--yel)}
+.h3c .t{display:block;font-size:12.5px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;margin:6px 0 2px;opacity:.75}
+.h3c b{display:block;font-family:'Roboto Slab',Georgia,serif;font-size:20px;line-height:1.2}
+.h3c p{margin:6px 0 0;font-size:15px}
+.h3c:nth-child(3) p{color:#d6cfc1}
+/* deal banner */
+.deal{background:var(--stucco);padding:40px 0}
+.dgrid{display:grid;gap:18px;align-items:center}
+@media(min-width:760px){.dgrid{grid-template-columns:320px 1fr}}
+.deal figure{margin:0;transform:rotate(-1.5deg)}
+.deal figure svg{display:block;width:100%;height:auto;filter:drop-shadow(0 6px 10px rgba(0,0,0,.15))}
+.deal h3{font-family:'Patrick Hand',cursive;font-weight:400;font-size:30px;line-height:1.1;color:var(--red);margin:0 0 6px}
+.deal p{margin:0 0 10px;color:#4a443d}
+/* menu */
+#menu{background:var(--paper)}
+.pricenote{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;margin:0 0 20px}
+.boards{display:grid;gap:18px}
+@media(min-width:860px){.boards{grid-template-columns:1fr 1fr;grid-auto-flow:row dense;align-items:start}}
+.bd{border-radius:14px;overflow:hidden}
+.bd h3{display:flex;align-items:baseline;justify-content:space-between;flex-wrap:wrap;gap:4px 10px;margin:0;padding:12px 16px;font-family:'Roboto Slab',Georgia,serif;font-weight:900;font-size:22px}
+.bd h3 small{font-family:Figtree,Arial,sans-serif;font-size:13px;font-weight:700;opacity:.8}
+.bd ul{list-style:none;margin:0;padding:6px 16px 10px}
+.bd li{display:grid;grid-template-columns:56px 1fr auto;gap:2px 12px;align-items:center;padding:8px 0;border-bottom:1px dashed rgba(0,0,0,.15)}
+.bd li:last-child{border-bottom:0}
+.bd li .food{grid-row:1/3;width:56px;height:40px}
+.bd li .nofood{grid-row:1/3;width:56px;height:40px;display:grid;place-items:center}
+.bd li .nofood i{width:30px;height:30px;border-radius:50%;background:#c98a45;box-shadow:inset 0 0 0 4px #b3763a,inset 6px 6px 0 -2px #7a4626}
+.bd li b{font-size:16px;line-height:1.25}.bd li small{grid-column:2;font-size:13.5px;opacity:.75}
+.bd .p{grid-row:1;grid-column:3;font-size:13px;font-weight:700;background:#fff3a6;color:#5b4a00;border:1.5px dashed #c9a300;border-radius:5px;padding:0 6px;white-space:nowrap}
+/* glass donut case */
+.bd.case{background:linear-gradient(180deg,#f3f8fb,#fff);border:3px solid var(--steel);box-shadow:inset 0 0 0 3px #fff,0 6px 0 var(--steel2)}
+.bd.case h3{background:var(--yel);color:var(--night)}
+/* sandwich board */
+.bd.board{background:#fff;border:3px solid var(--red)}
+.bd.board h3{background:var(--red);color:#fff}
+/* neon window */
+.bd.neon{background:#15161c;border:3px solid #4aa8ff;box-shadow:0 0 18px rgba(74,168,255,.35);color:#f4efe4}
+.bd.neon h3{color:var(--pink);text-shadow:0 0 10px rgba(255,111,160,.8);background:none;border-bottom:2px solid rgba(74,168,255,.5)}
+.bd.neon li{border-bottom-color:rgba(255,255,255,.14)}
+.bd.neon li b{color:#fff}
+@media(min-width:860px){.bd.wide{grid-column:1/-1}.bd.wide ul{columns:2;column-gap:28px}.bd.wide li{break-inside:avoid}}
+.alsob{margin-top:20px;display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.alsob .chip{font-weight:700;font-size:14px;border:2px solid var(--blue);color:var(--blue);border-radius:999px;padding:6px 12px}
+.asks{margin-top:12px;display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+/* good to know */
+.good{background:#f6f1e4}
+.gg{display:grid;gap:12px;grid-template-columns:1fr}
+@media(min-width:560px){.gg{grid-template-columns:1fr 1fr}}
+@media(min-width:900px){.gg{grid-template-columns:repeat(3,1fr)}}
+.gg>div{display:flex;gap:12px;align-items:flex-start;background:#fff;border-radius:12px;padding:14px;border-left:6px solid var(--yel)}
+.gg>div:nth-child(3n+2){border-left-color:var(--red)}.gg>div:nth-child(3n){border-left-color:var(--blue)}
+.gg .ic{width:26px;height:26px;color:var(--ink);margin-top:2px}
+.gg b{display:block;font-size:16px}.gg span{font-size:14px;color:var(--muted)}
+/* reviews */
+.quotes{display:grid;gap:14px;margin-top:18px}
+@media(min-width:760px){.quotes{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1000px){.quotes{grid-template-columns:repeat(4,1fr)}}
+.q{margin:0;background:#fff;border-radius:14px;padding:18px;border:1px solid #e6dfd0;border-top:6px solid var(--yel)}
+.q:nth-child(2){border-top-color:var(--red)}.q:nth-child(3){border-top-color:var(--blue)}.q:nth-child(4){border-top-color:var(--yel)}
+.q .st{color:#e3a400;letter-spacing:2px}.q .st .o{color:#ddd2c4}
+.q p{font-size:17px;margin:8px 0 10px;font-weight:700}
+.q cite{font-style:normal;font-size:14px;color:var(--muted)}
+.src{font-size:13px;color:var(--muted);margin-top:14px}
+/* visit */
+#visit{background:var(--stucco)}
+.vgrid{display:grid;gap:18px}
+@media(min-width:860px){.vgrid{grid-template-columns:1.1fr 1fr;align-items:start}}
+.panel{background:#fff;border:1px solid #e3d8c0;border-radius:14px;padding:18px}
+.panel h3{display:flex;align-items:center;gap:8px;margin:0 0 10px;font-size:18px}
+.panel h3 .ic{color:var(--red)}
+.allday{display:flex;align-items:center;gap:14px;background:var(--night);color:#fff;border-radius:10px;padding:14px 16px;margin-bottom:10px}
+.allday .big{font-family:'Roboto Slab',Georgia,serif;font-weight:900;font-size:40px;line-height:1;color:#ff4a4f;text-shadow:0 0 14px rgba(255,74,79,.6)}
+.allday span{font-weight:700}
+table.hours{width:100%;border-collapse:collapse;font-size:16px}
+table.hours td{padding:7px 0;border-bottom:1px solid #efe6d8}table.hours td+td{text-align:right;font-weight:700}
+.map{display:block;border-radius:10px;overflow:hidden;border:1px solid #e3d8c0;margin:6px 0 10px}
+.map svg{display:block;width:100%;height:auto}
+.link{display:inline-flex;align-items:center;gap:6px;font-weight:700;color:var(--blue)}
+.found{margin:0;border-radius:14px;overflow:hidden}
+.found.empty{display:grid;place-items:center;text-align:center;min-height:200px;padding:20px;border:2px dashed #cdbfa9;background:#fffaf0}
+.found.empty .ic{width:36px;height:36px;color:var(--red);margin:0 auto 8px;display:block}
+.found.empty b{display:block}.found.empty span{display:block;font-size:13.5px;color:var(--muted);margin-top:4px}
+/* locked bits */
+.lk{width:14px;height:14px;flex:none}
+.locked-sec{background:#fff8d9;border-top:4px solid #f2c200;border-bottom:4px solid #f2c200}
+.locked{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;margin:0 0 16px}
+.locked p{margin:0;font-size:15px;color:#5b4a12;flex:1 1 240px}
+.pill{display:inline-flex;align-items:center;gap:7px;background:#f6c315;color:#1b1f2a;font-weight:800;font-size:13px;letter-spacing:.03em;text-transform:uppercase;padding:7px 12px;border-radius:999px;box-shadow:0 2px 0 #c99d00}
+.lockwrap{position:relative}
+.lockwrap form,.lockwrap .ghost{filter:grayscale(1);opacity:.5;pointer-events:none;user-select:none}
+.lockwrap.open .ghost{filter:none;opacity:1;pointer-events:auto;user-select:auto;outline:3px solid #f2c200;outline-offset:6px;border-radius:10px}
+.lockwrap .ghost{transition:opacity .3s,filter .3s}
+.lockwrap .veil{position:absolute;inset:0;display:grid;place-items:center;padding:18px;background:rgba(240,242,245,.55);border-radius:10px}
+.veil .vcard{max-width:420px;text-align:center;background:#fff;border:2px solid #f2c200;border-radius:12px;padding:22px 22px 18px;box-shadow:0 14px 40px rgba(0,0,0,.14)}
+.veil .vcard svg{width:44px;height:44px;color:#1b1f2a;background:#f6c315;border-radius:50%;padding:10px;box-sizing:content-box;margin:0 auto 10px;display:block}
+.veil .vcard b{display:block;font-size:17px;color:#1b1f2a;margin-bottom:4px}
+.veil .vcard p{font-size:14.5px;color:#4a5260;margin:0}
+.veil .vcard small{display:block;margin-top:10px;font-size:12px;color:#7a828e}
+.formwrap{background:#fff;border:1px solid #e3d48a;border-radius:12px;padding:18px}
+.formwrap label{display:block;font-weight:700;font-size:14px;margin:10px 0 5px}
+.formwrap input,.formwrap select,.formwrap textarea{width:100%;font:inherit;font-size:16px;padding:11px 12px;border:1px solid #cdbfa9;border-radius:8px;background:#fff}
+.formwrap textarea{min-height:90px}
+.row2{display:grid;gap:0 14px}@media(min-width:620px){.row2{grid-template-columns:1fr 1fr}}
+.submit{margin-top:14px;width:100%}
+.note{font-size:13px;color:var(--muted);margin:8px 0 0}
+.vframe{position:relative;width:100%;height:320px;border-radius:12px;overflow:hidden;background:radial-gradient(ellipse at 30% 30%,#2b2e3a,#121318);display:grid;place-items:center}
+@media(min-width:760px){.vframe{height:auto;aspect-ratio:16/6;max-height:380px}}
+.vframe:before{content:"";position:absolute;left:0;right:0;top:0;height:10px;background:linear-gradient(var(--yel) 0 45%,var(--red) 45% 65%,var(--blue) 65%)}
+.vframe .play{width:64px;height:64px;border-radius:50%;background:rgba(255,255,255,.95);position:relative;box-shadow:0 4px 14px rgba(0,0,0,.2)}
+.vframe .play:after{content:"";position:absolute;left:26px;top:20px;border-left:18px solid var(--red);border-top:12px solid transparent;border-bottom:12px solid transparent}
+.vframe .lbl{position:absolute;left:12px;right:12px;bottom:10px;color:#fff;font-weight:700;font-size:14px;background:rgba(0,0,0,.6);border-radius:6px;padding:6px 8px}
+.vframe .t{position:absolute;right:10px;top:16px;background:rgba(0,0,0,.5);color:#fff;font-size:12px;font-weight:700;border-radius:6px;padding:3px 7px}
+.pages{display:grid;gap:12px;min-height:300px}
+.lockwrap .pgrid{min-height:300px}@media(min-width:760px){.pages{grid-template-columns:repeat(3,1fr)}}
+.pg{background:#fff;border:1px solid #e3d8c0;border-radius:12px;overflow:hidden}
+.pg .ph{height:90px;background:linear-gradient(var(--yel) 0 45%,var(--red) 45% 65%,var(--blue) 65%);display:grid;place-items:center;color:#fff}
+.pg .ph .ic{width:30px;height:30px}
+.pg div.tx{padding:12px 14px}.pg b{display:block;font-size:17px}.pg span{font-size:13.5px;color:var(--muted)}
+footer{background:var(--night);color:#ddd6c8;padding:0 0 96px;font-size:15px}
+footer .wrap{padding-top:30px}
+footer b{font-size:18px;color:#fff}footer p{margin:6px 0}
+.sticky{position:fixed;left:0;right:0;bottom:0;z-index:30;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(255,253,247,.96);border-top:1px solid #e3d8c0}
+.sticky .btn{width:100%}
+@media(min-width:860px){.sticky{display:none}footer{padding-bottom:34px}}
+:focus-visible{outline:3px solid #f2c200;outline-offset:2px}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+.pv-btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;margin-top:14px;min-height:46px;padding:12px 20px;border:0;border-radius:8px;background:#1b1f2a;color:#ffe27a;font:700 15px/1 Inter,system-ui,sans-serif;cursor:pointer}
+.pv-btn:hover{background:#2a3040}.pv-btn:focus-visible{outline:3px solid #f2c200;outline-offset:2px}
+.veil .vcard .pv-btn svg,.pv-lk{width:18px;height:18px;padding:0;margin:0;background:none;border-radius:0;color:inherit;display:inline-block;box-sizing:border-box}.pv-lk .shackle{transform-origin:16px 11px;transition:transform .35s cubic-bezier(.3,1.5,.5,1)}
+.pv-btn:hover .shackle,.lockwrap.open .shackle{transform:translate(4px,-3px) rotate(28deg)}
+.pv-ribbon{display:none;position:absolute;top:-13px;left:16px;z-index:3;align-items:center;gap:6px;background:#f6c315;color:#1b1f2a;font:800 12px/1 Inter,sans-serif;letter-spacing:.04em;text-transform:uppercase;padding:7px 11px;border-radius:999px;box-shadow:0 2px 0 #c99d00}
+.lockwrap.open .pv-ribbon{display:inline-flex}
+.lockwrap.open form{filter:none;opacity:1;pointer-events:auto;user-select:auto;outline:3px solid #f2c200;outline-offset:4px}
+.lockwrap.open .veil{display:none}
+.lockwrap form,.lockwrap .veil{transition:opacity .3s,filter .3s}
+.pv-result{display:none;margin-top:16px;padding:16px 18px;border-radius:10px;background:#fff8d9;border:2px solid #f2c200;color:#1b1f2a}
+.pv-result.show{display:block}
+.pv-result b{display:block;font-size:16px;margin-bottom:6px}
+.pv-result .bubble{display:inline-block;margin:4px 0 8px;padding:10px 14px;border-radius:14px 14px 14px 4px;background:#fff;border:1px solid #e3d48a;font-size:15px}
+.pv-result p{margin:0;font-size:14px;color:#4a5260}
+@media(prefers-reduced-motion:reduce){.pv-lk .shackle,.lockwrap form,.lockwrap .veil{transition:none}}
+
+
+#photos.locked-sec{background:#fff8d9;border-top:4px solid #f2c200;border-bottom:4px solid #f2c200}
+.pgrid{display:grid;gap:14px;grid-template-columns:1fr}
+@media(min-width:760px){.pgrid{grid-template-columns:repeat(3,1fr)}}
+.slot{display:grid;place-items:center;text-align:center;min-height:200px;padding:20px;border:2px dashed #b9c4d0;border-radius:10px;background:#fff}
+.slot svg{width:40px;height:40px;color:var(--navy2);margin:0 auto 10px;display:block}
+.slot b{display:block;font-size:17px;color:var(--navy)}
+.slot span{display:block;font-size:13.5px;color:var(--muted);margin-top:4px}
+.lockwrap .pgrid{filter:grayscale(1);opacity:.5;pointer-events:none;user-select:none;transition:opacity .3s,filter .3s}
+.lockwrap.open .pgrid{filter:none;opacity:1;pointer-events:auto;user-select:auto;outline:3px solid #f2c200;outline-offset:6px;border-radius:10px}
+@media(max-width:759px){.pwrap .pgrid .slot{min-height:120px}}
+
+</style>
+</head>
+<body>
+<div class="draft">Draft website made for Rainbow Donuts by Jay · not live yet</div>
+<header class="top"><div class="wrap">
+<a class="logo" href="#top" aria-label="Rainbow Donuts home"><svg class="arch" width="150" viewBox="0 0 240 70" role="img" aria-label="Rainbow Donuts arch sign"><defs><path id="rdcurve" d="M28 60 Q120 0 212 60"/></defs><g><path d="M4 66 Q120 -46 236 66 Q120 6 4 66Z" fill="#3a2418"/><path d="M8 64 Q120 -40 232 64 Q120 -16 8 64Z" fill="#f5b52e"/><path d="M8 64 Q120 -16 232 64 Q120 -4 8 64Z" fill="#d7282f"/><path d="M8 64 Q120 -4 232 64 Q120 12 8 64Z" fill="#0b62e4"/></g><text font-family="'Archivo Black',Arial Black,Arial,sans-serif" font-size="25" fill="#fff" stroke="#3a2418" stroke-width="2.6" paint-order="stroke" letter-spacing="1"><textPath href="#rdcurve" startOffset="50%" text-anchor="middle">RAINBOW</textPath></text></svg><span class="wm"><span class="wm1">DONUTS</span><span class="wm2">SANDWICHES</span></span></a>
+<nav class="links" aria-label="Main"><a href="#menu">Menu</a><a href="#good">Good to know</a><a href="#reviews">Reviews</a><a href="#visit">Hours and location</a></nav>
+<a class="hcall" href="tel:+13107191625" aria-label="Call (310) 719-1625"><svg class="ic" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.6a1 1 0 0 1-.25 1z"/></svg><span>(310) 719-1625</span></a>
+</div></header>
+<main id="top">
+<section class="hero"><div class="wrap hgrid">
+<div style="padding-bottom:10px">
+<span class="eyebrow">Donuts · Sandwiches · Boba · Gardena</span>
+<h1>Fresh donuts and hot sandwiches. <em>Open 24&nbsp;hours.</em></h1>
+<p class="sub">Donuts, croissant sandwiches, burgers, boba, smoothies and fresh orange juice on Redondo Beach Blvd. Morning, lunch or 3 AM.</p>
+<span class="status"><span class="dot" aria-hidden="true"></span>Open 24 hours, 7 days a week</span>
+<div class="actions"><a class="btn btn-call" href="tel:+13107191625"><svg class="ic" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.6a1 1 0 0 1-.25 1z"/></svg>Call (310) 719-1625</a><a class="btn btn-ghost" href="#book"><svg class="lk" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>Order a dozen for the office <i class="tag">Standard</i></a></div>
+</div>
+<figure class="store" style="margin:0"><svg viewBox="0 0 360 300" role="img" aria-label="Drawing of the Rainbow Donuts storefront at night, sign lit, OPEN 24 HOURS in the window">
+<defs><path id="sfcurve" d="M28 60 Q120 0 212 60"/>
+<filter id="sg" x="-20%" y="-50%" width="140%" height="200%"><feGaussianBlur stdDeviation="2.4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<filter id="ng" x="-30%" y="-80%" width="160%" height="260%"><feGaussianBlur stdDeviation="1.6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<linearGradient id="spill" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff6c8" stop-opacity=".32"/><stop offset="1" stop-color="#fff6c8" stop-opacity="0"/></linearGradient></defs>
+<rect width="360" height="300" fill="#121318"/>
+<rect x="0" y="8" width="360" height="104" fill="#1d1c1f"/>
+<g transform="translate(18 26) scale(.62)" filter="url(#sg)"><path d="M4 66 Q120 -46 236 66 Q120 6 4 66Z" fill="#2a1a10"/><path d="M8 64 Q120 -40 232 64 Q120 -16 8 64Z" fill="#ffc94a"/><path d="M8 64 Q120 -16 232 64 Q120 -4 8 64Z" fill="#ff3b44"/><path d="M8 64 Q120 -4 232 64 Q120 12 8 64Z" fill="#2f86ff"/><text font-family="'Archivo Black',Arial Black,Arial,sans-serif" font-size="25" fill="#fff" stroke="#2a1a10" stroke-width="2.6" paint-order="stroke" letter-spacing="1"><textPath href="#sfcurve" startOffset="50%" text-anchor="middle">RAINBOW</textPath></text></g>
+<g filter="url(#sg)" font-family="'Roboto Slab',Rockwell,Georgia,serif" font-weight="900" fill="#ff4a4f">
+<text x="276" y="56" text-anchor="middle" font-size="27" letter-spacing=".5">DONUTS</text>
+<text x="276" y="76" text-anchor="middle" font-size="14.5" letter-spacing=".4">SANDWICHES</text></g>
+<rect x="0" y="112" width="360" height="22" fill="#3a3f4a"/><g fill="#59606e"><circle cx="14" cy="117" r="1.4"/><circle cx="14" cy="129" r="1.4"/><circle cx="36" cy="117" r="1.4"/><circle cx="36" cy="129" r="1.4"/><circle cx="58" cy="117" r="1.4"/><circle cx="58" cy="129" r="1.4"/><circle cx="80" cy="117" r="1.4"/><circle cx="80" cy="129" r="1.4"/><circle cx="102" cy="117" r="1.4"/><circle cx="102" cy="129" r="1.4"/><circle cx="124" cy="117" r="1.4"/><circle cx="124" cy="129" r="1.4"/><circle cx="146" cy="117" r="1.4"/><circle cx="146" cy="129" r="1.4"/><circle cx="168" cy="117" r="1.4"/><circle cx="168" cy="129" r="1.4"/><circle cx="190" cy="117" r="1.4"/><circle cx="190" cy="129" r="1.4"/><circle cx="212" cy="117" r="1.4"/><circle cx="212" cy="129" r="1.4"/><circle cx="234" cy="117" r="1.4"/><circle cx="234" cy="129" r="1.4"/><circle cx="256" cy="117" r="1.4"/><circle cx="256" cy="129" r="1.4"/><circle cx="278" cy="117" r="1.4"/><circle cx="278" cy="129" r="1.4"/><circle cx="300" cy="117" r="1.4"/><circle cx="300" cy="129" r="1.4"/><circle cx="322" cy="117" r="1.4"/><circle cx="322" cy="129" r="1.4"/><circle cx="344" cy="117" r="1.4"/><circle cx="344" cy="129" r="1.4"/></g>
+<rect x="0" y="134" width="360" height="8" fill="#0d0e12"/>
+<g fill="#ffe9a8"><circle cx="40" cy="138" r="2"/><circle cx="150" cy="138" r="2"/><circle cx="260" cy="138" r="2"/><circle cx="330" cy="138" r="2"/></g>
+<rect x="0" y="142" width="70" height="146" fill="#5a2c22"/><rect x="0" y="150" width="70" height="1" fill="#3f1d16"/><rect x="0" y="159" width="70" height="1" fill="#3f1d16"/><rect x="0" y="168" width="70" height="1" fill="#3f1d16"/><rect x="0" y="177" width="70" height="1" fill="#3f1d16"/><rect x="0" y="186" width="70" height="1" fill="#3f1d16"/><rect x="0" y="195" width="70" height="1" fill="#3f1d16"/><rect x="0" y="204" width="70" height="1" fill="#3f1d16"/><rect x="0" y="213" width="70" height="1" fill="#3f1d16"/><rect x="0" y="222" width="70" height="1" fill="#3f1d16"/><rect x="0" y="231" width="70" height="1" fill="#3f1d16"/><rect x="0" y="240" width="70" height="1" fill="#3f1d16"/><rect x="0" y="249" width="70" height="1" fill="#3f1d16"/><rect x="0" y="258" width="70" height="1" fill="#3f1d16"/><rect x="0" y="267" width="70" height="1" fill="#3f1d16"/><rect x="0" y="276" width="70" height="1" fill="#3f1d16"/><rect x="0" y="285" width="70" height="1" fill="#3f1d16"/>
+<rect x="70" y="142" width="290" height="146" fill="#1a1b20"/>
+<rect x="76" y="148" width="104" height="134" fill="#c9d94e"/><rect x="76" y="232" width="104" height="50" fill="#d7282f"/>
+<rect x="186" y="148" width="62" height="134" fill="#e3e86a"/><rect x="254" y="148" width="100" height="134" fill="#c9d94e"/>
+<rect x="76" y="148" width="278" height="134" fill="url(#spill)"/>
+<rect x="76" y="148" width="104" height="134" fill="none" stroke="#0d0e12" stroke-width="4"/>
+<rect x="186" y="148" width="62" height="134" fill="none" stroke="#0d0e12" stroke-width="4"/><rect x="190" y="152" width="54" height="10" fill="#0d0e12"/>
+<text x="217" y="160.5" text-anchor="middle" font-family="Figtree,Arial,sans-serif" font-weight="700" font-size="8.5" fill="#f2f2f2">1242</text>
+<rect x="194" y="172" width="46" height="94" fill="#dbe7f0" opacity=".55"/><rect x="200" y="182" width="34" height="70" fill="#9fb3c8" opacity=".6"/>
+<rect x="254" y="148" width="100" height="134" fill="none" stroke="#0d0e12" stroke-width="4"/>
+<g filter="url(#ng)" font-family="Figtree,Arial,sans-serif" font-weight="800">
+<text x="128" y="170" text-anchor="middle" font-size="11.5" fill="#ff4a4f" letter-spacing=".6">SANDWICHES</text>
+<rect x="88" y="177" width="80" height="44" rx="3" fill="#15161c" stroke="#4aa8ff" stroke-width="2"/>
+<text x="128" y="189" text-anchor="middle" font-size="9" fill="#ff6fa0">SMOOTHIE</text>
+<text x="128" y="201" text-anchor="middle" font-size="9" fill="#3fe37f">BREAKFAST</text>
+<text x="128" y="213" text-anchor="middle" font-size="9" fill="#ff6fa0">CROISSANT</text>
+<rect x="268" y="156" width="40" height="13" rx="3" fill="#15161c" stroke="#ff4a4f" stroke-width="1.4"/><text x="288" y="166" text-anchor="middle" font-size="9" fill="#ff4a4f">OPEN</text></g>
+<rect x="262" y="226" width="30" height="34" rx="2" fill="#fff"/><text x="277" y="236" text-anchor="middle" font-family="Figtree,Arial,sans-serif" font-weight="800" font-size="6.5" fill="#1d1c1f">OPEN</text>
+<text x="277" y="250" text-anchor="middle" font-family="'Roboto Slab',Georgia,serif" font-weight="900" font-size="14" fill="#d7282f">24</text><text x="277" y="257.5" text-anchor="middle" font-family="Figtree,Arial,sans-serif" font-weight="800" font-size="5.5" fill="#1d1c1f">HOURS</text>
+<rect x="300" y="190" width="44" height="58" rx="3" fill="#f6efe0" opacity=".9"/><circle cx="322" cy="206" r="9" fill="#f6c315"/><rect x="310" y="222" width="24" height="18" rx="3" fill="#d99a52"/>
+<rect x="0" y="288" width="360" height="12" fill="#2a2b30"/>
+</svg><figcaption>Drawn from the storefront at night. Your own photos go in below.</figcaption></figure>
+</div></section>
+<div class="stripe" aria-hidden="true"></div>
+<div class="facts"><div class="wrap"><div class="f"><div class="n">24/7</div><div class="l">open every day</div></div><div class="f"><div class="n">4.6<span class=s>&#9733;</span></div><div class="l">Google, 339 reviews</div></div><div class="f"><div class="n">4.2<span class=s>&#9733;</span></div><div class="l">Yelp, 163 reviews</div></div><div class="f"><div class="n"><span class=fill style=font-size:15px>Grade: __</span></div><div class="l">health grade card, owner confirms</div></div></div></div>
+<section id="anyhour"><div class="wrap">
+<p class="kicker">Any hour</p><h2>Breakfast, lunch or 3 AM, the light's on</h2>
+<div class="hours3"><div class="h3c"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg><span class="t">Early</span><b>Breakfast croissants and coffee</b><p>Regulars stop in before work and before school.</p></div><div class="h3c"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 15h16M6 15a6 6 0 0 1 12 0"/><path d="M3 19h18"/><path d="M12 5v2"/></svg><span class="t">Midday</span><b>Subs, burgers, croissant sandwiches</b><p>A pickup stop for office workers, per the ECC Union.</p></div><div class="h3c"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"/></svg><span class="t">Late night</span><b>Still lit up at 3 AM</b><p>One regular got fresh glazed sprinkle cake donuts at 11:50 PM.</p></div></div>
+<p class="fine">From Yelp and Google reviews (2025 to 2026), a Yelp photo caption (&quot;3am @ Rainbow donut. So bright and still open&quot;), a Yelp Q&amp;A answer, and the ECC Union (June 2022).</p>
+</div></section>
+<section class="deal"><div class="wrap dgrid">
+<figure><svg viewBox="0 0 320 180" role="img" aria-label="Drawing of the donut special banner out front: buy a smoothie or boba, get a free donut">
+<rect x="4" y="4" width="312" height="172" rx="6" fill="#fffdf6" stroke="#cfc6b4" stroke-width="2"/>
+<path d="M60 52 Q160 -6 260 52" fill="none" stroke="#f5b52e" stroke-width="12" stroke-linecap="round"/>
+<path d="M66 58 Q160 6 254 58" fill="none" stroke="#d7282f" stroke-width="6" stroke-linecap="round"/>
+<path d="M72 64 Q160 18 248 64" fill="none" stroke="#0b62e4" stroke-width="9" stroke-linecap="round"/>
+<text x="160" y="40" text-anchor="middle" font-family="'Archivo Black',Arial Black,sans-serif" font-size="17" fill="#fff" stroke="#0b62e4" stroke-width="1.2" paint-order="stroke" letter-spacing="1">RAINBOW</text>
+<circle cx="282" cy="30" r="17" fill="#fff" stroke="#1b1f2a" stroke-width="2"/><text x="282" y="35" text-anchor="middle" font-family="'Patrick Hand',cursive" font-size="15" fill="#1b1f2a">24/7</text>
+<text x="160" y="88" text-anchor="middle" font-family="'Patrick Hand',cursive" font-size="22" fill="#d7282f" letter-spacing="1">DONUT SPECIAL</text>
+<text x="66" y="118" text-anchor="middle" font-family="'Patrick Hand',cursive" font-size="17" fill="#d7282f">BUY A</text>
+<text x="66" y="138" text-anchor="middle" font-family="'Patrick Hand',cursive" font-size="17" fill="#d7282f">SMOOTHIE</text>
+<text x="66" y="158" text-anchor="middle" font-family="'Patrick Hand',cursive" font-size="17" fill="#d7282f">OR BOBA</text>
+<path d="M134 102 H162 L158 156 H138Z" fill="#fff" stroke="#1b1f2a" stroke-width="1.6"/><path d="M135 116 H161 L158 155 H138Z" fill="#f08bb0"/>
+<g fill="#3b2416"><circle cx="144" cy="149" r="2.6"/><circle cx="151" cy="150" r="2.6"/><circle cx="148" cy="144" r="2.4"/></g>
+<rect x="150" y="88" width="4" height="22" fill="#d7282f" transform="rotate(10 152 99)"/>
+<circle cx="190" cy="134" r="18" fill="#f5b52e" stroke="#1b1f2a" stroke-width="1.6"/><circle cx="190" cy="134" r="6" fill="#fffdf6" stroke="#1b1f2a" stroke-width="1.4"/>
+<text x="262" y="118" text-anchor="middle" font-family="'Patrick Hand',cursive" font-size="17" fill="#d7282f">GET A</text>
+<text x="262" y="138" text-anchor="middle" font-family="'Patrick Hand',cursive" font-size="17" fill="#d7282f">FREE</text>
+<text x="262" y="158" text-anchor="middle" font-family="'Patrick Hand',cursive" font-size="17" fill="#d7282f">DONUT</text>
+</svg></figure>
+<div><p class="kicker">Donut special</p><h3>Buy a smoothie or boba, get a free donut.</h3><p>That&#x27;s the donut special on the banner out front. A Yelp reviewer got the donut deal with a boba in August 2026.</p><span class="fill">Owner confirms it's still on</span></div>
+</div></section>
+<section id="menu"><div class="wrap">
+<p class="kicker">Menu</p><h2>Donuts, sandwiches and boba</h2>
+<p class="lead">Donuts made all day, croissant sandwiches made to order, and a drinks window with boba, smoothies and fresh orange juice.</p>
+<div class="pricenote"><span class="fill">Prices: owner fills in</span></div>
+<div class="boards"><div class="bd case wide"><h3>The donut case <small>Made fresh all day</small></h3><ul><li><svg class="food" width="56" height="56" viewBox="0 0 64 44" aria-hidden="true"><ellipse cx="32" cy="25" rx="27" ry="15" fill="#d99a52"/><ellipse cx="32" cy="22" rx="25" ry="13" fill="#f6e9c9"/><ellipse cx="32" cy="22" rx="8" ry="4.2" fill="#f7efe0"/><ellipse cx="32" cy="23.5" rx="8" ry="3.4" fill="#d99a52"/></svg><b>Glazed</b><span class="p">$ __</span><small>The classic, plus sprinkle cake donuts</small></li><li><svg class="food" width="56" height="56" viewBox="0 0 64 44" aria-hidden="true"><ellipse cx="32" cy="25" rx="27" ry="15" fill="#d99a52"/><ellipse cx="32" cy="22" rx="25" ry="13" fill="#6b3a1f"/><ellipse cx="32" cy="22" rx="8" ry="4.2" fill="#f7efe0"/><ellipse cx="32" cy="23.5" rx="8" ry="3.4" fill="#d99a52"/><rect x="20" y="14" width="5" height="1.8" rx=".9" fill="#d7282f" transform="rotate(0 22.5 15)"/><rect x="30" y="10" width="5" height="1.8" rx=".9" fill="#0b62e4" transform="rotate(47 32.5 11)"/><rect x="42" y="13" width="5" height="1.8" rx=".9" fill="#f5b52e" transform="rotate(94 44.5 14)"/><rect x="48" y="22" width="5" height="1.8" rx=".9" fill="#39b54a" transform="rotate(141 50.5 23)"/><rect x="16" y="25" width="5" height="1.8" rx=".9" fill="#ffffff" transform="rotate(8 18.5 26)"/><rect x="44" y="30" width="5" height="1.8" rx=".9" fill="#d7282f" transform="rotate(55 46.5 31)"/><rect x="24" y="33" width="5" height="1.8" rx=".9" fill="#0b62e4" transform="rotate(102 26.5 34)"/><rect x="36" y="34" width="5" height="1.8" rx=".9" fill="#f5b52e" transform="rotate(149 38.5 35)"/><rect x="12" y="18" width="5" height="1.8" rx=".9" fill="#39b54a" transform="rotate(16 14.5 19)"/></svg><b>Cake donuts</b><span class="p">$ __</span><small>Chocolate, sprinkle and more</small></li><li><svg class="food" width="56" height="56" viewBox="0 0 64 44" aria-hidden="true"><rect x="4" y="12" width="56" height="22" rx="11" fill="#d99a52"/><rect x="5" y="10" width="54" height="18" rx="9" fill="#c98a45"/><path d="M14 15 H40" stroke="rgba(255,255,255,.35)" stroke-width="2.4" stroke-linecap="round"/></svg><b>Maple bars</b><span class="p">$ __</span></li><li><svg class="food" width="56" height="56" viewBox="0 0 64 44" aria-hidden="true"><ellipse cx="32" cy="24" rx="25" ry="15" fill="#d99a52"/><path d="M9 22 Q32 2 55 22 Q32 30 9 22Z" fill="#f3e6c8"/><ellipse cx="44" cy="25" rx="5" ry="3" fill="#f6e7a6"/></svg><b>Bavarian cream</b><span class="p">$ __</span><small>Filled</small></li><li><svg class="food" width="56" height="56" viewBox="0 0 64 44" aria-hidden="true"><ellipse cx="32" cy="24" rx="26" ry="16" fill="#c98a45"/><path d="M32 24 m-3 0 a3 3 0 1 1 6 0 a7 7 0 1 1 -13 0 a11 11 0 1 1 21 0 a15 15 0 1 1 -29 0" fill="none" stroke="#8a5523" stroke-width="2.2"/><path d="M10 18 Q20 12 30 16 Q40 10 52 16" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" opacity=".9"/></svg><b>Cinnamon buns</b><span class="p">$ __</span></li><li><svg class="food" width="56" height="56" viewBox="0 0 64 44" aria-hidden="true"><circle cx="18" cy="28" r="9" fill="#d99a52"/><circle cx="34" cy="30" r="9" fill="#7a4626"/><circle cx="48" cy="26" r="9" fill="#d99a52"/><circle cx="26" cy="16" r="9" fill="#f3e6c8"/><circle cx="42" cy="14" r="8" fill="#d99a52"/><path d="M14 25 a4 3 0 0 1 6 -2M44 23 a4 3 0 0 1 6 -2M22 13 a4 3 0 0 1 6 -2" stroke="#fff" stroke-width="1.6" fill="none" opacity=".7"/></svg><b>Donut holes</b><span class="p">$ __</span><small>A bag for the car</small></li><li><svg class="food" width="56" height="56" viewBox="0 0 64 44" aria-hidden="true"><ellipse cx="16" cy="32" rx="10" ry="6" fill="#d99a52"/><ellipse cx="16" cy="30.5" rx="9" ry="5" fill="#f4a6c0"/><ellipse cx="16" cy="30.5" rx="3" ry="1.6" fill="#f7efe0"/><ellipse cx="32" cy="34" rx="10" ry="6" fill="#d99a52"/><ellipse cx="32" cy="32.5" rx="9" ry="5" fill="#6b3a1f"/><ellipse cx="32" cy="32.5" rx="3" ry="1.6" fill="#f7efe0"/><ellipse cx="48" cy="32" rx="10" ry="6" fill="#d99a52"/><ellipse cx="48" cy="30.5" rx="9" ry="5" fill="#f6e9c9"/><ellipse cx="48" cy="30.5" rx="3" ry="1.6" fill="#f7efe0"/><ellipse cx="24" cy="18" rx="10" ry="6" fill="#d99a52"/><ellipse cx="24" cy="16.5" rx="9" ry="5" fill="#f6e9c9"/><ellipse cx="24" cy="16.5" rx="3" ry="1.6" fill="#f7efe0"/><ellipse cx="40" cy="18" rx="10" ry="6" fill="#d99a52"/><ellipse cx="40" cy="16.5" rx="9" ry="5" fill="#f4a6c0"/><ellipse cx="40" cy="16.5" rx="3" ry="1.6" fill="#f7efe0"/></svg><b>Mini donuts</b><span class="p">$ __</span></li></ul></div><div class="bd case"><h3>Croissants and bakery <small>From the case</small></h3><ul><li><svg class="food" width="56" height="56" viewBox="0 0 64 44" aria-hidden="true"><path d="M4 30 Q8 14 22 10 Q32 6 42 10 Q56 14 60 30 Q50 24 44 26 Q32 18 20 26 Q14 24 4 30Z" fill="#d8923f"/><path d="M20 12 L24 26M32 9 V22M44 12 L40 26" stroke="#a9622a" stroke-width="2" fill="none"/><path d="M14 26 Q32 34 50 26" stroke="#e2546f" stroke-width="4" fill="none" stroke-linecap="round"/></svg><b>Strawberry cream cheese croissant</b><span class="p">$ __</span><small>A Yelp favorite</small></li><li><svg class="food" width="56" height="56" viewBox="0 0 64 44" aria-hidden="true"><path d="M4 30 Q8 14 22 10 Q32 6 42 10 Q56 14 60 30 Q50 24 44 26 Q32 18 20 26 Q14 24 4 30Z" fill="#d8923f"/><path d="M20 12 L24 26M32 9 V22M44 12 L40 26" stroke="#a9622a" stroke-width="2" fill="none"/><path d="M14 26 Q32 34 50 26" stroke="#fbf6ee" stroke-width="4" fill="none" stroke-linecap="round"/></svg><b>Cream cheese croissant</b><span class="p">$ __</span></li><li><svg class="food" width="56" height="56" viewBox="0 0 64 44" aria-hidden="true"><path d="M18 22 H46 L42 42 H22Z" fill="#e9e1d2" stroke="#b9ab94" stroke-width="1"/><path d="M24 22 L25 42M32 22 V42M40 22 L39 42" stroke="#cfc4b0"/><path d="M12 24 Q12 4 32 4 Q52 4 52 24Z" fill="#a8672f"/><g fill="#4a2a17"><circle cx="24" cy="14" r="1.8"/><circle cx="34" cy="10" r="1.8"/><circle cx="40" cy="17" r="1.8"/><circle cx="29" cy="19" r="1.6"/></g></svg><b>Muffins</b><span class="p">$ __</span></li><li><svg class="food" width="56" height="56" viewBox="0 0 64 44" aria-hidden="true"><ellipse cx="32" cy="24" rx="26" ry="15" fill="#c27c3a"/><ellipse cx="32" cy="21" rx="24" ry="12" fill="#d89a55"/><path d="M10 22 Q32 30 54 22" stroke="#fbf6ee" stroke-width="4" fill="none"/><ellipse cx="32" cy="21" rx="6" ry="3" fill="#7a4626"/></svg><b>Bagels with cream cheese</b><span class="p">$ __</span></li><li><span class=nofood aria-hidden=true><i></i></span><b>Cookies</b><span class="p">$ __</span></li></ul></div><div class="bd neon"><h3>Boba and smoothies <small>The neon window</small></h3><ul><li><svg class="food" width="56" height="56" viewBox="0 0 64 44" aria-hidden="true"><rect x="35" y="0" width="4" height="16" rx="1.5" fill="#d7282f" transform="rotate(12 37 8)"/><path d="M20 8 H46 L42 42 H24Z" fill="rgba(255,255,255,.85)" stroke="#c9cfd8" stroke-width="1.2"/><path d="M21.2 14 H44.8 L41.8 41 H24.2Z" fill="#efe3c8"/><circle cx="25" cy="37" r="2.3" fill="#3b2416"/><circle cx="30" cy="38" r="2.3" fill="#3b2416"/><circle cx="35" cy="37" r="2.3" fill="#3b2416"/><circle cx="40" cy="38" r="2.3" fill="#3b2416"/><circle cx="28" cy="34" r="2.3" fill="#3b2416"/><circle cx="37" cy="34" r="2.3" fill="#3b2416"/><ellipse cx="33" cy="8" rx="13" ry="2.4" fill="#fff" stroke="#c9cfd8"/></svg><b>Boba</b><span class="p">$ __</span><small>Vanilla, banana and more</small></li><li><svg class="food" width="56" height="56" viewBox="0 0 64 44" aria-hidden="true"><rect x="35" y="0" width="4" height="16" rx="1.5" fill="#0b62e4" transform="rotate(12 37 8)"/><path d="M20 8 H46 L42 42 H24Z" fill="rgba(255,255,255,.85)" stroke="#c9cfd8" stroke-width="1.2"/><path d="M21.2 14 H44.8 L41.8 41 H24.2Z" fill="#f08bb0"/><ellipse cx="33" cy="8" rx="13" ry="2.4" fill="#fff" stroke="#c9cfd8"/></svg><b>Smoothies</b><span class="p">$ __</span></li><li><svg class="food" width="56" height="56" viewBox="0 0 64 44" aria-hidden="true"><path d="M18 6 H40 L38 42 H20Z" fill="rgba(255,255,255,.85)" stroke="#c9cfd8" stroke-width="1.2"/><path d="M19 12 H39 L37.4 41 H20.6Z" fill="#f7a21b"/><circle cx="48" cy="30" r="10" fill="#f7a21b"/><circle cx="48" cy="30" r="7.5" fill="#ffc35a"/><path d="M48 22.5 V37.5M40.5 30 H55.5M42.7 24.7 L53.3 35.3M53.3 24.7 L42.7 35.3" stroke="#f7a21b" stroke-width="1"/></svg><b>Fresh squeezed orange juice</b><span class="p">$ __</span></li><li><svg class="food" width="56" height="56" viewBox="0 0 64 44" aria-hidden="true"><rect x="35" y="0" width="4" height="16" rx="1.5" fill="#1b1f2a" transform="rotate(12 37 8)"/><path d="M20 8 H46 L42 42 H24Z" fill="rgba(255,255,255,.85)" stroke="#c9cfd8" stroke-width="1.2"/><path d="M21.2 14 H44.8 L41.8 41 H24.2Z" fill="#b27a4e"/><ellipse cx="33" cy="8" rx="13" ry="2.4" fill="#fff" stroke="#c9cfd8"/></svg><b>Iced coffee</b><span class="p">$ __</span></li><li><svg class="food" width="56" height="56" viewBox="0 0 64 44" aria-hidden="true"><path d="M14 12 H44 L41 40 H17Z" fill="#fff" stroke="#6b3a24" stroke-width="2"/><path d="M15.5 16 H42.5" stroke="#6b3a24" stroke-width="5"/><path d="M44 18 Q54 20 48 30 L42 31" fill="none" stroke="#6b3a24" stroke-width="2"/><path d="M24 8 Q22 4 26 1M32 8 Q30 4 34 1" stroke="#b9a89a" stroke-width="1.6" fill="none"/></svg><b>Coffee and cappuccino</b><span class="p">$ __</span><small>Fresh coffee, hot</small></li><li><svg class="food" width="56" height="56" viewBox="0 0 64 44" aria-hidden="true"><path d="M14 12 H44 L41 40 H17Z" fill="#fff" stroke="#6b3a24" stroke-width="2"/><path d="M15.5 16 H42.5" stroke="#6b3a24" stroke-width="5"/><path d="M44 18 Q54 20 48 30 L42 31" fill="none" stroke="#6b3a24" stroke-width="2"/><path d="M24 8 Q22 4 26 1M32 8 Q30 4 34 1" stroke="#b9a89a" stroke-width="1.6" fill="none"/></svg><b>Hot chocolate</b><span class="p">$ __</span></li></ul></div><div class="bd board wide"><h3>Sandwiches and hot food <small>Made to order, all day and all night</small></h3><ul><li><svg class="food" width="56" height="56" viewBox="0 0 64 44" aria-hidden="true"><path d="M6 18 Q8 6 32 6 Q56 6 58 18Z" fill="#d8923f"/><rect x="5" y="18" width="54" height="4" rx="2" fill="#7fb24a"/><rect x="6" y="22" width="52" height="5" rx="2" fill="#b5432c"/><rect x="7" y="27" width="50" height="4" rx="2" fill="#f2c94c"/><path d="M6 31 H58 Q56 40 32 40 Q8 40 6 31Z" fill="#c98a45"/></svg><b>Breakfast sandwiches</b><span class="p">$ __</span><small>Sausage, egg and cheese on a croissant, bagel, wheat or white</small></li><li><svg class="food" width="56" height="56" viewBox="0 0 64 44" aria-hidden="true"><path d="M4 30 Q8 14 22 10 Q32 6 42 10 Q56 14 60 30 Q50 24 44 26 Q32 18 20 26 Q14 24 4 30Z" fill="#d8923f"/><path d="M20 12 L24 26M32 9 V22M44 12 L40 26" stroke="#a9622a" stroke-width="2" fill="none"/><path d="M14 26 Q32 34 50 26" stroke="#f2b8a2" stroke-width="4" fill="none" stroke-linecap="round"/></svg><b>Ham, cheese and jalapeño croissant</b><span class="p">$ __</span></li><li><svg class="food" width="56" height="56" viewBox="0 0 64 44" aria-hidden="true"><path d="M6 18 Q8 6 32 6 Q56 6 58 18Z" fill="#d8923f"/><rect x="5" y="18" width="54" height="4" rx="2" fill="#7fb24a"/><rect x="6" y="22" width="52" height="5" rx="2" fill="#a33a3a"/><rect x="7" y="27" width="50" height="4" rx="2" fill="#f2c94c"/><path d="M6 31 H58 Q56 40 32 40 Q8 40 6 31Z" fill="#c98a45"/></svg><b>Pastrami sandwich</b><span class="p">$ __</span></li><li><svg class="food" width="56" height="56" viewBox="0 0 64 44" aria-hidden="true"><path d="M6 18 Q8 6 32 6 Q56 6 58 18Z" fill="#d8923f"/><rect x="5" y="18" width="54" height="4" rx="2" fill="#7fb24a"/><rect x="6" y="22" width="52" height="5" rx="2" fill="#e7b9a8"/><rect x="7" y="27" width="50" height="4" rx="2" fill="#f2c94c"/><path d="M6 31 H58 Q56 40 32 40 Q8 40 6 31Z" fill="#c98a45"/></svg><b>Lunch subs</b><span class="p">$ __</span></li><li><svg class="food" width="56" height="56" viewBox="0 0 64 44" aria-hidden="true"><path d="M8 20 Q10 4 32 4 Q54 4 56 20Z" fill="#d8923f"/><g fill="#fff3d6"><ellipse cx="22" cy="11" rx="1.6" ry=".9"/><ellipse cx="32" cy="8" rx="1.6" ry=".9"/><ellipse cx="42" cy="12" rx="1.6" ry=".9"/></g><path d="M6 21 H58 L54 25 H10Z" fill="#7fb24a"/><rect x="8" y="24" width="48" height="7" rx="3.5" fill="#6b3a1f"/><path d="M7 30 H57 L50 34 H14Z" fill="#f2c94c"/><path d="M8 34 H56 Q55 41 32 41 Q9 41 8 34Z" fill="#c98a45"/></svg><b>Burgers</b><span class="p">$ __</span></li><li><svg class="food" width="56" height="56" viewBox="0 0 64 44" aria-hidden="true"><rect x="6" y="12" width="52" height="22" rx="11" fill="#f1dfb4"/><path d="M12 14 Q16 24 12 32M24 13 Q28 23 24 33" stroke="#d9c08a" stroke-width="2" fill="none"/><ellipse cx="52" cy="23" rx="6" ry="10" fill="#f6e7a6"/><g fill="#b5432c"><circle cx="51" cy="19" r="1.6"/><circle cx="53" cy="25" r="1.5"/></g><circle cx="50" cy="28" r="1.5" fill="#7fb24a"/></svg><b>Breakfast burritos</b><span class="p">$ __</span></li><li><svg class="food" width="56" height="56" viewBox="0 0 64 44" aria-hidden="true"><ellipse cx="32" cy="30" rx="28" ry="10" fill="#e9e6e0"/><path d="M8 28 Q32 6 56 28Z" fill="#f6cf4a"/><g fill="#7fb24a"><circle cx="24" cy="22" r="1.6"/><circle cx="36" cy="19" r="1.6"/></g><circle cx="30" cy="24" r="1.6" fill="#d7282f"/></svg><b>Low carb omelettes</b><span class="p">$ __</span></li><li><svg class="food" width="56" height="56" viewBox="0 0 64 44" aria-hidden="true"><rect x="4" y="16" width="56" height="13" rx="6.5" fill="#b3532d"/><path d="M6 24 Q32 40 58 24 L56 30 Q32 44 8 30Z" fill="#d8923f"/><path d="M8 20 Q14 16 20 20 T32 20 T44 20 T56 20" stroke="#f5b52e" stroke-width="2.4" fill="none"/></svg><b>Hot dogs</b><span class="p">$ __</span></li></ul></div></div>
+<div class="alsob"><span style="font-weight:700">Also:</span><span class="chip">Fresh fruit</span></div>
+<div class="asks"><span style="font-weight:700">Owner confirms:</span><span class="fill">Glaze twists?</span><span class="fill">Tuna or roast beef croissant?</span><span class="fill">Full list of boba flavors</span><span class="fill">Other juices?</span></div>
+<p class="fine">From the business&#x27;s own Yelp page (specialties list and menu sections), Yelp and Google reviews (2025 to 2026), the ECC Union (June 2022) and the signs out front. No prices are posted with a date, so the owner fills them in before this goes live.</p>
+</div></section>
+<section class="good" id="good"><div class="wrap">
+<p class="kicker">Good to know</p><h2>Walk in, sit down or take it to go</h2>
+<div class="gg"><div><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><div><b>Open 24/7</b><span>Every day, all night. The sign stays lit.</span></div></div><div><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 4v9h12M6 13v7M18 13v7M9 9h9"/></svg><div><b>Tables inside</b><span>Seating for a group, per a Yelp review.</span></div></div><div><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="6" width="18" height="12" rx="2"/><path d="M3 10h18M7 15h4"/></svg><div><b>Cards taken</b><span>Per the Yelp listing.</span></div></div><div><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="6" cy="17" r="3"/><circle cx="18" cy="17" r="3"/><path d="M6 17l4-8h5l3 8M10 9l-1-3H7"/></svg><div><b>Delivery too</b><span>The Yelp listing says delivery is offered.</span></div></div><div><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8.5 12.5l2.5 2.5 4.5-5"/></svg><div><b>Health grade</b><span><span class=fill>Owner confirms the current grade card</span></span></div></div><div><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 16h14M6 16l1.5-5h9L18 16M5 16v3M19 16v3"/><circle cx="8" cy="16" r="1"/><circle cx="16" cy="16" r="1"/></svg><div><b>Lot out front</b><span>Strip mall parking, per Yelp photos.</span></div></div></div>
+</div></section>
+<section id="reviews"><div class="wrap">
+<p class="kicker">Reviews</p><h2>4.6 stars on Google from 339 reviews</h2>
+<div class="quotes"><figure class="q"><div class="st" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;<span class="o"></span></div><p>"My favorite part about this shop is that it&#x27;s open 24/7/365."</p><cite>Kendrick L. · Yelp · Jan 2026</cite></figure><figure class="q"><div class="st" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;<span class="o"></span></div><p>"The donuts are so fresh and delicious, better than anywhere else!"</p><cite>Batu D. · Google · Mar 2025</cite></figure><figure class="q"><div class="st" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;<span class="o"></span></div><p>"I love the cream cheese croissant!"</p><cite>Alyssa B. · Yelp · Jun 2026</cite></figure><figure class="q"><div class="st" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;<span class="o"></span></div><p>"Fresh donuts, hot coffee, and super friendly staff."</p><cite>Mellese G. · Google · Jul 2026</cite></figure></div>
+<p class="src">Short excerpts from public Google and Yelp reviews, as written, star ratings as the reviewer gave them.</p>
+</div></section>
+<section id="visit"><div class="wrap">
+<p class="kicker">Hours and location</p><h2>Look for the rainbow over the door</h2>
+<div class="vgrid">
+<div class="panel"><h3><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>1242 W Redondo Beach Blvd, Gardena, CA 90247</h3>
+<a class="map" href="https://maps.google.com/?cid=17749070450323333346" target="_blank" rel="noopener" aria-label="Open directions in Google Maps"><svg viewBox="0 0 520 220" role="img" aria-label="Simple map: Rainbow Donuts on Redondo Beach Blvd in Gardena">
+<rect width="520" height="220" fill="#efeadf"/>
+<g fill="#e2dac8"><rect x="8" y="14" width="92" height="54" rx="4"/><rect x="8" y="152" width="92" height="54" rx="4"/><rect x="112" y="14" width="92" height="54" rx="4"/><rect x="112" y="152" width="92" height="54" rx="4"/><rect x="216" y="14" width="92" height="54" rx="4"/><rect x="216" y="152" width="92" height="54" rx="4"/><rect x="320" y="14" width="92" height="54" rx="4"/><rect x="320" y="152" width="92" height="54" rx="4"/><rect x="424" y="14" width="92" height="54" rx="4"/><rect x="424" y="152" width="92" height="54" rx="4"/></g>
+<rect x="0" y="86" width="520" height="48" fill="#fff"/><path d="M0 110 H520" stroke="#f5b52e" stroke-width="2" stroke-dasharray="14 10"/>
+<text x="16" y="80" font-family="Figtree,Arial,sans-serif" font-weight="700" font-size="14" fill="#5b5148">Redondo Beach Blvd</text>
+<rect x="150" y="12" width="230" height="64" rx="6" fill="#e6d9b8"/>
+<rect x="160" y="20" width="110" height="16" rx="3" fill="#8a94a6"/>
+<text x="215" y="32" text-anchor="middle" font-family="Figtree,Arial,sans-serif" font-weight="700" font-size="11" fill="#fff">Lot out front</text>
+<text x="180" y="64" text-anchor="middle" font-family="Figtree,Arial,sans-serif" font-weight="800" font-size="18" fill="#0b62e4">P</text>
+<g transform="translate(330 24)"><path d="M0 46 C-4 34 -18 26 -18 12 A18 18 0 0 1 18 12 C18 26 4 34 0 46Z" fill="#d7282f"/><circle cx="0" cy="12" r="6.5" fill="#fff"/></g>
+<rect x="160" y="150" width="220" height="26" rx="13" fill="#1d1c1f"/><text x="270" y="168" text-anchor="middle" font-family="Figtree,Arial,sans-serif" font-weight="700" font-size="13" fill="#fff">1242 W Redondo Beach Blvd</text>
+<text x="504" y="210" text-anchor="end" font-family="Figtree,Arial,sans-serif" font-size="11" fill="#8a7a6a">Not to scale</text>
+</svg></a>
+<a class="link" href="https://maps.google.com/?cid=17749070450323333346" target="_blank" rel="noopener">Get directions</a>
+<p class="fine">Strip mall with a lot out front. The rainbow sign is over the door, lit all night.</p></div>
+<div style="display:grid;gap:18px;align-content:start">
+<div class="panel"><h3><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Hours</h3><div class="allday"><span class="big">24/7</span><span>Open 24 hours, every day of the week</span></div><table class="hours"><tr><td>Monday</td><td>Open 24 hours</td></tr><tr><td>Tuesday</td><td>Open 24 hours</td></tr><tr><td>Wednesday</td><td>Open 24 hours</td></tr><tr><td>Thursday</td><td>Open 24 hours</td></tr><tr><td>Friday</td><td>Open 24 hours</td></tr><tr><td>Saturday</td><td>Open 24 hours</td></tr><tr><td>Sunday</td><td>Open 24 hours</td></tr></table><p class="fine">Hours from the Google and Yelp listings (they match). Call to check holidays.</p>
+<a class="btn btn-call" style="margin-top:12px;width:100%" href="tel:+13107191625"><svg class="ic" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.6a1 1 0 0 1-.25 1z"/></svg>Call (310) 719-1625</a></div>
+<figure class="found empty" data-photo-slot="rainbow-donuts"><div><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 8h3l2-2.5h6L17 8h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg><b>Your photo goes here</b><span>The rainbow sign lit up, the donut case or a boba. Send one anytime.</span></div></figure>
+</div></div></div></section>
+<section id="video" class="locked-sec"><div class="wrap"><p class="kicker">Video</p><h2>A 10-second look at the shop, day or night</h2>
+<div class="locked"><span class="pill"><svg class="lk" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>Standard plan</span><p>A short video banner across the top of your site.</p></div>
+<div class="lockwrap"><span class="pv-ribbon"><svg class="pv-lk" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path class="shackle" d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>Preview: part of the Standard plan</span><div class="ghost" aria-hidden="true" inert><div class="vframe"><div class="play"></div><span class="t">0:10</span><div class="lbl">10 seconds at 3 AM: the sign lit up, the donut case, a boba getting shaken</div></div></div><div class="veil"><div class="vcard"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/><circle cx="12" cy="16" r="1.3" fill="currentColor"/></svg><b>Locked on the Starter site</b><p>The 10-second video banner is part of the Standard plan. Jay shoots it at your place.</p><button type="button" class="pv-btn"><svg class="pv-lk" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path class="shackle" d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>Preview this feature</button></div></div></div>
+</div></section>
+<section id="photos" class="locked-sec"><div class="wrap">
+<p class="kicker">Photos</p><h2>Show the donut case before they drive over</h2>
+<div class="locked"><span class="pill"><svg class="lk" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>Standard plan</span><p>Real photos of your donut case, your counter and your sign, shot by Jay.</p></div>
+<div class="lockwrap pwrap"><span class="pv-ribbon"><svg class="pv-lk" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path class="shackle" d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>Preview: part of the Standard plan</span><div class="pgrid" aria-hidden="true" inert><div class="slot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 8h3l2-2.5h6L17 8h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg><b>Your donut case</b><span>The trays up close, fresh out of the fryer</span></div><div class="slot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.4"/><path d="M3.5 19c.6-3.2 3-5 5.5-5s4.9 1.8 5.5 5M14.5 14.6c2.6-.3 5 1.2 5.8 4.4"/></svg><b>Your counter</b><span>Boba, smoothies and sandwiches being made</span></div><div class="slot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="4" width="18" height="9" rx="1.5"/><path d="M8 13v7M16 13v7M6.5 8.5h11"/></svg><b>Your sign</b><span>The rainbow lit up at night, so people know they found you</span></div></div><div class="veil"><div class="vcard"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/><circle cx="12" cy="16" r="1.3" fill="currentColor"/></svg><b>Locked on the Starter site</b><p>Pro photo shoot: part of the Standard plan. On your Starter site you can send your own photos anytime.</p><button type="button" class="pv-btn"><svg class="pv-lk" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path class="shackle" d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>Preview this feature</button></div></div></div>
+</div></section>
+<section id="pages" class="locked-sec"><div class="wrap"><p class="kicker">Menu pages</p><h2>A page for each part of the menu</h2>
+<div class="locked"><span class="pill"><svg class="lk" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>Standard plan</span><p>Each part of the menu gets its own page with photos and prices.</p></div>
+<div class="lockwrap"><span class="pv-ribbon"><svg class="pv-lk" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path class="shackle" d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>Preview: part of the Standard plan</span><div class="ghost" aria-hidden="true" inert><div class="pages"><div class="pg"><div class="ph"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3h7l4 4v14H7z"/><path d="M14 3v4h4M10 12h5M10 16h5"/></svg></div><div class="tx"><b>Donuts</b><span>Its own page, with photos and prices</span></div></div><div class="pg"><div class="ph"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3h7l4 4v14H7z"/><path d="M14 3v4h4M10 12h5M10 16h5"/></svg></div><div class="tx"><b>Sandwiches</b><span>Its own page, with photos and prices</span></div></div><div class="pg"><div class="ph"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3h7l4 4v14H7z"/><path d="M14 3v4h4M10 12h5M10 16h5"/></svg></div><div class="tx"><b>Boba and smoothies</b><span>Its own page, with photos and prices</span></div></div></div></div><div class="veil"><div class="vcard"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/><circle cx="12" cy="16" r="1.3" fill="currentColor"/></svg><b>Locked on the Starter site</b><p>A page per menu section is part of the Standard plan.</p><button type="button" class="pv-btn"><svg class="pv-lk" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path class="shackle" d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>Preview this feature</button></div></div></div>
+</div></section>
+<section id="book"><div class="wrap">
+<p class="kicker">Office and group orders</p><h2>Order a dozen for the office</h2>
+<p class="lead" style="margin-bottom:18px">Send your order ahead and it's ready when you walk in. Want it now? Just call.</p>
+<div class="locked"><span class="pill"><svg class="lk" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>Standard plan</span><p>Customers can send a dozen, sandwich or drinks order for pickup right here.</p></div>
+<div class="lockwrap"><span class="pv-ribbon"><svg class="pv-lk" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path class="shackle" d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>Preview: part of the Standard plan</span><form class="formwrap" aria-hidden="true" inert>
+<div class="row2"><div><label for="n">Your name</label><input id="n" autocomplete="off"></div><div><label for="p">Phone</label><input id="p" type="tel" autocomplete="off"></div></div>
+<div class="row2"><div><label for="s">What's it for?</label><select id="s"><option>Donuts by the dozen for the office</option><option>Sandwiches for a group</option><option>Boba and smoothies for a group</option><option>Something else</option></select></div><div><label for="c">How many people?</label><input id="c" inputmode="numeric" placeholder="e.g. 12" autocomplete="off"></div></div>
+<div class="row2"><div><label for="d">Pickup day</label><input id="d" type="date"></div><div><label for="t">Pickup time</label><select id="t"><option>Early morning</option><option>Late morning</option><option>Lunch</option><option>Afternoon</option><option>Evening</option><option>Late night</option></select></div></div>
+<label for="m">Your order</label><textarea id="m" placeholder="e.g. 2 dozen mixed, 6 breakfast croissants, 4 boba"></textarea>
+<button class="btn btn-call submit" type="submit">Send order</button><p class="note">Demo form, not connected yet.</p><div class="pv-result" role="status"><b>This is what your customer would see:</b><span class="bubble">Got it! We'll call you to confirm your order.</span><p>On the Standard plan, this order goes straight to your phone. Demo form, not connected yet: nothing was sent.</p></div></form><div class="veil"><div class="vcard"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/><circle cx="12" cy="16" r="1.3" fill="currentColor"/></svg><b>Locked on the Starter site</b><p>Online orders for pickup are part of the Standard plan. Your Starter site ($500) shows your menu, your hours and a call button.</p><small>Demo form, not connected yet</small><button type="button" class="pv-btn"><svg class="pv-lk" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path class="shackle" d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>Preview this feature</button></div></div></div>
+</div></section>
+</main>
+<footer><div class="stripe" aria-hidden="true"></div><div class="wrap"><b>Rainbow Donuts</b><p>1242 W Redondo Beach Blvd, Gardena, CA 90247 · <a href="tel:+13107191625">(310) 719-1625</a></p><p>Donuts, sandwiches, boba and smoothies on Redondo Beach Blvd in Gardena. Open 24 hours, 7 days a week.</p><p style="margin-top:14px;opacity:.6">Draft site by Jay. Not live yet.</p></div></footer>
+<div class="sticky"><a class="btn btn-call" href="tel:+13107191625" aria-label="Call Rainbow Donuts at (310) 719-1625"><svg class="ic" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.6a1 1 0 0 1-.25 1z"/></svg>Call (310) 719-1625</a></div>
+<script>
+(function(){
+function open(w,focus){if(!w.classList.contains('open')){w.classList.add('open');var x=w.querySelector('[inert]');if(x){x.removeAttribute('inert');x.removeAttribute('aria-hidden');}}
+ if(focus){var i=w.querySelector('input,select,textarea,.pv-ribbon');if(i&&i.focus)i.focus({preventScroll:true});}}
+document.querySelectorAll('.lockwrap').forEach(function(w){var b=w.querySelector('.pv-btn');if(b)b.addEventListener('click',function(){open(w,true);});});
+var bw=document.querySelector('#book .lockwrap');
+document.querySelectorAll('a[href="#book"]').forEach(function(a){a.addEventListener('click',function(e){e.preventDefault();
+ document.getElementById('book').scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'start'});if(bw)open(bw,false);});});
+var f=bw&&bw.querySelector('form'),r=bw&&bw.querySelector('.pv-result');
+if(f)f.addEventListener('submit',function(e){e.preventDefault();r.classList.add('show');r.scrollIntoView({behavior:'smooth',block:'nearest'});});
+})();
+</script>
+</body>
+</html>
