@@ -1,0 +1,131 @@
+/* Winter drop hero: the new merch turns on a ring under the mountains.
+   Four looks share one structure; <html data-look> picks peak | range | night | lines.
+   Layers, back to front: sky, headline, mountains, far snow, lake + ring, near snow, controls.
+   app.js positions the ring, lake, horizon and mountains (renderRack / layoutRing). */
+.visually-hidden{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.drop{position:relative;background:var(--paper,#e7f2f8)}
+.drop-stage{--tx:#0f2c47;--tx2:#1f4a6d;--muted:#4d6a82;--accent:#79dcff;--glass:#ffffffa6;--glass-line:#ffffffd9;--btn:#0f2c47;--btn-tx:#fff;--ring-top:205px;
+ position:relative;overflow:hidden;isolation:isolate;height:calc(100svh - 82px);min-height:620px;max-height:1000px;color:var(--tx);
+ background:radial-gradient(120% 60% at 78% 8%,#ffffffcc 0,#ffffff00 55%),linear-gradient(180deg,#b9d6ea 0%,#d6e8f4 34%,#edf5fa 62%,#f6fafd 100%)}
+.drop-sky{position:absolute;inset:0;z-index:0;pointer-events:none;display:none}
+
+/* Only the active look's headline and mountains show */
+.drop-head,.drop-mountains{display:none}
+[data-look="peak"] .head-peak,[data-look="range"] .head-range,[data-look="night"] .head-night,[data-look="lines"] .head-lines,
+[data-look="peak"] .m-peak,[data-look="range"] .m-range,[data-look="night"] .m-night,[data-look="lines"] .m-lines{display:block}
+.drop-head{position:absolute;z-index:1;left:4%;right:4%;top:68px;text-align:center;pointer-events:none}
+.drop-head h1{margin:0;font-weight:inherit}
+.drop-mountains{position:absolute;z-index:2;left:0;width:100%;top:40%;height:30%;pointer-events:none}
+
+.drop-pill{display:inline-flex;align-items:center;gap:8px;height:30px;padding:0 14px 0 12px;border-radius:99px;background:var(--btn);color:var(--btn-tx);font:700 11px/1 var(--body);letter-spacing:.1em;text-transform:uppercase;white-space:nowrap}
+.drop-pill i,.r-sub i{flex:none;width:7px;height:7px;border-radius:50%;background:var(--accent);animation:drop-pulse 2.4s ease-out infinite}
+@keyframes drop-pulse{0%{box-shadow:0 0 0 0 #79dcffaa}70%,100%{box-shadow:0 0 0 7px #79dcff00}}
+
+/* 1 PEAK: giant WINTER with a soft peak rising behind its lower edge */
+.head-peak h1{display:inline-block;margin-top:12px}
+.drop-word{display:block;font:900 min(30.5vw,30svh,300px)/.74 var(--display);letter-spacing:-.01em;padding-top:.04em;
+ background:linear-gradient(180deg,#0f2c47 0%,#1f4a6d 46%,#5f8db0 82%);-webkit-background-clip:text;background-clip:text;color:transparent}
+[data-look="peak"] .m-peak{opacity:.85}
+
+/* 2 RANGE: clean two-line drop headline over a low, hazy range */
+[data-look="range"] .drop-stage{--ring-top:150px}
+[data-look="range"] .drop-head{z-index:3}
+.r-big{display:block;font:800 min(15.4vw,13svh,140px)/.9 var(--display);letter-spacing:-.005em;color:var(--tx)}
+.r-sub{display:inline-flex;align-items:center;gap:9px;margin-top:10px;font:700 12px/1 var(--body);letter-spacing:.14em;text-transform:uppercase;color:var(--tx2)}
+
+/* 3 NIGHT: moonlit ridges, white type, glowing ice */
+[data-look="night"] .drop-stage{--tx:#ffffff;--tx2:#bfe9ff;--muted:#9fb7cc;--glass:#ffffff1a;--glass-line:#ffffff2e;--btn:#79dcff;--btn-tx:#082036;--ring-top:212px;
+ background:radial-gradient(70% 45% at 80% 6%,#2f5b84aa 0,#2f5b8400 70%),linear-gradient(180deg,#06111f 0%,#0b1d33 38%,#14304d 70%,#1c3d5f 100%)}
+[data-look="night"] .drop-sky{display:block;background:
+ radial-gradient(1px 1px at 12% 18%,#fff 98%,#0000),radial-gradient(1px 1px at 27% 9%,#ffffffcc 98%,#0000),radial-gradient(1.5px 1.5px at 44% 22%,#fff 98%,#0000),
+ radial-gradient(1px 1px at 63% 12%,#ffffffb3 98%,#0000),radial-gradient(1px 1px at 72% 27%,#fff 98%,#0000),radial-gradient(1.5px 1.5px at 88% 17%,#ffffffd9 98%,#0000),
+ radial-gradient(1px 1px at 6% 33%,#ffffff99 98%,#0000),radial-gradient(1px 1px at 36% 36%,#ffffffa6 98%,#0000),radial-gradient(1px 1px at 93% 38%,#ffffffb3 98%,#0000),radial-gradient(1px 1px at 55% 31%,#ffffff8c 98%,#0000)}
+.moon{position:absolute;right:9%;top:36%;width:28px;height:28px;border-radius:50%;background:radial-gradient(circle at 38% 36%,#ffffff,#dcecf8 60%,#b9d2e6);box-shadow:0 0 30px 8px #cfe8ff40,0 0 90px 30px #79dcff1f}
+[data-look="night"] .drop-head{z-index:3}
+.head-night h1{display:block;margin-top:10px}
+.n-big{display:block;font:900 min(30.5vw,30svh,300px)/.74 var(--display);letter-spacing:-.01em;padding-top:.04em;
+ background:linear-gradient(180deg,#ffffff 10%,#cfeaff 55%,#79b8e0 100%);-webkit-background-clip:text;background-clip:text;color:transparent;text-shadow:0 0 40px #79dcff22}
+.n-sub{display:block;margin-top:9px;font:600 12px/1 var(--body);letter-spacing:.24em;text-transform:uppercase;color:var(--tx2)}
+
+/* 4 LINES: stacked ridgelines and a radar ring, graphic and modern */
+[data-look="lines"] .drop-stage{--ring-top:214px;background:linear-gradient(180deg,#e3eef6 0%,#eef5fa 55%,#f6fafd 100%)}
+[data-look="lines"] .drop-head{z-index:3}
+.l-top{display:block;font:700 12px/1 var(--body);letter-spacing:.3em;text-transform:uppercase;color:var(--tx)}
+.l-big{display:block;margin-top:6px;font:900 min(34vw,30svh,320px)/.8 var(--display);letter-spacing:-.01em;color:transparent;-webkit-text-stroke:1.6px var(--tx)}
+.l-sub{display:inline-block;margin-top:8px;padding:6px 12px;border-radius:99px;background:var(--btn);color:var(--btn-tx);font:700 11px/1 var(--body);letter-spacing:.12em;text-transform:uppercase}
+
+.drop-snow{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:3}
+.drop-snow.front{z-index:7}
+
+/* 3-day forecast across the top: is snow coming? */
+.drop-forecast{position:absolute;z-index:8;top:12px;left:4%;right:4%;height:46px;display:flex;align-items:center;gap:10px;padding:0 6px 0 14px;border-radius:14px;background:var(--glass);border:1px solid var(--glass-line);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);color:var(--tx)}
+.df-place{font:700 10px/1.15 var(--body);letter-spacing:.12em;text-transform:uppercase;width:44px;flex:none}
+.df-days{flex:1;display:grid;grid-template-columns:repeat(3,1fr);height:100%}
+.df-day{display:grid;grid-template-columns:auto 1fr;grid-template-rows:auto auto;column-gap:6px;align-content:center;padding:0 8px;border-left:1px solid color-mix(in srgb,var(--tx) 14%,transparent)}
+.df-day svg{grid-row:1/3;width:20px;height:20px;align-self:center;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.df-day b{font:600 10px/1.2 var(--body);letter-spacing:.04em;text-transform:uppercase;color:var(--muted)}
+.df-day span{font:700 14px/1.2 var(--body);white-space:nowrap}
+.df-day em{font-style:normal;font-weight:500;opacity:.6;font-size:12px}
+.df-day.snowy svg{color:#2a8fd0}
+[data-look="night"] .df-day.snowy svg{color:var(--accent)}
+.df-snow{display:inline-block;margin-left:4px;padding:2px 5px;border-radius:6px;background:var(--accent);color:#082036;font:800 10px/1 var(--body);vertical-align:2px}
+.df-loading{grid-column:1/-1;align-self:center;font-size:12px;color:var(--muted)}
+
+/* Ring: app.js sets every piece's transform, blur and fade */
+.ring{position:absolute;z-index:6;left:0;right:0;top:var(--ring-top);bottom:176px;touch-action:pan-y;cursor:grab;outline-offset:-6px}
+.ring.dragging{cursor:grabbing}
+.ring-lake{position:absolute;border-radius:50%;pointer-events:none;
+ background:radial-gradient(60% 55% at 50% 42%,#ffffff 0%,#f1f8fc 38%,#d3e6f2 72%,#b4d1e5 100%);
+ box-shadow:inset 0 2px 0 #ffffff,inset 0 -10px 24px #8db4d033,0 18px 40px -18px #0f2c4740}
+.ring-lake:after{content:'';position:absolute;inset:14% 9%;border-radius:50%;border:1px solid #ffffffb3}
+[data-look="night"] .ring-lake{background:radial-gradient(60% 55% at 50% 40%,#5d8fb8 0%,#2d5679 45%,#163452 80%,#0f2840 100%);box-shadow:inset 0 1px 0 #bfe9ff80,0 0 50px -6px #79dcff40}
+[data-look="night"] .ring-lake:after{border-color:#bfe9ff40}
+[data-look="lines"] .ring-lake{overflow:hidden;background:radial-gradient(closest-side,#ffffffe6,#f4f9fcb3 70%,#eef5fa80);border:1.5px solid #123553a6;box-shadow:0 0 0 6px #12355312}
+[data-look="lines"] .ring-lake:after{inset:22% 18%;border:1px dashed #1235534d}
+[data-look="lines"] .ring-lake:before{content:'';position:absolute;inset:-50%;background:conic-gradient(from 0deg,#79dcff00 0deg,#79dcff00 300deg,#79dcff73 360deg);animation:radar 5s linear infinite}
+@keyframes radar{to{transform:rotate(360deg)}}
+.ring-item{position:absolute;left:50%;top:0;padding:0;border:0;background:none;transform-origin:50% 100%;will-change:transform,filter,opacity;user-select:none;-webkit-user-select:none}
+.ring-item img{display:block;width:100%;height:100%;object-fit:contain;pointer-events:none;-webkit-user-drag:none;filter:drop-shadow(0 10px 14px #0f2c4724)}
+.ring-item:after{content:'';position:absolute;z-index:-1;left:16%;right:16%;bottom:-3%;height:9%;border-radius:50%;background:radial-gradient(closest-side,#0f2c4740,#0f2c4700)}
+[data-look="night"] .ring-item img{filter:drop-shadow(0 12px 18px #00000066)}
+[data-look="night"] .ring-item:after{background:radial-gradient(closest-side,#000a,#0000)}
+.ring-item:focus-visible{outline:3px solid #79dcff;outline-offset:2px;border-radius:12px}
+
+/* Swipe cue: plays in the arrow row for a few seconds, then hands over to the dots */
+.drop-mid{position:relative;display:grid;place-items:center}
+.drop .swipe-guide{position:absolute;inset:auto;left:50%;top:50%;bottom:auto;transform:translate(-50%,-50%);display:flex;flex-direction:row;align-items:center;gap:8px;color:var(--tx);opacity:1;pointer-events:none;animation:cue-out .5s 7.4s forwards}
+.drop .swipe-gesture{width:40px;height:22px}
+.drop .swipe-word{font:700 11px/1 var(--body);letter-spacing:.28em}
+.drop .swipe-guide.used{animation:cue-out .3s forwards}
+.drop-dots{opacity:0;animation:cue-in .5s 7.6s forwards}
+.drop .swipe-guide.used+.drop-dots{animation:cue-in .3s .2s forwards}
+@keyframes cue-out{to{opacity:0;visibility:hidden}}
+@keyframes cue-in{to{opacity:1}}
+
+/* Bottom: name, one clear button, big arrows */
+.drop-bottom{position:absolute;z-index:8;left:5%;right:5%;bottom:16px;display:grid;grid-template-columns:1fr auto;align-items:end;gap:14px 12px}
+.drop-name{margin:0;font:800 clamp(30px,8.6vw,64px)/.9 var(--display);text-transform:uppercase;color:var(--tx);letter-spacing:-.005em}
+.drop-cta{display:inline-flex;align-items:center;gap:10px;height:50px;padding:0 20px;border:0;border-radius:99px;background:var(--btn);color:var(--btn-tx);font:700 14px/1 var(--body);letter-spacing:.02em;white-space:nowrap;box-shadow:0 10px 24px -10px #0f2c4799;transition:transform .2s,filter .2s}
+.drop-cta span{font-size:17px;color:var(--accent)}
+[data-look="night"] .drop-cta span{color:#082036}
+.drop-cta:hover{filter:brightness(1.15)}
+.drop-cta:active{transform:scale(.97)}
+.drop-nav{grid-column:1/-1;display:flex;align-items:center;justify-content:space-between}
+.drop-nav>button{width:50px;height:50px;border-radius:50%;border:1px solid color-mix(in srgb,var(--tx) 18%,transparent);background:var(--glass);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);color:var(--tx);font-size:20px;display:grid;place-items:center;transition:background .2s,color .2s}
+.drop-nav>button:hover{background:var(--btn);color:var(--btn-tx)}
+.drop-dots{display:flex;gap:2px}
+.drop-dots button{padding:8px 5px;border:0;background:none}
+.drop-dots button:after{content:'';display:block;width:7px;height:7px;border-radius:99px;background:color-mix(in srgb,var(--tx) 25%,transparent);transition:width .3s,background .3s}
+.drop-dots button.active:after{width:22px;background:var(--tx)}
+
+/* Wider screens: name + button on the left, arrows on the right, ring spread out */
+@media(min-width:701px){
+ .drop-forecast{left:auto;right:3.2%;width:min(520px,60%);top:20px}
+ .drop-head{top:84px}
+ .drop-stage{--ring-top:34%}
+ .drop-bottom{left:3.2%;right:3.2%;bottom:26px;grid-template-columns:auto auto 1fr;gap:24px;align-items:end}
+ .drop-nav{grid-column:auto;justify-self:end;gap:14px}
+ .ring{bottom:120px}
+}
+@media(max-width:700px){.drop-stage{height:calc(100svh - 68px);min-height:600px}}
+@media(prefers-reduced-motion:reduce){.drop-pill i,.r-sub i,[data-look="lines"] .ring-lake:before{animation:none}}
