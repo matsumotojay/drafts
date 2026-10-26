@@ -23,3 +23,41 @@
   box.innerHTML=`<p class="so-head">${total>0?`<b>${Number(total.toFixed(1))}" of new snow</b> in the next 3 days`:'<b>No new snow</b> in the next 3 days'}</p><div class="so-days">${d.time.map((t,i)=>`<span class="${d.snowfall_sum[i]>0?'snowy':''}"><b>${day(t,i)}</b>${Math.round(d.temperature_2m_max[i])}°<em>/${Math.round(d.temperature_2m_min[i])}°</em><i>${d.snowfall_sum[i]>0?Number(d.snowfall_sum[i].toFixed(1))+'" snow':'No snow'}</i></span>`).join('')}</div><p class="so-src">Forecast model data from Open-Meteo. Check Nikk's latest video before you drive up.</p>`}
  catch{box.innerHTML='<p class="so-head">Forecast unavailable right now. <a href="https://forecast.weather.gov/MapClick.php?lat=34.2439&lon=-116.9114" target="_blank" rel="noopener">National Weather Service ↗</a></p>'}}
  load();setInterval(load,900000)})();
+
+// Stay gallery: arrows and dots
+(()=>{
+ function initStayGalleries(root){
+  root.querySelectorAll('.stay-gallery').forEach(gallery=>{
+   if(gallery.dataset.controlsReady)return;
+   const track=gallery.querySelector('.stay-track'),slides=gallery.querySelectorAll('.stay-slide');
+   if(!track||!slides.length)return;
+   gallery.dataset.controlsReady='true';
+   const count=slides.length,dots=document.createElement('div');
+   dots.className='stay-dots';dots.setAttribute('aria-label','Choose a photo');
+   const index=()=>track.clientWidth?Math.max(0,Math.min(count-1,Math.round(track.scrollLeft/track.clientWidth))):0;
+   const go=i=>track.scrollTo({left:((i+count)%count)*track.clientWidth,behavior:'smooth'});
+   const move=step=>go(index()+step);
+   const prev=document.createElement('button'),next=document.createElement('button');
+   [[prev,'prev','Previous photo','←',-1],[next,'next','Next photo','→',1]].forEach(([button,cls,label,arrow,step])=>{
+    button.type='button';button.className='stay-arrow '+cls;button.setAttribute('aria-label',label);button.textContent=arrow;
+    button.hidden=count<2;button.addEventListener('click',()=>move(step));gallery.appendChild(button);
+   });
+   const indicators=Array.from(slides,(_,i)=>{
+    const dot=document.createElement('i');dot.setAttribute('role','button');dot.tabIndex=0;
+    dot.setAttribute('aria-label','Show photo '+(i+1)+' of '+count);
+    dot.addEventListener('click',()=>go(i));
+    dot.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();go(i)}});
+    dots.appendChild(dot);return dot;
+   });
+   dots.hidden=count<2;gallery.appendChild(dots);
+   const update=()=>{const active=index();indicators.forEach((dot,i)=>{
+    dot.classList.toggle('active',i===active);dot.setAttribute('aria-current',i===active?'true':'false');
+   })};
+   track.addEventListener('scroll',update,{passive:true});
+   track.addEventListener('keydown',e=>{if(e.key==='ArrowLeft'||e.key==='ArrowRight'){e.preventDefault();move(e.key==='ArrowRight'?1:-1)}});
+   window.addEventListener('resize',update);update();
+  });
+ }
+ initStayGalleries(document);
+ document.addEventListener('shopify:section:load',e=>initStayGalleries(e.target));
+})();

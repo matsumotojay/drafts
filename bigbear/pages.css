@@ -61,13 +61,20 @@
 .rule p{margin:0;font:400 15px/1.45 var(--body);color:var(--body-tx)}
 .stays{padding:8px 5% 56px}
 .stay{border-radius:var(--r);overflow:hidden;background:var(--card);border:1px solid var(--line);box-shadow:0 24px 50px -32px #0f2c4780}
-.stay-gallery{position:relative}
+.stay-gallery{position:relative;min-width:0}
 .stay-track{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;aspect-ratio:4/3.2}
 .stay-track::-webkit-scrollbar{display:none}
 .stay-slide{flex:0 0 100%;scroll-snap-align:center}
 .stay-slide img{width:100%;height:100%;object-fit:cover;display:block}
 .stay-badge{position:absolute;left:12px;top:12px;padding:7px 11px;border-radius:99px;background:#ffffffeb;color:#0f2c47;font:700 13px/1 var(--body)}
-.stay-hint{position:absolute;right:12px;bottom:12px;padding:6px 10px;border-radius:99px;background:#0f2c47b3;color:#fff;font:600 12px/1 var(--body)}
+.stay-arrow{position:absolute;top:50%;transform:translateY(-50%);z-index:1;display:grid;place-items:center;width:40px;height:40px;padding:0;border:0;border-radius:50%;background:#ffffffe6;color:#0f2c47;box-shadow:0 3px 14px #07152640;font:700 23px/1 var(--body);cursor:pointer}
+.stay-arrow.prev{left:10px}.stay-arrow.next{right:10px}
+.stay-dots{position:absolute;bottom:10px;left:50%;transform:translateX(-50%);display:flex;align-items:center;justify-content:center;gap:7px;z-index:1}
+.stay-dots i{position:relative;display:block;width:7px;height:7px;border-radius:99px;background:#ffffff80;box-shadow:0 1px 4px #07152666;cursor:pointer;transition:width .2s,background .2s}
+.stay-dots i::before{content:"";position:absolute;inset:-8px -3px}
+.stay-dots i.active{width:20px;background:#fff}
+.stay-arrow[hidden],.stay-dots[hidden]{display:none}
+.stay-arrow:focus-visible,.stay-dots i:focus-visible{outline:3px solid #79dcff;outline-offset:4px}
 .stay-info{padding:18px}
 .stay-info h2{margin:0;font:800 clamp(28px,8vw,44px)/.95 var(--display);text-transform:uppercase;color:var(--tx)}
 .stay-facts{margin:8px 0 12px;font:600 14px/1.3 var(--body);color:var(--muted)}
@@ -99,13 +106,17 @@
 .so-src{margin:10px 0 0;font:500 12px/1.35 var(--body);color:var(--muted)}
 .sled-intro{margin:0 0 16px;font:400 17px/1.6 var(--body);color:var(--body-tx)}
 .sled-map{display:block;width:100%;height:auto;border-radius:var(--r);margin-bottom:12px}
-.sm-land{fill:#e6f0f6}.sm-hill{fill:#cfe0eb}.sm-lake{fill:#7fb4d8;stroke:#ffffff;stroke-width:2}
+.sm-land{fill:#e6f0f6}.sm-hill{fill:#cfe0eb}.sm-lake{fill:#7fb4d8;stroke:#ffffff;stroke-width:1.2;stroke-linecap:round;stroke-linejoin:round}
 .sm-tree{fill:#5f8db0}.sm-peak{fill:#9fbdd3}.sm-cap{fill:#ffffff}
 [data-look="night"] .sm-tree{fill:#3f6283}[data-look="night"] .sm-peak{fill:#2d5679}
 [data-look="lines"] .sm-tree,[data-look="lines"] .sm-peak{fill:none;stroke:#0f2c47;stroke-width:1.2}
-.sm-road{fill:none;stroke:#ffffff;stroke-width:5;stroke-linecap:round}
+.sm-road{fill:none;stroke:#ffffff;stroke-linecap:round;stroke-linejoin:round}
+.sm-road-major{stroke-width:2.3}.sm-road-minor{stroke-width:1.1}
+.sm-ski{fill:#f4faff;fill-opacity:.7;stroke:#aacbdf;stroke-width:.8;stroke-dasharray:3 2;stroke-linejoin:round}
+.sm-north path,.sm-scale{fill:none;stroke:#4d6a82;stroke-width:1.2;stroke-linecap:round;stroke-linejoin:round}
+.map-credit{margin:0 0 16px;font:500 12px/1.4 var(--body);color:var(--muted)}
 .sm-label{font:700 11px var(--body);fill:#ffffff;text-anchor:middle}
-.sm-small{font:600 10px var(--body);fill:#4d6a82}
+.sm-small{font:600 10px var(--body);fill:#4d6a82;paint-order:stroke;stroke:#e6f0f6;stroke-width:2;stroke-linejoin:round}
 .sm-note{font:500 9px var(--body);fill:#4d6a82}
 .sm-pin circle{fill:#0f2c47;stroke:#ffffff;stroke-width:3}
 .sm-pin text{font:900 15px var(--display);fill:#ffffff;text-anchor:middle}
@@ -113,7 +124,7 @@
 .sm-pin:nth-of-type(2){animation-delay:.4s}.sm-pin:nth-of-type(3){animation-delay:.8s}
 @keyframes pin-bob{50%{translate:0 -3px}}
 [data-look="night"] .sm-land{fill:#13304d}[data-look="night"] .sm-hill{fill:#0f2742}[data-look="night"] .sm-lake{fill:#2d5679;stroke:#bfe9ff}[data-look="night"] .sm-road{stroke:#3f6283}[data-look="night"] .sm-small,[data-look="night"] .sm-note{fill:#9fb7cc}[data-look="night"] .sm-pin circle{fill:#79dcff}[data-look="night"] .sm-pin text{fill:#082036}
-[data-look="lines"] .sm-land{fill:#f3f7fa;stroke:#0f2c47;stroke-width:1.5}[data-look="lines"] .sm-hill{fill:none;stroke:#0f2c4755}[data-look="lines"] .sm-lake{fill:#e3f3fc;stroke:#0f2c47;stroke-width:1.5}[data-look="lines"] .sm-label{fill:#0f2c47}[data-look="lines"] .sm-road{stroke:#0f2c4733;stroke-width:3}
+[data-look="lines"] .sm-land{fill:#f3f7fa;stroke:#0f2c47;stroke-width:1.5}[data-look="lines"] .sm-hill{fill:none;stroke:#0f2c4755}[data-look="lines"] .sm-lake{fill:#e3f3fc;stroke:#0f2c47;stroke-width:1.5}[data-look="lines"] .sm-label{fill:#0f2c47}[data-look="lines"] .sm-road{stroke:#0f2c4766}
 .spots{display:grid;gap:10px}
 .spot{display:grid;grid-template-columns:52px 1fr;gap:12px;align-items:start;padding:14px;border-radius:var(--r-sm);background:var(--card);border:1px solid var(--line)}
 .spot-num{display:grid;place-items:center;width:52px;height:52px;border-radius:50%;background:var(--btn);color:var(--btn-tx);font:900 28px/1 var(--display)}
@@ -139,3 +150,12 @@
 .game-bar{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:12px}
 .game-tag{padding:7px 11px;border-radius:99px;background:var(--tile);color:#0f2c47;font:700 12px/1 var(--body);text-transform:uppercase;letter-spacing:.06em}
 .game-note{margin:12px 0 0;font:400 16px/1.5 var(--body);color:var(--body-tx)}
+
+[data-look="night"] .sm-road-major{stroke:#7b9db9}[data-look="night"] .sm-road-minor{stroke:#4b7394}
+[data-look="night"] .sm-ski{fill:#cde6f5;fill-opacity:.15;stroke:#7b9db9}
+[data-look="night"] .sm-small{stroke:#13304d}
+[data-look="night"] .sm-north path,[data-look="night"] .sm-scale{stroke:#9fb7cc}
+[data-look="lines"] .sm-road-major{stroke-width:2.3}[data-look="lines"] .sm-road-minor{stroke-width:1.1}
+[data-look="lines"] .sm-ski{fill:#eaf4fb;stroke:#0f2c4780}
+[data-look="lines"] .sm-small{stroke:#f3f7fa}
+[data-look="lines"] .sm-north path,[data-look="lines"] .sm-scale{stroke:#0f2c47}
